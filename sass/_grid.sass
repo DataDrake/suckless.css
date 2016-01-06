@@ -1,24 +1,25 @@
 $grid-cols: 12
 
 @mixin grid-cols($size)
-    @for $cols from 1 through $grid-cols
-        .#{$size}-#{$cols}
-            width: 100%/($grid-cols/$cols)
-.row
-    width: 100%
-    clear: left
-    .col
-        padding: 0
-        float: left
-        min-height: 1px
+  @for $cols from 1 through $grid-cols
+    .#{$size}-#{$cols}
+      width: 100%/($grid-cols/$cols)
 
-.block
-    margin: 0.5em
+.row
+  width: 100%
+  clear: both
+  display: table
+  .col
+    padding: 0
+    float: left
+    min-height: 1px
+
 @include grid-cols(lg)
 @include grid-cols(md)
 @include grid-cols(sm)
 @media only screen and (min-width: 38.5em)
-    @include grid-cols(lg)
-    @include grid-cols(md)
+  @include grid-cols(lg)
+  @include grid-cols(md)
+
 @media only screen and (min-width: 62.5em)
-    @include grid-cols(lg)
+  @include grid-cols(lg)

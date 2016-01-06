@@ -1,0 +1,92 @@
+$button-foreground: #F7F7F7
+$button-background: darken(#4AF,10)
+$button-padding: 0.5em
+$button-hover-change: -20
+$button-border-width: 0.125em
+
+// Default Button
+.button
+  display: inline-block
+  color: $button-foreground
+  background-color: $button-background
+  text-align: center
+  vertical-align: middle
+  padding: $button-padding
+  margin-right: $button-padding
+  text-decoration: none
+  border: $button-border-width solid $button-background
+.button:hover
+  cursor: pointer
+  @if $button-hover-change > 0
+    background-color: lighten($button-background, $button-hover-change)
+  @else
+    background-color: darken($button-background,-1*$button-hover-change)
+
+// Size Modifiers
+.tiny
+  font-size: x-small
+.small
+  font-size: small
+.large
+  font-size: x-large
+.expand
+  width: 100%
+
+// Color Modifiers
+
+// Hollow Color Modifiers
+.button.hollow
+  color: $button-background
+  background-color: $button-foreground
+.button.hollow:hover
+  color: $button-foreground
+  background-color: $button-background
+
+.button-group
+  float: left
+  border: $button-border-width solid $button-background
+  background-color: $button-background
+  .button
+    float: left
+    border-top: none
+    border-bottom: none
+    border-right: $button-border-width/2 solid $button-foreground
+    border-left: $button-border-width/2 solid $button-foreground
+  \:first-child
+    border-left: none
+  \:last-child
+    border-right: none
+.button-group.expand
+  display: table
+  table-layout: fixed
+  .button
+    display: table-cell
+    float: none
+.button-group.hollow
+  .button
+    color: $button-background
+    background-color: $button-foreground
+    border-right: $button-border-width/2 solid $button-background
+    border-left: $button-border-width/2 solid $button-background
+  .button:hover
+    color: $button-foreground
+    background-color: $button-background
+
+//Button Shape Modifiers
+.button.radius
+  border-radius: 0.5em
+.button.round
+  border-radius: 1.5em
+
+.button-group.radius
+  border-radius: 0.5em
+  \:first-child
+    border-radius: 0.375em 0 0 0.375em
+  \:last-child
+    border-radius: 0 0.375em 0.375em 0
+.button-group.round
+  border-radius: 1.5em
+  \:first-child
+    border-radius: 1.25em 0 0 1.25em
+  \:last-child
+    border-radius: 0 1.5em 1.5em 0
