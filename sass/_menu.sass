@@ -4,13 +4,30 @@ $menu-padding: 0.5em
 ul.menu
   padding: 0
   margin: 0
+  float: left
+  clear: left
+  background: #EEE
   li
-    display: inline-block
     list-style: none
     padding: $menu-padding
+    float: left
     a
       text-decoration: none
       cursor: pointer
+  li.dropdown
+    ul
+      display: none
+      position: absolute
+      margin-top: $menu-padding
+      margin-left: -$menu-padding
+      width: inherit
+      border: #333 solid 0.0625em
+      li
+        float: none
+  li.dropdown:hover
+    ul
+      display: block
+
 
 // Expand List to fill container with evenly sized items
 ul.menu.expand
@@ -18,10 +35,12 @@ ul.menu.expand
   table-layout: fixed
   li
     display: table-cell
+    float: none
 
 // Vertical List without bullets
 ul.menu.vertical
   li
     display: list-item
+    float: none
 
 //TODO: Implement Icon Bar
