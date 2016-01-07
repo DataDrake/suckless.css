@@ -1,0 +1,27 @@
+$menu-padding: 0.5em
+
+// Base Menu Style
+ul.menu
+  padding: 0
+  margin: 0
+  li
+    display: inline-block
+    list-style: none
+    padding: $menu-padding
+    a
+      text-decoration: none
+      cursor: pointer
+
+// Expand List to fill container with evenly sized items
+ul.menu.expand
+  display: table
+  table-layout: fixed
+  li
+    display: table-cell
+
+// Vertical List without bullets
+ul.menu.vertical
+  li
+    display: list-item
+
+//TODO: Implement Icon Bar
