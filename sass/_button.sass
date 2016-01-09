@@ -1,93 +1,86 @@
-$button-foreground: #F7F7F7
-$button-background: darken(#4AF,10)
-$button-padding: 0.5em
-$button-hover-change: -20
-$button-border-width: 0.125em
+$btn-foreground: #F7F7F7
+$btn-background: darken(#4AF,10)
+$btn-padding: 0.5em
+$btn-hover-change: -20
+$btn-border-width: 0.125em
 
-// Default Button
-.button
+// Default btn
+.btn
   display: inline-block
-  color: $button-foreground
-  background-color: $button-background
+  color: $btn-foreground
+  background-color: $btn-background
   text-align: center
   vertical-align: middle
-  padding: $button-padding
-  margin-right: $button-padding
+  padding: $btn-padding
+  margin-right: $btn-padding
   text-decoration: none
-  border: $button-border-width solid $button-background
-.button:hover
+  border: $btn-border-width solid $btn-background
+.btn:hover
   cursor: pointer
-  @if $button-hover-change > 0
-    background-color: lighten($button-background, $button-hover-change)
+  @if $btn-hover-change > 0
+    background-color: lighten($btn-background, $btn-hover-change)
+    border-color: lighten($btn-background, $btn-hover-change)
   @else
-    background-color: darken($button-background,-1*$button-hover-change)
+    background-color: darken($btn-background,-1*$btn-hover-change)
+    border-color: darken($btn-background, -1*$btn-hover-change)
 
 // Size Modifiers
-.tiny
+.btn-tiny
   font-size: x-small
-.small
+.btn-small
   font-size: small
-.large
+.btn-large
   font-size: x-large
-.expand
+.btn-expand
   width: 100%
 
 // Color Modifiers
 //TODO: Add support for useful color classes
 
 // Hollow Color Modifiers
-.button.hollow
-  color: $button-background
-  background-color: $button-foreground
-.button.hollow:hover
-  color: $button-foreground
-  background-color: $button-background
+.btn-hollow
+  color: $btn-background
+  background-color: $btn-foreground
+.btn-hollow:hover
+  color: $btn-foreground
+  background-color: $btn-background
+  border-color: $btn-background
 
-.button-group
+.btn-group
   float: left
-  border: $button-border-width solid $button-background
-  background-color: $button-background
-  .button
+  border: $btn-border-width solid $btn-background
+  background-color: $btn-background
+  .btn
     float: left
-    border-top: none
-    border-bottom: none
-    border-right: $button-border-width/2 solid $button-foreground
-    border-left: $button-border-width/2 solid $button-foreground
+    border-color: $btn-foreground
+    border-width: 0 $btn-border-width/2
   \:first-child
     border-left: none
   \:last-child
     border-right: none
-.button-group.expand
+.btn-group.btn-expand
   display: table
   table-layout: fixed
-  .button
+  .btn
     display: table-cell
     float: none
-.button-group.hollow
-  .button
-    color: $button-background
-    background-color: $button-foreground
-    border-right: $button-border-width/2 solid $button-background
-    border-left: $button-border-width/2 solid $button-background
-  .button:hover
-    color: $button-foreground
-    background-color: $button-background
+.btn-group.hollow
+  .btn
+    color: $btn-background
+    background-color: $btn-foreground
+    border-color: $btn-background
+    border-width: 0 $btn-border-width/2
+  .btn:hover
+    color: $btn-foreground
+    background-color: $btn-background
 
-//Button Shape Modifiers
-.button.radius
+//btn Shape Modifiers
+.btn-radius
   border-radius: 0.5em
-.button.round
-  border-radius: 1.5em
 
-.button-group.radius
+.btn-group.btn-radius
   border-radius: 0.5em
   \:first-child
     border-radius: 0.375em 0 0 0.375em
   \:last-child
     border-radius: 0 0.375em 0.375em 0
-.button-group.round
-  border-radius: 1.5em
-  \:first-child
-    border-radius: 1.25em 0 0 1.25em
-  \:last-child
-    border-radius: 0 1.5em 1.5em 0
