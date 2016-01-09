@@ -9,17 +9,15 @@ $grid-cols: 12
   width: 100%
   clear: both
   display: table
-  .col
-    padding: 0
+  > [class*="col-"]
     float: left
-    min-height: 1px
 
-@include grid-cols(lg)
-@include grid-cols(md)
-@include grid-cols(sm)
-@media only screen and (min-width: 38.5em)
-  @include grid-cols(lg)
-  @include grid-cols(md)
+@include grid-cols(col)
+@media only screen and (min-width: 40em)
+  @include grid-cols(col-lg)
+  @include grid-cols(col-md)
 
-@media only screen and (min-width: 62.5em)
-  @include grid-cols(lg)
+
+@media only screen and (min-width: 72.5em)
+  @include grid-cols(col-md)
+  @include grid-cols(col-lg)
