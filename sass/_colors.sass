@@ -1,8 +1,22 @@
-.black
-  background-color: black
-.red
-  background-color: red
-.green
-  background-color: green
-.blue
-  background-color: blue
+@mixin color-pair($name,$fg,$bg)
+  .#{$name}
+    color: $fg
+    background-color: $bg
+
+//Primary
+$colors-primary-fg: #F7F7F7
+$colors-primary-bg: #C0F
+@include color-pair(primary,$colors-primary-fg,$colors-primary-bg)
+
+//Secondary
+$colors-secondary-fg: #F7F7F7
+$colors-secondary-bg: #19F
+@include color-pair(secondary,$colors-secondary-fg,$colors-secondary-bg)
+
+//Status
+$colors-alert: #F90
+$colors-failure: #E00
+$colors-success: #0D0
+@include color-pair(alert,$colors-primary-fg,$colors-alert)
+@include color-pair(failure,$colors-primary-fg,$colors-failure)
+@include color-pair(success,$colors-primary-fg,$colors-success)

@@ -1,19 +1,13 @@
-$btn-foreground: #F7F7F7
-$btn-background: darken(#4AF,10)
+@import _colors
+$btn-foreground: $colors-secondary-fg
+$btn-background: $colors-secondary-bg
 $btn-padding: 0.5em
-$btn-hover-change: -20
+$btn-hover-change: -10
 $btn-border-width: 0.125em
 $btn-outer-radius: 0.25em
 $btn-inner-radius: 0.1875em
 
-$btn-alert-background: #F90
-$btn-failure-background: #E00
-$btn-success-background: #0D0
-
-@mixin button-colors($fg,$bg,$change)
-  color: $fg
-  background: $bg
-  border-color: $bg
+@mixin button-hover($fg,$bg,$change)
   &:hover
     @if $change > 0
       background: lighten($bg, $change)
@@ -21,6 +15,12 @@ $btn-success-background: #0D0
     @else
       background: darken($bg,-1*$change)
       border-color: darken($bg, -1*$change)
+
+@mixin button-colors($fg,$bg,$change)
+  color: $fg
+  background: $bg
+  border-color: $bg
+  @include button-hover($fg,$bg,$change)
 
 // Default btn
 .btn
@@ -44,12 +44,12 @@ $btn-success-background: #0D0
   width: 100%
 
 // Color Modifiers
-.btn-alert
-  @include button-colors($btn-foreground, $btn-alert-background,$btn-hover-change)
-.btn-failure
-  @include button-colors($btn-foreground, $btn-failure-background,$btn-hover-change)
-.btn-success
-  @include button-colors($btn-foreground, $btn-success-background,$btn-hover-change)
+.btn.alert
+  @include button-hover($btn-foreground, $colors-alert,$btn-hover-change)
+.btn.failure
+  @include button-hover($btn-foreground, $colors-failure,$btn-hover-change)
+.btn.success
+  @include button-hover($btn-foreground, $colors-success,$btn-hover-change)
 
 
 // Hollow Color Modifiers

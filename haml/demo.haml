@@ -3,30 +3,30 @@
   %head
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
   %body
-    .grid-col
-      .col-1x.black
+    .grid-row
+      .col-1x.primary
         %h1 lg-4x
-      .col-1x.red
+      .col-1x.secondary
         .grid-row
-          .col-1x.black
+          .col-1x.primary
             %h1 1
-          .col-1x.green
+          .col-1x.alert
             %h1 2
-      .col-1x.black
+      .col-1x.success
         %h1 lg-4x
     .grid-row
-      .col-1x.col-lg-1x.black
+      .col-1x.col-lg-1x.primary
         %h1 lg-3x
-      .col-1x.col-lg-2x.red
+      .col-1x.col-lg-2x.secondary
         %h1 lg-6x
-      .col-1x.col-lg-1x.black
+      .col-1x.col-lg-1x.primary
         %h1 lg-3x
     .grid-row
-      .col-1x.black
+      .col-1x.primary
         %h1 lg-2x
-      .col-2x.red
+      .col-2x.secondary
         %h1 lg-4x
-      .col-1x.black
+      .col-1x.primary
         %h1 lg-6x
     .row
       .btn-group.btn-expand
@@ -42,11 +42,11 @@
     .row
       .btn
         %a normal
-      .btn.btn-alert
+      .btn.alert
         %a alert
-      .btn.btn-failure
+      .btn.failure
         %a failure
-      .btn.btn-success
+      .btn.success
         %a success
     .row
       .pad
