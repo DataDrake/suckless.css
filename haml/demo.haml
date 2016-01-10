@@ -3,31 +3,65 @@
   %head
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
   %body
-    .grid-row
+    %h2 Grid
+    %h3 Multipliers
+    .grid-row.pad.text-center
       .col-1x.primary
-        %h1 lg-4x
+        %h4 1x
+    .grid-row.pad.text-center
+      .col-1x.primary
+        %h4 1x
       .col-1x.secondary
-        .grid-row
-          .col-1x.primary
-            %h1 1
-          .col-1x.alert
-            %h1 2
-      .col-1x.success
-        %h1 lg-4x
-    .grid-row
-      .col-1x.col-lg-1x.primary
-        %h1 lg-3x
-      .col-1x.col-lg-2x.secondary
-        %h1 lg-6x
-      .col-1x.col-lg-1x.primary
-        %h1 lg-3x
-    .grid-row
+        %h4 1x
+    .grid-row.pad.text-center
       .col-1x.primary
-        %h1 lg-2x
+        %h4 1x
+      .col-1x.secondary
+        %h4 1x
+      .col-1x.primary
+        %h4 1x
+    .grid-row.pad.text-center
+      .col-1x.primary
+        %h4 1x
       .col-2x.secondary
-        %h1 lg-4x
+        %h4 2x
       .col-1x.primary
-        %h1 lg-6x
+        %h4 1x
+    .grid-row.pad.text-center
+      .col-1x.primary
+        %h4 1x
+      .col-6x.secondary
+        %h4 6x
+    %h3 Sizes
+    .grid-row.pad.text-center
+      .col-1x.col-lg-1x.primary
+        %h4 1x
+      .col-1x.col-md-2x.col-lg-6x.secondary
+        %h4 1x,md-2x,lg-6x
+    %h3 Column
+    .grid-row.text-center
+      .col-1x
+        .grid-col.pad
+          .col-1x.primary
+            %h4 1x
+          .col-1x.tertiary
+            %h4 1x
+          .col-1x.primary
+            %h4 1x
+      .col-1x
+        .grid-col.pad
+          .col-1x.primary
+            %h4 1x
+          .col-2x.tertiary
+            %h4 2x
+          .col-1x.primary
+            %h4 1x
+      .col-1x
+        .grid-col.pad
+          .col-1x.primary
+            %h4 1x
+          .col-2x.tertiary
+            %h4 2x
     .row
       .btn-group.expand
         %a.btn btn
