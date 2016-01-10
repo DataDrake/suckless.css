@@ -11,12 +11,25 @@
 /**************************/
 
 //default to small
+.hide-for-small,.show-for-medium-only,.show-for-large-only
+  display: none
+.show-for-small-only
+  display: inherit
 @include grid-cols(col)
 
 //medium settings
 @media only screen and (min-width: $grid-medium-min)
+  .hide-for-small,.show-for-medium-only
+    display: inherit
+  .hide-for-medium,.show-for-small-only
+    display: none
+  // grid
   @include grid-cols(col-md)
 
 //large settings
 @media only screen and (min-width: $grid-large-min)
+  .hide-for-large,.show-for-small-only,.show-for-medium-only
+    display: none
+  .hide-for-medium,.show-for-large-only
+    display: inherit
   @include grid-cols(col-lg)
