@@ -12,14 +12,3 @@ $grid-max: 6
   display: flex
 .grid-col
   flex-direction: column
-
-//default to small
-@include grid-cols(col)
-
-//medium settings
-@media only screen and (min-width: $grid-medium-min)
-  @include grid-cols(col-md)
-
-//large settings
-@media only screen and (min-width: $grid-large-min)
-  @include grid-cols(col-lg)

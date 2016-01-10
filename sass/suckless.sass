@@ -4,3 +4,18 @@
 @import _grid
 @import _helpers
 //@import _menu
+
+/**************************/
+/* Size-specific settings */
+/**************************/
+
+//default to small
+@include grid-cols(col)
+
+//medium settings
+@media only screen and (min-width: $grid-medium-min)
+  @include grid-cols(col-md)
+
+//large settings
+@media only screen and (min-width: $grid-large-min)
+  @include grid-cols(col-lg)
