@@ -3,25 +3,35 @@ $btn-background: darken(#4AF,10)
 $btn-padding: 0.5em
 $btn-hover-change: -20
 $btn-border-width: 0.125em
+$btn-outer-radius: 0.25em
+$btn-inner-radius: 0.1875em
+
+$btn-alert-background: #F90
+$btn-failure-background: #E00
+$btn-success-background: #0D0
+
+@mixin button-colors($fg,$bg,$change)
+  color: $fg
+  background: $bg
+  border-color: $bg
+  &:hover
+    @if $change > 0
+      background: lighten($bg, $change)
+      border-color: lighten($bg, $change)
+    @else
+      background: darken($bg,-1*$change)
+      border-color: darken($bg, -1*$change)
 
 // Default btn
 .btn
   display: inline-block
-  color: $btn-foreground
-  background: $btn-background
   text-align: center
   vertical-align: middle
   padding: $btn-padding
   margin-right: $btn-padding
   text-decoration: none
-  border: $btn-border-width solid $btn-background
-.btn:hover
-  @if $btn-hover-change > 0
-    background: lighten($btn-background, $btn-hover-change)
-    border-color: lighten($btn-background, $btn-hover-change)
-  @else
-    background: darken($btn-background,-1*$btn-hover-change)
-    border-color: darken($btn-background, -1*$btn-hover-change)
+  border-width: $btn-border-width
+  @include button-colors($btn-foreground,$btn-background,$btn-hover-change)
 
 // Size Modifiers
 .btn-tiny
@@ -34,7 +44,13 @@ $btn-border-width: 0.125em
   width: 100%
 
 // Color Modifiers
-//TODO: Add support for useful color classes
+.btn-alert
+  @include button-colors($btn-foreground, $btn-alert-background,$btn-hover-change)
+.btn-failure
+  @include button-colors($btn-foreground, $btn-failure-background,$btn-hover-change)
+.btn-success
+  @include button-colors($btn-foreground, $btn-success-background,$btn-hover-change)
+
 
 // Hollow Color Modifiers
 .btn-hollow, .btn-hollow > .btn
@@ -69,8 +85,8 @@ $btn-border-width: 0.125em
 
 //btn Shape Modifiers
 .btn-radius
-  border-radius: 0.5em
+  border-radius: $btn-outer-radius
 
 .btn-group.btn-radius
   > *
-    border-radius: 0.375em
+    border-radius: $btn-inner-radius
