@@ -3,7 +3,7 @@ $btn-foreground: $colors-secondary-fg
 $btn-background: $colors-secondary-bg
 $btn-padding: 0.5em
 $btn-hover-change: -10
-$btn-border-width: 0.125em
+$btn-border-width: 0.1875rem
 $btn-outer-radius: 0.25em
 $btn-inner-radius: 0.1875em
 
@@ -30,16 +30,9 @@ $btn-inner-radius: 0.1875em
   padding: $btn-padding
   margin-right: $btn-padding
   text-decoration: none
-  border-width: $btn-border-width
+  border: $btn-border-width solid
   @include button-colors($btn-foreground,$btn-background,$btn-hover-change)
 
-// Size Modifiers
-.btn-tiny
-  font-size: x-small
-.btn-small
-  font-size: small
-.btn-large
-  font-size: x-large
 .btn-expand
   width: 100%
 
@@ -66,7 +59,7 @@ $btn-inner-radius: 0.1875em
   display: flex
   border: $btn-border-width solid $btn-background
   background: $btn-foreground
-  .btn
+  > .btn
     border: none
     flex: 1
     margin-right: $btn-border-width
