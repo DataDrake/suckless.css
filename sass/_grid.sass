@@ -1,3 +1,5 @@
+$grid-large-min: 72.5em
+$grid-medium-min: 40em
 $grid-max: 6
 
 @mixin grid-cols($size)
@@ -11,13 +13,13 @@ $grid-max: 6
 .grid-col
   flex-direction: column
 
+//default to small
 @include grid-cols(col)
-@media only screen and (min-width: 40em)
-  //@include grid-cols(col-lg)
-  @include grid-cols(col-md)
-  .grid-col
-    flex-direction: row
 
-@media only screen and (min-width: 72.5em)
-  //@include grid-cols(col-md)
+//medium settings
+@media only screen and (min-width: $grid-medium-min)
+  @include grid-cols(col-md)
+
+//large settings
+@media only screen and (min-width: $grid-large-min)
   @include grid-cols(col-lg)
