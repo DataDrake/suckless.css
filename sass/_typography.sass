@@ -1,3 +1,34 @@
+@import _colors
+$quote-border-width: 0.125em
+$quote-padding: 0.5em
+
+// Alignment Modifiers
+.text-center
+  text-align: center
+.text-justify
+  text-align: justify
+.text-left
+  text-align: left
+.text-right
+  text-align: right
+
+// Block Quote
+blockquote
+  color: $colors-tertiary-fg
+  background: $colors-tertiary-bg
+  border: $quote-border-width dotted lighten($colors-tertiary-fg,50)
+  font-style: italic
+  padding: $quote-padding
+  cite
+    display: block
+    font-style: italic
+    &::before
+      content: '\2014 \0020'
+
+// List Modifiers
+.list-hide-bullet
+  list-style-type: none
+
 // Size Modifiers
 .tiny
   font-size: x-small
