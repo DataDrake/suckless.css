@@ -1,23 +1,23 @@
-$grid-cols: 12
+$grid-max: 6
 
 @mixin grid-cols($size)
-  @for $cols from 1 through $grid-cols
-    .#{$size}-#{$cols}
-      width: 100%/($grid-cols/$cols)
+  @for $cols from 1 through $grid-max
+    .#{$size}-#{$cols}x
+      flex: $cols
 
-.row
+.grid-row,.grid-col
   width: 100%
-  clear: both
-  display: table
-  > [class*="col-"]
-    float: left
+  display: flex
+.grid-col
+  flex-direction: column
 
 @include grid-cols(col)
 @media only screen and (min-width: 40em)
-  @include grid-cols(col-lg)
+  //@include grid-cols(col-lg)
   @include grid-cols(col-md)
-
+  .grid-col
+    flex-direction: row
 
 @media only screen and (min-width: 72.5em)
-  @include grid-cols(col-md)
+  //@include grid-cols(col-md)
   @include grid-cols(col-lg)

@@ -4,37 +4,44 @@
     <link href='css/suckless.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class='row'>
-      <div class='col-12 col-md-3 col-lg-4 black'>
-        <h1>lg-4</h1>
+    <div class='grid-col'>
+      <div class='col-1x black'>
+        <h1>lg-4x</h1>
       </div>
-      <div class='col-12 col-md-6 col-lg-4 red'>
-        <h1>lg-4</h1>
+      <div class='col-1x red'>
+        <div class='grid-row'>
+          <div class='col-1x black'>
+            <h1>1</h1>
+          </div>
+          <div class='col-1x green'>
+            <h1>2</h1>
+          </div>
+        </div>
       </div>
-      <div class='col-12 col-md-3 col-lg-4 black'>
-        <h1>lg-4</h1>
-      </div>
-    </div>
-    <div class='row'>
-      <div class='col-4 col-lg-3 black'>
-        <h1>lg-3</h1>
-      </div>
-      <div class='col-4 col-lg-6 red'>
-        <h1>lg-6</h1>
-      </div>
-      <div class='col-4 col-lg-3 black'>
-        <h1>lg-3</h1>
+      <div class='col-1x black'>
+        <h1>lg-4x</h1>
       </div>
     </div>
-    <div class='row'>
-      <div class='col-2 black'>
-        <h1>lg-2</h1>
+    <div class='grid-row'>
+      <div class='col-1x col-lg-1x black'>
+        <h1>lg-3x</h1>
       </div>
-      <div class='col-4 red'>
-        <h1>lg-4</h1>
+      <div class='col-1x col-lg-2x red'>
+        <h1>lg-6x</h1>
       </div>
-      <div class='col-2 black'>
-        <h1>lg-6</h1>
+      <div class='col-1x col-lg-1x black'>
+        <h1>lg-3x</h1>
+      </div>
+    </div>
+    <div class='grid-row'>
+      <div class='col-1x black'>
+        <h1>lg-2x</h1>
+      </div>
+      <div class='col-2x red'>
+        <h1>lg-4x</h1>
+      </div>
+      <div class='col-1x black'>
+        <h1>lg-6x</h1>
       </div>
     </div>
     <div class='row'>
@@ -45,9 +52,15 @@
         <a class='btn'>btn</a>
       </div>
     </div>
+    <div class='btn-group btn-stack' style='float: left'>
+      <a class='btn'>btn</a>
+      <a class='btn'>btn</a>
+      <a class='btn'>btn</a>
+      <a class='btn'>btn</a>
+    </div>
     <div class='row'>
       <div class='pad'>
-        <div class='btn-group hollow btn-expand btn-round large'>
+        <div class='btn-group btn-hollow btn-expand btn-radius btn-large'>
           <a class='btn'>btn</a>
           <a class='btn'>btn</a>
           <a class='btn'>btn</a>
@@ -68,8 +81,8 @@
       <a class='btn btn-large hollow'>Large</a>
     </div>
     <div class='row'>
-      <a class='btn btn-small hollow btn-round'>round</a>
-      <a class='btn btn-large hollow btn-round'>Round</a>
+      <a class='btn btn-small hollow btn-radius'>Radius</a>
+      <a class='btn btn-large hollow btn-radius'>Radius</a>
     </div>
     <div class='row pad'>
       <a class='btn btn-large btn-expand'>Large Expanded</a>

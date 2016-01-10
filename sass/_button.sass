@@ -8,7 +8,7 @@ $btn-border-width: 0.125em
 .btn
   display: inline-block
   color: $btn-foreground
-  background-color: $btn-background
+  background: $btn-background
   text-align: center
   vertical-align: middle
   padding: $btn-padding
@@ -16,12 +16,11 @@ $btn-border-width: 0.125em
   text-decoration: none
   border: $btn-border-width solid $btn-background
 .btn:hover
-  cursor: pointer
   @if $btn-hover-change > 0
-    background-color: lighten($btn-background, $btn-hover-change)
+    background: lighten($btn-background, $btn-hover-change)
     border-color: lighten($btn-background, $btn-hover-change)
   @else
-    background-color: darken($btn-background,-1*$btn-hover-change)
+    background: darken($btn-background,-1*$btn-hover-change)
     border-color: darken($btn-background, -1*$btn-hover-change)
 
 // Size Modifiers
@@ -38,49 +37,40 @@ $btn-border-width: 0.125em
 //TODO: Add support for useful color classes
 
 // Hollow Color Modifiers
-.btn-hollow
+.btn-hollow, .btn-hollow > .btn
   color: $btn-background
-  background-color: $btn-foreground
-.btn-hollow:hover
+  background: $btn-foreground
+.btn-hollow:hover,.btn-hollow > .btn:hover
   color: $btn-foreground
-  background-color: $btn-background
+  background: $btn-background
   border-color: $btn-background
 
+// Button Groups
 .btn-group
-  float: left
+  display: flex
   border: $btn-border-width solid $btn-background
-  background-color: $btn-background
+  background: $btn-foreground
   .btn
-    float: left
-    border-color: $btn-foreground
-    border-width: 0 $btn-border-width/2
-  \:first-child
-    border-left: none
+    border: none
+    flex: 1
+    margin-right: $btn-border-width
   \:last-child
-    border-right: none
-.btn-group.btn-expand
-  display: table
-  table-layout: fixed
+    margin: 0
+.btn-group.btn-hollow
+  background: $btn-background
+
+.btn-stack
+  flex-direction: column
   .btn
-    display: table-cell
-    float: none
-.btn-group.hollow
-  .btn
-    color: $btn-background
-    background-color: $btn-foreground
-    border-color: $btn-background
-    border-width: 0 $btn-border-width/2
-  .btn:hover
-    color: $btn-foreground
-    background-color: $btn-background
+    margin-right: 0
+    margin-bottom: $btn-border-width
+  \:last-child
+    margin: 0
 
 //btn Shape Modifiers
 .btn-radius
   border-radius: 0.5em
 
 .btn-group.btn-radius
-  border-radius: 0.5em
-  \:first-child
-    border-radius: 0.375em 0 0 0.375em
-  \:last-child
-    border-radius: 0 0.375em 0.375em 0
+  > *
+    border-radius: 0.375em
