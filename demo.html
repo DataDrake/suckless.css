@@ -4,8 +4,15 @@
     <link href='css/suckless.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h2>Grid</h2>
-    <h3>Multipliers</h3>
+    <div class='row primary'>
+      <div class='btn-group expand'>
+        <a class='btn'>Suckless.css</a>
+        <a class='btn'>Grid</a>
+        <a class='btn'>Buttons</a>
+      </div>
+    </div>
+    <h1>Grid</h1>
+    <h2>Multipliers</h2>
     <div class='grid-row pad text-center'>
       <div class='col-1x primary'>
         <h4>1x</h4>
@@ -49,7 +56,7 @@
         <h4>6x</h4>
       </div>
     </div>
-    <h3>Sizes</h3>
+    <h2>Sizes</h2>
     <div class='grid-row pad text-center'>
       <div class='col-1x col-lg-1x primary'>
         <h4>1x</h4>
@@ -58,7 +65,7 @@
         <h4>1x,md-2x,lg-6x</h4>
       </div>
     </div>
-    <h3>Column</h3>
+    <h2>Column</h2>
     <div class='grid-row text-center'>
       <div class='col-1x'>
         <div class='grid-col pad'>
@@ -97,23 +104,27 @@
         </div>
       </div>
     </div>
-    <div class='row'>
-      <div class='btn-group expand'>
-        <a class='btn'>btn</a>
-        <a class='btn'>btn</a>
-        <a class='btn'>btn</a>
-        <a class='btn'>btn</a>
-      </div>
+    <h1>Buttons</h1>
+    <h2>Sizes</h2>
+    <div class='row pad'>
+      <a class='btn tiny'>Tiny</a>
+      <a class='btn small'>Small</a>
+      <a class='btn'>Normal</a>
+      <a class='btn large'>Large</a>
     </div>
-    <div class='btn-group btn-stack' style='float: left'>
-      <a class='btn'>btn</a>
-      <a class='btn'>btn</a>
-      <a class='btn'>btn</a>
-      <a class='btn'>btn</a>
+    <div class='row pad'>
+      <a class='btn large expand'>Large Expanded</a>
     </div>
-    <div class='row'>
+    <div class='row pad'>
+      <a class='btn tiny expand'>Tiny Expanded</a>
+    </div>
+    <h2>Types</h2>
+    <div class='row pad'>
       <div class='btn'>
         <a>normal</a>
+      </div>
+      <div class='btn btn-hollow'>
+        <a>hollow</a>
       </div>
       <div class='btn alert'>
         <a>alert</a>
@@ -125,9 +136,45 @@
         <a>success</a>
       </div>
     </div>
-    <div class='row'>
-      <div class='pad'>
-        <div class='btn-group btn-hollow expand btn-radius large'>
+    <h2>Shapes</h2>
+    <div class='row pad'>
+      <a class='btn'>Normal</a>
+      <a class='btn btn-radius'>Radius</a>
+      <a class='btn btn-hollow'>Hollow</a>
+      <a class='btn btn-hollow btn-radius'>Radius</a>
+    </div>
+    <h2>Groups</h2>
+    <h3>Normal</h3>
+    <div class='row pad'>
+      <div class='btn-group'>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+      </div>
+    </div>
+    <h3>Expanded</h3>
+    <div class='row pad'>
+      <div class='btn-group expand'>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+      </div>
+    </div>
+    <h3>Expanded, Hollow, Radius, Large</h3>
+    <div class='row pad'>
+      <div class='btn-group btn-hollow expand btn-radius large'>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+        <a class='btn'>btn</a>
+      </div>
+    </div>
+    <h3>Stacked</h3>
+    <div class='row pad'>
+      <div class='col-1x'>
+        <div class='btn-group btn-stack'>
           <a class='btn'>btn</a>
           <a class='btn'>btn</a>
           <a class='btn'>btn</a>
@@ -135,68 +182,37 @@
         </div>
       </div>
     </div>
-    <div class='row'>
-      <a class='btn tiny'>Tiny</a>
-      <a class='btn small'>Small</a>
-      <a class='btn'>Normal</a>
-      <a class='btn large'>Large</a>
-    </div>
-    <div class='row'>
-      <a class='btn tiny btn-hollow'>Tiny</a>
-      <a class='btn small btn-hollow'>Small</a>
-      <a class='btn btn-hollow'>Normal</a>
-      <a class='btn large btn-hollow'>Large</a>
-    </div>
-    <div class='row'>
-      <a class='btn small btn-hollow btn-radius'>Radius</a>
-      <a class='btn large btn-hollow btn-radius'>Radius</a>
-    </div>
-    <div class='row pad'>
-      <a class='btn large expand'>Large Expanded</a>
-    </div>
-    <ul class='menu expand'>
-      <li>
-        <a>Home</a>
-      </li>
-      <li class='dropdown'>
-        <span>Dropdown</span>
-        <ul class='menu vertical'>
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <a>Item 2</a>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul class='menu vertical'>
-      <li>
-        <a>Item 1</a>
-      </li>
-      <li>
-        <ul class='menu'>
-          <li>
-            <a>This is a really long item</a>
-          </li>
-          <li>
-            <a>Item B</a>
-          </li>
-          <li>
-            <a>Item C</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a>Item 3</a>
-      </li>
-    </ul>
-    <blockquote>
-      This is awesome
-      <cite>Some Awesome Dude</cite>
-    </blockquote>
   </body>
+  <h1>Typography</h1>
+  <h2>Sizes</h2>
+  <div class='row pad'>
+    <p class='tiny'>Tiny</p>
+    <p class='small'>Small</p>
+    <p>Normal</p>
+    <p class='large'>Large</p>
+  </div>
+  <h2>Alignment</h2>
+  <div class='grid-row pad'>
+    <div class='col-1x pad primary text-left'>
+      <h4>Left</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
+    </div>
+    <div class='col-1x pad secondary text-center'>
+      <h4>Center</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
+    </div>
+    <div class='col-1x pad primary text-right'>
+      <h4>Right</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
+    </div>
+    <div class='col-1x pad tertiary text-justify'>
+      <h4>Justify</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
+    </div>
+  </div>
+  <h2>Blockquote</h2>
+  <blockquote>
+    This is awesome
+    <cite>Some Awesome Dude</cite>
+  </blockquote>
 </html>

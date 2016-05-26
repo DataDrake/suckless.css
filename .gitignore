@@ -1,2 +1,4 @@
 .idea/*
 *.map
+blog.haml
+blog.html
