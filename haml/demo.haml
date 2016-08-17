@@ -3,7 +3,7 @@
   %head
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
   %body
-    .row.primary
+    .primary
       .btn-group.expand
         %a.btn Suckless.css
         %a.btn Grid
@@ -11,75 +11,75 @@
     %h1 Grid
     %h2 Multipliers
     .grid-row.pad.text-center
-      .col-1x.primary
-        %h4 1x
+      .sm-1.primary
+        %h4 .sm-1
     .grid-row.pad.text-center
-      .col-1x.primary
-        %h4 1x
-      .col-1x.secondary
-        %h4 1x
+      .sm-1.primary
+        %h4 .sm-1
+      .sm-1.secondary
+        %h4 .sm-1
     .grid-row.pad.text-center
-      .col-1x.primary
-        %h4 1x
-      .col-1x.secondary
-        %h4 1x
-      .col-1x.primary
-        %h4 1x
+      .sm-1.primary
+        %h4 .sm-1
+      .sm-1.secondary
+        %h4 .sm-1
+      .sm-1.primary
+        %h4 .sm-1
     .grid-row.pad.text-center
-      .col-1x.primary
-        %h4 1x
-      .col-2x.secondary
-        %h4 2x
-      .col-1x.primary
-        %h4 1x
+      .sm-1.primary
+        %h4 .sm-1
+      .sm-2.secondary
+        %h4 .sm-2
+      .sm-1.primary
+        %h4 .sm-1
     .grid-row.pad.text-center
-      .col-1x.primary
-        %h4 1x
-      .col-6x.secondary
-        %h4 6x
+      .sm-1.primary
+        %h4 .sm-1
+      .sm-6.secondary
+        %h4 .sm-6
     %h2 Sizes
     .grid-row.pad.text-center
-      .col-1x.col-lg-1x.primary
-        %h4 1x
-      .col-1x.col-md-2x.col-lg-6x.secondary
-        %h4 1x,md-2x,lg-6x
+      .sm-1.lg-1.primary
+        %h4 .sm-1
+      .sm-1.md-2.lg-6.secondary
+        %h4 .sm-1.md-2.lg-6
     %h2 Column
     .grid-row.text-center
-      .col-1x
+      .sm-1
         .grid-col.pad
-          .col-1x.primary
-            %h4 1x
-          .col-1x.tertiary
-            %h4 1x
-          .col-1x.primary
-            %h4 1x
-      .col-1x
+          .sm-1.primary
+            %h4 .sm-1
+          .sm-1.tertiary
+            %h4 .sm-1
+          .sm-1.primary
+            %h4 .sm-1
+      .sm-1
         .grid-col.pad
-          .col-1x.primary
-            %h4 1x
-          .col-2x.tertiary
-            %h4 2x
-          .col-1x.primary
-            %h4 1x
-      .col-1x
+          .sm-1.primary
+            %h4 .sm-1
+          .sm-2.tertiary
+            %h4 .sm-2
+          .sm-1.primary
+            %h4 .sm-1
+      .sm-1
         .grid-col.pad
-          .col-1x.primary
-            %h4 1x
-          .col-2x.tertiary
-            %h4 2x
+          .sm-1.primary
+            %h4 .sm-1
+          .sm-2.tertiary
+            %h4 .sm-2
     %h1 Buttons
     %h2 Sizes
-    .row.pad
+    .pad
       %a.btn.tiny Tiny
       %a.btn.small Small
       %a.btn Normal
       %a.btn.large Large
-    .row.pad
+    .pad
       %a.btn.large.expand Large Expanded
-    .row.pad
+    .pad
       %a.btn.tiny.expand Tiny Expanded
     %h2 Types
-    .row.pad
+    .pad
       .btn
         %a normal
       .btn.btn-hollow
@@ -91,36 +91,36 @@
       .btn.success
         %a success
     %h2 Shapes
-    .row.pad
+    .pad
       %a.btn Normal
       %a.btn.btn-radius Radius
       %a.btn.btn-hollow Hollow
       %a.btn.btn-hollow.btn-radius Radius
     %h2 Groups
     %h3 Normal
-    .row.pad
+    .pad
       .btn-group
         %a.btn btn
         %a.btn btn
         %a.btn btn
         %a.btn btn
     %h3 Expanded
-    .row.pad
+    .pad
       .btn-group.expand
         %a.btn btn
         %a.btn btn
         %a.btn btn
         %a.btn btn
     %h3 Expanded, Hollow, Radius, Large
-    .row.pad
+    .pad
       .btn-group.btn-hollow.expand.btn-radius.large
         %a.btn btn
         %a.btn btn
         %a.btn btn
         %a.btn btn
     %h3 Stacked
-    .row.pad
-      .col-1x
+    .pad
+      .sm-1
         .btn-group.btn-stack
           %a.btn btn
           %a.btn btn
@@ -128,23 +128,23 @@
           %a.btn btn
   %h1 Typography
   %h2 Sizes
-  .row.pad
+  .pad
     %p.tiny Tiny
     %p.small Small
     %p Normal
     %p.large Large
   %h2 Alignment
   .grid-row.pad
-    .col-1x.pad.primary.text-left
+    .sm-1.pad.primary.text-left
       %h4 Left
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-    .col-1x.pad.secondary.text-center
+    .sm-1.pad.secondary.text-center
       %h4 Center
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-    .col-1x.pad.primary.text-right
+    .sm-1.pad.primary.text-right
       %h4 Right
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-    .col-1x.pad.tertiary.text-justify
+    .sm-1.pad.tertiary.text-justify
       %h4 Justify
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
   %h2 Blockquote

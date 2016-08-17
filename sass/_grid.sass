@@ -2,9 +2,9 @@ $grid-large-min: 72.5em
 $grid-medium-min: 40em
 $grid-max: 6
 
-@mixin grid-cols($size)
+@mixin grid($size)
   @for $cols from 1 through $grid-max
-    .#{$size}-#{$cols}x
+    .#{$size}-#{$cols}
       flex: $cols
 
 .grid-row,.grid-col

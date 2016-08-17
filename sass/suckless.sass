@@ -1,4 +1,4 @@
-@import _button.sass
+@import _button
 @import _colors
 @import _general
 @import _grid
@@ -11,25 +11,25 @@
 /**************************/
 
 //default to small
-.hide-for-small,.show-for-medium-only,.show-for-large-only
+.hide-sm,.show-md-only,.show-lg-only
   display: none
-.show-for-small-only
+.show-sm-only
   display: inherit
-@include grid-cols(col)
+@include grid(sm)
 
 //medium settings
 @media only screen and (min-width: $grid-medium-min)
-  .hide-for-small,.show-for-medium-only
+  .hide-sm,.show-md-only
     display: inherit
-  .hide-for-medium,.show-for-small-only
+  .hide-md,.show-sm-only
     display: none
   // grid
-  @include grid-cols(col-md)
+  @include grid(md)
 
 //large settings
 @media only screen and (min-width: $grid-large-min)
-  .hide-for-large,.show-for-small-only,.show-for-medium-only
+  .hide-lg,.show-sm-only,.show-md-only
     display: none
-  .hide-for-medium,.show-for-large-only
+  .hide-md,.show-lg-only
     display: inherit
-  @include grid-cols(col-lg)
+  @include grid(lg)

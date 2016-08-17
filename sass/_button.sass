@@ -19,7 +19,6 @@ $btn-inner-radius: 0.1875em
 @mixin button-colors($fg,$bg,$change)
   color: $fg
   background: $bg
-  border-color: $bg
   @include button-hover($fg,$bg,$change)
 
 // Default btn
@@ -30,7 +29,7 @@ $btn-inner-radius: 0.1875em
   padding: $btn-padding
   margin-right: $btn-padding
   text-decoration: none
-  border: $btn-border-width solid
+  border: $btn-border-width solid $btn-background
   @include button-colors($btn-foreground,$btn-background,$btn-hover-change)
 
 .btn-expand
