@@ -17,6 +17,7 @@ $btn-radius: 0.25em
 @mixin button-colors($fg,$bg,$change)
   color: $fg
   background: $bg
+  border-color: $bg
   @include button-hover($fg,$bg,$change)
 
 // Default btn
@@ -35,11 +36,11 @@ $btn-radius: 0.25em
 
 // Color Modifiers
 .btn.alert
-  @include button-hover($btn-foreground, $colors-alert,$btn-hover-change)
+  @include button-colors($btn-foreground, $colors-alert,$btn-hover-change)
 .btn.failure
-  @include button-hover($btn-foreground, $colors-failure,$btn-hover-change)
+  @include button-colors($btn-foreground, $colors-failure,$btn-hover-change)
 .btn.success
-  @include button-hover($btn-foreground, $colors-success,$btn-hover-change)
+  @include button-colors($btn-foreground, $colors-success,$btn-hover-change)
 
 
 // Hollow Color Modifiers
