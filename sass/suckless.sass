@@ -11,25 +11,22 @@
 /**************************/
 
 //default to small
-.hide-sm,.show-md-only,.show-lg-only
+.sm-hide,.md-only,.lg-only
   display: none
-.show-sm-only
-  display: inherit
 @include grid(sm)
 
 //medium settings
 @media only screen and (min-width: $grid-medium-min)
-  .hide-sm,.show-md-only
-    display: inherit
-  .hide-md,.show-sm-only
+  .sm-only,.md-hide,.lg-only
     display: none
-  // grid
+  .sm-hide,.md-only
+    display: inherit
   @include grid(md)
 
 //large settings
 @media only screen and (min-width: $grid-large-min)
-  .hide-lg,.show-sm-only,.show-md-only
+  .sm-only,.md-only,.lg-hide
     display: none
-  .hide-md,.show-lg-only
+  .sm-hide,.md-hide,.lg-only
     display: inherit
   @include grid(lg)

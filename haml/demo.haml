@@ -1,5 +1,5 @@
 !!! html5
-%html
+%html{dir:'rtl'}
   %head
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
   %body
@@ -11,43 +11,43 @@
     .pad
       %h1 Grid
       %h2 Multipliers
-      .grid-row.pad.text-center
+      .row.pad.text-center
         .sm-1.primary
           %h4 .sm-1
-      .grid-row.pad.text-center
-        .sm-1.primary
-          %h4 .sm-1
-        .sm-1.secondary
-          %h4 .sm-1
-      .grid-row.pad.text-center
+      .row.pad.text-center
         .sm-1.primary
           %h4 .sm-1
         .sm-1.secondary
           %h4 .sm-1
+      .row.pad.text-center
         .sm-1.primary
           %h4 .sm-1
-      .grid-row.pad.text-center
+        .sm-1.secondary
+          %h4 .sm-1
+        .sm-1.primary
+          %h4 .sm-1
+      .row.pad.text-center
         .sm-1.primary
           %h4 .sm-1
         .sm-2.secondary
           %h4 .sm-2
         .sm-1.primary
           %h4 .sm-1
-      .grid-row.pad.text-center
+      .row.pad.text-center
         .sm-1.primary
           %h4 .sm-1
         .sm-6.secondary
           %h4 .sm-6
       %h2 Sizes
-      .grid-row.pad.text-center
+      .row.pad.text-center
         .sm-1.lg-1.primary
           %h4 .sm-1
         .sm-1.md-2.lg-6.secondary
           %h4 .sm-1.md-2.lg-6
       %h2 Column
-      .grid-row.text-center
+      .row.text-center
         .sm-1
-          .grid-col.pad
+          .col.pad
             .sm-1.primary
               %h4 .sm-1
             .sm-1.tertiary
@@ -55,7 +55,7 @@
             .sm-1.primary
               %h4 .sm-1
         .sm-1
-          .grid-col.pad
+          .col.pad
             .sm-1.primary
               %h4 .sm-1
             .sm-2.tertiary
@@ -63,7 +63,7 @@
             .sm-1.primary
               %h4 .sm-1
         .sm-1
-          .grid-col.pad
+          .col.pad
             .sm-1.primary
               %h4 .sm-1
             .sm-2.tertiary
@@ -127,28 +127,28 @@
             %a.btn btn
             %a.btn btn
             %a.btn btn
-    %h1 Typography
-    %h2 Sizes
-    .pad
-      %p.tiny Tiny
-      %p.small Small
-      %p Normal
-      %p.large Large
-    %h2 Alignment
-    .grid-row.pad
-      .sm-1.pad.primary.text-left
-        %h4 Left
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-      .sm-1.pad.secondary.text-center
-        %h4 Center
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-      .sm-1.pad.primary.text-right
-        %h4 Right
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-      .sm-1.pad.tertiary.text-justify
-        %h4 Justify
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-    %h2 Blockquote
-    %blockquote
-      This is awesome
-      %cite Some Awesome Dude
+      %h1 Typography
+      %h2 Sizes
+      .pad
+        %p.tiny Tiny
+        %p.small Small
+        %p Normal
+        %p.large Large
+      %h2 Alignment
+      .row.pad
+        .sm-1.pad.primary.text-left
+          %h4 Left
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
+        .sm-1.pad.secondary.text-center
+          %h4 Center
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
+        .sm-1.pad.primary.text-right
+          %h4 Right
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
+        .sm-1.pad.tertiary.text-justify
+          %h4 Justify
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
+      %h2 Blockquote
+      %blockquote
+        This is awesome
+        %cite Some Awesome Dude
