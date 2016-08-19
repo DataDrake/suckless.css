@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href='css/suckless.css' rel='stylesheet' type='text/css'>
+    <link href='css/vendor/font-awesome/font-awesome.min.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class='primary'>
@@ -12,7 +13,124 @@
       </div>
     </div>
     <div class='pad'>
-      <h1>Grid</h1>
+      <h1>
+        <i class='fa fa-fw fa-paint-brush'></i>
+        Colors
+      </h1>
+      <div class='row'>
+        <div class='sm-1 col pad'>
+          <div class='sm-1'>
+            <h3>
+              Primary
+            </h3>
+          </div>
+          <div class='sm-1 primary text-center'>
+            <h3>.primary</h3>
+          </div>
+          <div class='sm-1 primary-inverse text-center'>
+            <h3>.primary-inverse</h3>
+          </div>
+        </div>
+        <div class='sm-1 col pad'>
+          <div class='sm-1'>
+            <h3>Secondary</h3>
+          </div>
+          <div class='sm-1 secondary text-center'>
+            <h3>.secondary</h3>
+          </div>
+          <div class='sm-1 secondary-inverse text-center'>
+            <h3>.secondary-inverse</h3>
+          </div>
+        </div>
+        <div class='sm-1 col pad'>
+          <div class='sm-1'>
+            <h3>Tertiary</h3>
+          </div>
+          <div class='sm-1 tertiary text-center'>
+            <h3>.tertiary</h3>
+          </div>
+          <div class='sm-1 tertiary-inverse text-center'>
+            <h3>.tertiary-inverse</h3>
+          </div>
+        </div>
+      </div>
+      <h1>
+        <i class='fa fa-fw fa-th-large'></i>
+        Block Grid
+      </h1>
+      <h2>
+        <span>.block-grid-2</span>
+        <div class='block-grid-2 text-center pad'>
+          <div class='tertiary'>
+            1
+          </div>
+          <div class='tertiary'>
+            2
+          </div>
+          <div class='tertiary'>
+            3
+          </div>
+          <div class='tertiary'>
+            4
+          </div>
+          <div class='tertiary'>
+            5
+          </div>
+          <div class='tertiary'>
+            6
+          </div>
+        </div>
+      </h2>
+      <h2>
+        <span>.block-grid-4</span>
+        <div class='block-grid-4 text-center pad'>
+          <div class='tertiary'>
+            1
+          </div>
+          <div class='tertiary'>
+            2
+          </div>
+          <div class='tertiary'>
+            3
+          </div>
+          <div class='tertiary'>
+            4
+          </div>
+          <div class='tertiary'>
+            5
+          </div>
+          <div class='tertiary'>
+            6
+          </div>
+        </div>
+      </h2>
+      <h2>
+        <span>.block-grid-8</span>
+        <div class='block-grid-8 text-center pad'>
+          <div class='tertiary'>
+            1
+          </div>
+          <div class='tertiary'>
+            2
+          </div>
+          <div class='tertiary'>
+            3
+          </div>
+          <div class='tertiary'>
+            4
+          </div>
+          <div class='tertiary'>
+            5
+          </div>
+          <div class='tertiary'>
+            6
+          </div>
+        </div>
+      </h2>
+      <h1>
+        <i class='fa fa-fw fa-th'></i>
+        Grid
+      </h1>
       <h2>Multipliers</h2>
       <div class='row pad text-center'>
         <div class='sm-1 primary'>
@@ -73,7 +191,7 @@
             <div class='sm-1 primary'>
               <h4>.sm-1</h4>
             </div>
-            <div class='sm-1 tertiary'>
+            <div class='sm-1 tertiary-inverse'>
               <h4>.sm-1</h4>
             </div>
             <div class='sm-1 primary'>
@@ -86,7 +204,7 @@
             <div class='sm-1 primary'>
               <h4>.sm-1</h4>
             </div>
-            <div class='sm-2 tertiary'>
+            <div class='sm-2 tertiary-inverse'>
               <h4>.sm-2</h4>
             </div>
             <div class='sm-1 primary'>
@@ -99,13 +217,16 @@
             <div class='sm-1 primary'>
               <h4>.sm-1</h4>
             </div>
-            <div class='sm-2 tertiary'>
+            <div class='sm-2 tertiary-inverse'>
               <h4>.sm-2</h4>
             </div>
           </div>
         </div>
       </div>
-      <h1>Buttons</h1>
+      <h1>
+        <i class='fa fa-fw fa-hand-pointer-o'></i>
+        Buttons
+      </h1>
       <h2>Sizes</h2>
       <div class='pad'>
         <a class='btn tiny'>Tiny</a>
@@ -128,13 +249,22 @@
           <a>hollow</a>
         </div>
         <div class='btn alert'>
-          <a>alert</a>
+          <a>
+            <i class='fa fa-warning'></i>
+            <span>alert</span>
+          </a>
         </div>
         <div class='btn failure'>
-          <a>failure</a>
+          <a>
+            <i class='fa fa-close'></i>
+            <span>failure</span>
+          </a>
         </div>
         <div class='btn success'>
-          <a>success</a>
+          <a>
+            <i class='fa fa-check'></i>
+            <span>success</span>
+          </a>
         </div>
       </div>
       <h2>Shapes</h2>
@@ -183,30 +313,53 @@
           </div>
         </div>
       </div>
-      <h1>Typography</h1>
+      <h1>
+        <i class='fa fa-fw fa-keyboard-o'></i>
+        Typography
+      </h1>
       <h2>Sizes</h2>
-      <div class='pad'>
-        <p class='tiny'>Tiny</p>
-        <p class='small'>Small</p>
-        <p>Normal</p>
-        <p class='large'>Large</p>
+      <div class='row pad text-center'>
+        <div class='sm-1 tiny'>
+          <p>.tiny</p>
+        </div>
+        <div class='sm-1 small'>
+          <p>.small</p>
+        </div>
+        <div class='sm-1'>
+          <p>.normal</p>
+        </div>
+        <div class='sm-1 large'>
+          <p>.large</p>
+        </div>
       </div>
       <h2>Alignment</h2>
       <div class='row pad'>
         <div class='sm-1 pad primary text-left'>
-          <h4>Left</h4>
+          <h4>
+            <i class='fa fa-align-left'></i>
+            <span>.text-left</span>
+          </h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
         </div>
         <div class='sm-1 pad secondary text-center'>
-          <h4>Center</h4>
+          <h4>
+            <i class='fa fa-align-center'></i>
+            <span>.text-center</span>
+          </h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
         </div>
         <div class='sm-1 pad primary text-right'>
-          <h4>Right</h4>
+          <h4>
+            <span>.text-right</span>
+            <i class='fa fa-align-right'></i>
+          </h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
         </div>
         <div class='sm-1 pad tertiary text-justify'>
-          <h4>Justify</h4>
+          <h4>
+            <i class='fa fa-align-justify'></i>
+            <span>.text-justify</span>
+          </h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
         </div>
       </div>
@@ -215,6 +368,11 @@
         This is awesome
         <cite>Some Awesome Dude</cite>
       </blockquote>
+      <h2>Inline Code</h2>
+      <h3>kbd Tags</h3>
+      <kbd>Ctrl + I</kbd>
+      <h3>code Tags</h3>
+      <code>code</code>
     </div>
   </body>
 </html>

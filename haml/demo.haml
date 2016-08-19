@@ -2,6 +2,7 @@
 %html
   %head
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
+    %link{rel:'stylesheet',type:"text/css",href:"css/vendor/font-awesome/font-awesome.min.css"}
   %body
     .primary
       .btn-group.expand
@@ -9,7 +10,83 @@
         %a.btn Grid
         %a.btn Buttons
     .pad
-      %h1 Grid
+      %h1
+        %i.fa.fa-fw.fa-paint-brush
+        Colors
+      .row
+        .sm-1.col.pad
+          .sm-1
+            %h3
+              Primary
+          .sm-1.primary.text-center
+            %h3 .primary
+          .sm-1.primary-inverse.text-center
+            %h3 .primary-inverse
+        .sm-1.col.pad
+          .sm-1
+            %h3 Secondary
+          .sm-1.secondary.text-center
+            %h3 .secondary
+          .sm-1.secondary-inverse.text-center
+            %h3 .secondary-inverse
+        .sm-1.col.pad
+          .sm-1
+            %h3 Tertiary
+          .sm-1.tertiary.text-center
+            %h3 .tertiary
+          .sm-1.tertiary-inverse.text-center
+            %h3 .tertiary-inverse
+      %h1
+        %i.fa.fa-fw.fa-th-large
+        Block Grid
+      %h2
+        %span .block-grid-2
+        .block-grid-2.text-center.pad
+          .tertiary
+            1
+          .tertiary
+            2
+          .tertiary
+            3
+          .tertiary
+            4
+          .tertiary
+            5
+          .tertiary
+            6
+      %h2
+        %span .block-grid-4
+        .block-grid-4.text-center.pad
+          .tertiary
+            1
+          .tertiary
+            2
+          .tertiary
+            3
+          .tertiary
+            4
+          .tertiary
+            5
+          .tertiary
+            6
+      %h2
+        %span .block-grid-8
+        .block-grid-8.text-center.pad
+          .tertiary
+            1
+          .tertiary
+            2
+          .tertiary
+            3
+          .tertiary
+            4
+          .tertiary
+            5
+          .tertiary
+            6
+      %h1
+        %i.fa.fa-fw.fa-th
+        Grid
       %h2 Multipliers
       .row.pad.text-center
         .sm-1.primary
@@ -50,7 +127,7 @@
           .col.pad
             .sm-1.primary
               %h4 .sm-1
-            .sm-1.tertiary
+            .sm-1.tertiary-inverse
               %h4 .sm-1
             .sm-1.primary
               %h4 .sm-1
@@ -58,7 +135,7 @@
           .col.pad
             .sm-1.primary
               %h4 .sm-1
-            .sm-2.tertiary
+            .sm-2.tertiary-inverse
               %h4 .sm-2
             .sm-1.primary
               %h4 .sm-1
@@ -66,9 +143,11 @@
           .col.pad
             .sm-1.primary
               %h4 .sm-1
-            .sm-2.tertiary
+            .sm-2.tertiary-inverse
               %h4 .sm-2
-      %h1 Buttons
+      %h1
+        %i.fa.fa-fw.fa-hand-pointer-o
+        Buttons
       %h2 Sizes
       .pad
         %a.btn.tiny Tiny
@@ -86,11 +165,17 @@
         .btn.btn-hollow
           %a hollow
         .btn.alert
-          %a alert
+          %a
+            %i.fa.fa-warning
+            %span alert
         .btn.failure
-          %a failure
+          %a
+            %i.fa.fa-close
+            %span failure
         .btn.success
-          %a success
+          %a
+            %i.fa.fa-check
+            %span success
       %h2 Shapes
       .pad
         %a.btn Normal
@@ -127,28 +212,47 @@
             %a.btn btn
             %a.btn btn
             %a.btn btn
-      %h1 Typography
+      %h1
+        %i.fa.fa-fw.fa-keyboard-o
+        Typography
       %h2 Sizes
-      .pad
-        %p.tiny Tiny
-        %p.small Small
-        %p Normal
-        %p.large Large
+      .row.pad.text-center
+        .sm-1.tiny
+          %p .tiny
+        .sm-1.small
+          %p .small
+        .sm-1
+          %p .normal
+        .sm-1.large
+          %p .large
       %h2 Alignment
       .row.pad
         .sm-1.pad.primary.text-left
-          %h4 Left
+          %h4
+            %i.fa.fa-align-left
+            %span .text-left
           %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
         .sm-1.pad.secondary.text-center
-          %h4 Center
+          %h4
+            %i.fa.fa-align-center
+            %span .text-center
           %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
         .sm-1.pad.primary.text-right
-          %h4 Right
+          %h4
+            %span .text-right
+            %i.fa.fa-align-right
           %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
         .sm-1.pad.tertiary.text-justify
-          %h4 Justify
+          %h4
+            %i.fa.fa-align-justify
+            %span .text-justify
           %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
       %h2 Blockquote
       %blockquote
         This is awesome
         %cite Some Awesome Dude
+      %h2 Inline Code
+      %h3 kbd Tags
+      %kbd Ctrl + I
+      %h3 code Tags
+      %code code

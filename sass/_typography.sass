@@ -1,5 +1,9 @@
 $quote-border-width: 0.125em
-$quote-padding: 0.5em
+$quote-padding: 0.25rem 0.5rem
+
+// Header margins
+h1,h2,h3,h4,h5,h5,h6
+  margin: 1rem 0
 
 // Alignment Modifiers
 .text-center
@@ -12,15 +16,21 @@ $quote-padding: 0.5em
   text-align: right
 
 // Block Quote
-blockquote,code
-  color: $colors-tertiary-fg
-  background: $colors-tertiary-bg
-  font-style: italic
-  padding: $quote-padding
+blockquote
   cite
     display: block
     &::before
       content: '\2014 \0020'
+
+// Inline Code
+code,kbd
+  font-family: Hack, Consolas, "Liberation Mono", Menlo, monospace
+
+blockquote,code,kbd
+  color: $colors-tertiary-fg
+  background: $colors-tertiary-bg
+  border-radius: 0.25rem
+  padding: $quote-padding
 
 // List Modifiers
 .list-hide-bullet

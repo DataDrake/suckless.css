@@ -3,6 +3,10 @@
     border-color: $bg
     color: $fg
     background: $bg
+  .#{$name}-inverse
+    border-color: $fg
+    color: $bg
+    background: $fg
 
 //Primary
 $colors-primary-fg: #F7F7F7
@@ -15,8 +19,8 @@ $colors-secondary-bg: #19F
 @include color-pair(secondary,$colors-secondary-fg,$colors-secondary-bg)
 
 //Tertiary
-$colors-tertiary-fg: #333
-$colors-tertiary-bg: #EEE
+$colors-tertiary-fg: #EEE
+$colors-tertiary-bg: #333
 @include color-pair(tertiary,$colors-tertiary-fg,$colors-tertiary-bg)
 
 //Status
