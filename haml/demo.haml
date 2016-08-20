@@ -1,5 +1,5 @@
 !!! html5
-%html
+%html{dir:'rtl'}
   %head
     %link{rel:'stylesheet',type:"text/css",href:"vendor/css/font-awesome.min.css"}
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
@@ -335,8 +335,23 @@
         %br
         %button{type:'reset',form:'test',value:'Reset'} Reset
         %input{type:'submit',value:'Submit'}
-      %h1 Badges
+      %h1 Decorations
+      %h2 Badges
       %i.fa.fa-info.badge.info
       %i.fa.fa-check.badge.success
       %i.fa.fa-exclamation.badge.alert
       %i.fa.fa-bolt.badge.error
+      %h2 Labels
+      .label.info
+        Info
+      .label.success
+        Success
+      .label.alert
+        Alert
+      .label.error
+        Error
+      %h2 Progress
+      %progress{max:100,value:90}
+      %progress{max:100,value:70}
+      %progress{max:100,value:50}
+      %progress{max:100,value:70}

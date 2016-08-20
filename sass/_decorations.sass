@@ -1,0 +1,25 @@
+.badge
+  height: 1.5em
+  width: 1.5em
+  text-align: center
+  vertical-align: middle
+  border-radius: 1em
+  line-height: 1.5em
+
+.label
+  padding: 0.125em 0.5em
+  margin: 0 0 0.5em 0
+progress
+  -moz-appearance: none
+  -webkit-appearance: none
+  width: 100%
+  border: none
+  margin: 0 0 0.5em 0
+  color: $colors-secondary-bg
+  background-color: darken($colors-secondary-fg,10%)
+  &::-moz-progress-bar
+    background-color: $colors-secondary-bg
+  &::-webkit-progress-value
+    background-color: $colors-secondary-bg
+  &::-webkit-progress-bar
+    background-color: darken($colors-secondary-fg,10%)
