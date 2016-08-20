@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='css/suckless.css' rel='stylesheet' type='text/css'>
     <link href='vendor/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='css/suckless.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class='primary'>
@@ -203,10 +203,10 @@
           <span>alert</span>
         </a>
       </div>
-      <div class='btn failure'>
+      <div class='btn error'>
         <a>
           <i class='fa fa-close'></i>
-          <span>failure</span>
+          <span class='error'></span>
         </a>
       </div>
       <div class='btn success'>
@@ -451,6 +451,11 @@
         <button form='test' type='reset' value='Reset'>Reset</button>
         <input type='submit' value='Submit'>
       </form>
+      <h1>Badges</h1>
+      <i class='fa fa-info badge info'></i>
+      <i class='fa fa-check badge success'></i>
+      <i class='fa fa-exclamation badge alert'></i>
+      <i class='fa fa-bolt badge error'></i>
     </div>
   </body>
 </html>

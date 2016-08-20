@@ -34,7 +34,7 @@ button,.btn,[type=submit],[type=reset]
 // Color Modifiers
 .btn.alert
   @include button-colors($btn-foreground, $colors-alert,$btn-hover-change)
-.btn.failure
+.btn.error
   @include button-colors($btn-foreground, $colors-failure,$btn-hover-change)
 .btn.success
   @include button-colors($btn-foreground, $colors-success,$btn-hover-change)
@@ -69,3 +69,11 @@ button,.btn,[type=submit],[type=reset]
 .btn-group.btn-radius
   > *
     border-radius: $btn-radius
+
+.badge
+  height: 1.5em
+  width: 1.5em
+  text-align: center
+  vertical-align: middle
+  border-radius: 1em
+  line-height: 1.5em

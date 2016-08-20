@@ -24,9 +24,11 @@ $colors-tertiary-bg: #333
 @include color-pair(tertiary,$colors-tertiary-fg,$colors-tertiary-bg)
 
 //Status
+$colors-info: $colors-secondary-bg
 $colors-alert: #F90
 $colors-failure: #E00
 $colors-success: #0D0
+@include color-pair(info,$colors-primary-fg,$colors-info)
 @include color-pair(alert,$colors-primary-fg,$colors-alert)
-@include color-pair(failure,$colors-primary-fg,$colors-failure)
+@include color-pair(error,$colors-primary-fg,$colors-failure)
 @include color-pair(success,$colors-primary-fg,$colors-success)
