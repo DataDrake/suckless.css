@@ -14,6 +14,10 @@
 //default to small
 .sm-hide,.md-only,.lg-only
   display: none
+.md-col, .lg-col
+  flex-direction: row
+.sm-col
+  flex-direction: column
 @include grid(sm)
 
 //medium settings
@@ -22,6 +26,10 @@
     display: none
   .sm-hide,.md-only
     display: inherit
+  .sm-col, .lg-col
+    flex-direction: row
+  .md-col
+    flex-direction: column
   @include grid(md)
 
 //large settings
@@ -30,4 +38,8 @@
     display: none
   .sm-hide,.md-hide,.lg-only
     display: inherit
+  .sm-col, .md-col
+    flex-direction: row
+  .lg-col
+    flex-direction: column
   @include grid(lg)

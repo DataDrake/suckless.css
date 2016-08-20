@@ -2,7 +2,7 @@
 %html
   %head
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
-    %link{rel:'stylesheet',type:"text/css",href:"css/vendor/font-awesome/font-awesome.min.css"}
+    %link{rel:'stylesheet',type:"text/css",href:"vendor/css/font-awesome.min.css"}
   %body
     .primary
       .btn-group.expand
@@ -13,11 +13,10 @@
       %h1
         %i.fa.fa-fw.fa-paint-brush
         Colors
-      .row
+      .row.sm-col
         .sm-1.col.pad
           .sm-1
-            %h3
-              Primary
+            %h3 Primary
           .sm-1.primary.text-center
             %h3 .primary
           .sm-1.primary-inverse.text-center
@@ -42,48 +41,30 @@
       %h2
         %span .block-grid-2
         .block-grid-2.text-center.pad
-          .tertiary
-            1
-          .tertiary
-            2
-          .tertiary
-            3
-          .tertiary
-            4
-          .tertiary
-            5
-          .tertiary
-            6
+          .tertiary 1
+          .tertiary 2
+          .tertiary 3
+          .tertiary 4
+          .tertiary 5
+          .tertiary 6
       %h2
         %span .block-grid-4
         .block-grid-4.text-center.pad
-          .tertiary
-            1
-          .tertiary
-            2
-          .tertiary
-            3
-          .tertiary
-            4
-          .tertiary
-            5
-          .tertiary
-            6
+          .tertiary 1
+          .tertiary 2
+          .tertiary 3
+          .tertiary 4
+          .tertiary 5
+          .tertiary 6
       %h2
         %span .block-grid-8
         .block-grid-8.text-center.pad
-          .tertiary
-            1
-          .tertiary
-            2
-          .tertiary
-            3
-          .tertiary
-            4
-          .tertiary
-            5
-          .tertiary
-            6
+          .tertiary 1
+          .tertiary 2
+          .tertiary 3
+          .tertiary 4
+          .tertiary 5
+          .tertiary 6
       %h1
         %i.fa.fa-fw.fa-th
         Grid
@@ -123,100 +104,87 @@
           %h4 .sm-1.md-2.lg-6
       %h2 Column
       .row.text-center
-        .sm-1
-          .col.pad
-            .sm-1.primary
-              %h4 .sm-1
-            .sm-1.tertiary-inverse
-              %h4 .sm-1
-            .sm-1.primary
-              %h4 .sm-1
-        .sm-1
-          .col.pad
-            .sm-1.primary
-              %h4 .sm-1
-            .sm-2.tertiary-inverse
-              %h4 .sm-2
-            .sm-1.primary
-              %h4 .sm-1
-        .sm-1
-          .col.pad
-            .sm-1.primary
-              %h4 .sm-1
-            .sm-2.tertiary-inverse
-              %h4 .sm-2
+        .sm-1.pad.col
+          .sm-1.primary
+            %h4 .sm-1
+          .sm-1.tertiary-inverse
+            %h4 .sm-1
+          .sm-1.primary
+            %h4 .sm-1
+        .sm-1.pad.col
+          .sm-1.primary
+            %h4 .sm-1
+          .sm-2.tertiary-inverse
+            %h4 .sm-2
+          .sm-1.primary
+            %h4 .sm-1
+        .sm-1.pad.col
+          .sm-1.primary
+            %h4 .sm-1
+          .sm-2.tertiary-inverse
+            %h4 .sm-2
       %h1
         %i.fa.fa-fw.fa-hand-pointer-o
         Buttons
       %h2 Sizes
-      .pad
-        %a.btn.tiny Tiny
-        %a.btn.small Small
-        %a.btn Normal
-        %a.btn.large Large
-      .pad
-        %a.btn.large.expand Large Expanded
-      .pad
-        %a.btn.tiny.expand Tiny Expanded
+      %a.btn.tiny Tiny
+      %a.btn.small Small
+      %a.btn Normal
+      %a.btn.large Large
+      %a.btn.large.expand Large Expanded
+      %a.btn.tiny.expand Tiny Expanded
       %h2 Types
-      .pad
-        .btn
-          %a normal
-        .btn.btn-hollow
-          %a hollow
-        .btn.alert
-          %a
-            %i.fa.fa-warning
-            %span alert
-        .btn.failure
-          %a
-            %i.fa.fa-close
-            %span failure
-        .btn.success
-          %a
-            %i.fa.fa-check
-            %span success
+      .btn
+        %a normal
+      .btn.btn-hollow
+        %a hollow
+      .btn.alert
+        %a
+          %i.fa.fa-warning
+          %span alert
+      .btn.failure
+        %a
+          %i.fa.fa-close
+          %span failure
+      .btn.success
+        %a
+          %i.fa.fa-check
+          %span success
       %h2 Shapes
-      .pad
-        %a.btn Normal
-        %a.btn.btn-radius Radius
-        %a.btn.btn-hollow Hollow
-        %a.btn.btn-hollow.btn-radius Radius
+      %a.btn Normal
+      %a.btn.btn-radius Radius
+      %a.btn.btn-hollow Hollow
+      %a.btn.btn-hollow.btn-radius Radius
       %h2 Groups
       %h3 Normal
-      .pad
-        .btn-group
-          %a.btn btn
-          %a.btn btn
-          %a.btn btn
-          %a.btn btn
+      .btn-group
+        %a.btn btn
+        %a.btn btn
+        %a.btn btn
+        %a.btn btn
       %h3 Expanded
-      .pad
-        .btn-group.expand
-          %a.btn btn
-          %a.btn btn
-          %a.btn btn
-          %a.btn btn
+      .btn-group.expand
+        %a.btn btn
+        %a.btn btn
+        %a.btn btn
+        %a.btn btn
       %h3 Expanded, Hollow, Radius, Large
-      .pad
-        .btn-group.btn-hollow.expand.btn-radius.large
-          %a.btn btn
-          %a.btn btn
-          %a.btn btn
-          %a.btn btn
+      .btn-group.btn-hollow.expand.btn-radius.large
+        %a.btn btn
+        %a.btn btn
+        %a.btn btn
+        %a.btn btn
       %h3 Stacked
-      .pad
-        .sm-1
-          .btn-group.btn-stack
-            %a.btn btn
-            %a.btn btn
-            %a.btn btn
-            %a.btn btn
+      .btn-group.btn-stack
+        %a.btn btn
+        %a.btn btn
+        %a.btn btn
+        %a.btn btn
       %h1
         %i.fa.fa-fw.fa-keyboard-o
         Typography
       %h2 Sizes
-      .row.pad.text-center
+      .row.text-center
         .sm-1.tiny
           %p .tiny
         .sm-1.small
@@ -226,7 +194,7 @@
         .sm-1.large
           %p .large
       %h2 Alignment
-      .row.pad
+      .row.sm-col.md-col
         .sm-1.pad.primary.text-left
           %h4
             %i.fa.fa-align-left

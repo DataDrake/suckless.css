@@ -1,6 +1,6 @@
 .idea/*
-fonts/*
-*/vendor/*
+vendor/fonts/*
+vendor/*
 *.map
 blog.haml
 blog.html
