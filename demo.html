@@ -405,6 +405,52 @@
         </table>
       </div>
       <i class='fa fa-chevron-up tertiary' simple-top></i>
+      <h1>
+        <i class='fa fa-fw fa-clipboard'></i>
+        Forms
+      </h1>
+      <form id='test'>
+        <legend>This is a form</legend>
+        <select>
+          <option value='A'>Apple</option>
+          <option value='B'>Banana</option>
+          <option value='C'>Cherry</option>
+        </select>
+        <br>
+        <select multiple='true'>
+          <option value='A'>Apple</option>
+          <option value='B'>Banana</option>
+          <option value='C'>Cherry</option>
+        </select>
+        <br>
+        <label for='name'>
+          Name
+          <br>
+          <input name='name' type='text'>
+        </label>
+        <br>
+        <div class='input-group'>
+          <div class='input-pre'>
+            Pre
+          </div>
+          <input type='text'>
+          <div class='input-post'>
+            Post
+          </div>
+        </div>
+        <br>
+        <textarea>Tell me a story...</textarea>
+        <br>
+        <div class='input-group'>
+          <input type='search'>
+          <div class='input-post'>
+            <i class='fa fa-search'></i>
+          </div>
+        </div>
+        <br>
+        <button form='test' type='reset' value='Reset'>Reset</button>
+        <input type='submit' value='Submit'>
+      </form>
     </div>
   </body>
 </html>

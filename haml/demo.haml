@@ -299,3 +299,39 @@
               %td 11
               %td 12
       %i.fa.fa-chevron-up.tertiary(simple-top=true)
+      %h1
+        %i.fa.fa-fw.fa-clipboard
+        Forms
+      %form{id:'test'}
+        %legend This is a form
+        %select
+          %option{value:'A'} Apple
+          %option{value:'B'} Banana
+          %option{value:'C'} Cherry
+        %br
+        %select{multiple:'true'}
+          %option{value:'A'} Apple
+          %option{value:'B'} Banana
+          %option{value:'C'} Cherry
+        %br
+        %label{for:'name'}
+          Name
+          %br
+          %input{type:'text', name:'name'}
+        %br
+        .input-group
+          .input-pre
+            Pre
+          %input{type:'text'}
+          .input-post
+            Post
+        %br
+        %textarea Tell me a story...
+        %br
+        .input-group
+          %input{type:'search'}
+          .input-post
+            %i.fa.fa-search
+        %br
+        %button{type:'reset',form:'test',value:'Reset'} Reset
+        %input{type:'submit',value:'Submit'}
