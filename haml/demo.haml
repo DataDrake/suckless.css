@@ -1,14 +1,10 @@
 !!! html5
-%html
+%html{dir:'rtl'}
   %head
     %link{rel:'stylesheet',type:"text/css",href:"vendor/css/font-awesome.min.css"}
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
   %body
-    .primary
-      .btn-group.expand
-        %a.btn Suckless.css
-        %a.btn Grid
-        %a.btn Buttons
+    #top
     .pad
       %h1
         %i.fa.fa-fw.fa-paint-brush
@@ -298,7 +294,8 @@
               %td 10
               %td 11
               %td 12
-      %i.fa.fa-chevron-up.tertiary(simple-top=true)
+      %a{href:'#top'}
+        %i.fa.fa-chevron-up.tertiary(simple-top=true)
       %h1
         %i.fa.fa-fw.fa-clipboard
         Forms
