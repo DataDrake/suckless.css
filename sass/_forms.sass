@@ -17,12 +17,14 @@ textarea
   background: #DDD
   input:focus
     border-color: $colors-secondary-bg
-  .input-pre, .input-post
-    margin: 0.375em 0.5em
+  >*
+    margin-bottom: 0
+.input-pre, .input-post
+  margin: 0.375em 0.5em
 select
   -moz-appearance: none
   -webkit-appearance: none
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24'><polygon points='0,0 32,0 16,24'></polygon></svg>") no-repeat
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'><path d='M0 0 H4 L2 3 Z'/></svg>") no-repeat
   background-size: 0.75em 0.5em
   background-position: right 0.375em center
   &[multiple]

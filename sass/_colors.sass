@@ -3,31 +3,31 @@
     border-color: $bg
     color: $fg
     background: $bg
-  .#{$name}-inverse
+  .#{$name}.inv
     border-color: $fg
     color: $bg
     background: $fg
 
-//Primary
-$colors-primary-fg: #F7F7F7
+//First
+$colors-primary-fg: #FFF
 $colors-primary-bg: #C0F
-@include color-pair(primary,$colors-primary-fg,$colors-primary-bg)
+@include color-pair(clr-1,$colors-primary-fg,$colors-primary-bg)
 
-//Secondary
-$colors-secondary-fg: #F7F7F7
+//Second
+$colors-secondary-fg: #FFF
 $colors-secondary-bg: #19F
-@include color-pair(secondary,$colors-secondary-fg,$colors-secondary-bg)
+@include color-pair(clr-2,$colors-secondary-fg,$colors-secondary-bg)
 
-//Tertiary
-$colors-tertiary-fg: #EEE
+//Third
+$colors-tertiary-fg: #FFF
 $colors-tertiary-bg: #333
-@include color-pair(tertiary,$colors-tertiary-fg,$colors-tertiary-bg)
+@include color-pair(clr-3,$colors-tertiary-fg,$colors-tertiary-bg)
 
 //Status
 $colors-info: $colors-secondary-bg
 $colors-alert: #F90
 $colors-failure: #E00
-$colors-success: #0D0
+$colors-success: #0C0
 @include color-pair(info,$colors-primary-fg,$colors-info)
 @include color-pair(alert,$colors-primary-fg,$colors-alert)
 @include color-pair(error,$colors-primary-fg,$colors-failure)

@@ -3,10 +3,16 @@ $block-margin-pre: 0
 $block-margin-post: 0.5em
 $block-margin-sides: 1%
 
+
+
+%blocks
+  display: flex
+  flex-wrap: wrap
+  > *
+    margin: $block-margin-pre $block-margin-sides $block-margin-post $block-margin-sides
+
 @each $count in $block-counts
-  .block-grid-#{$count}
-    display: flex
-    flex-wrap: wrap
+  .blocks-#{$count}
+    @extend %blocks
     > *
       width: 100/($count) - 2*$block-margin-sides
-      margin: $block-margin-pre $block-margin-sides $block-margin-post $block-margin-sides
