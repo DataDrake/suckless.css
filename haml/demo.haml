@@ -6,62 +6,92 @@
     %link{rel:'stylesheet',type:"text/css",href:"css/suckless.css"}
   %body
     #top
+    %a{href:'#top'}
+      %i.fa.fa-chevron-up.clr-3(simple-top=true)
     .pad
       %h1
         %i.fa.fa-fw.fa-paint-brush
         Colors
-      .row.sm-col
+      %h2 Swatches
+      .row.sm-col.text-center
         .sm-1.col.pad
           .sm-1
-            %h3 Primary
-          .sm-1.clr-1.text-center
-            %h3 .clr-1
-          .sm-1.clr-1.inv.text-center
-            %h3 .clr-1.inv
+            %h4 First
+          .sm-1.clr-1
+            %h4 .clr-1
+          .sm-1.clr-1.inv
+            %h4 .clr-1.inv
         .sm-1.col.pad
           .sm-1
-            %h3 Secondary
-          .sm-1.clr-2.text-center
-            %h3 .clr-2
-          .sm-1.clr-2.inv.text-center
-            %h3 .clr-2.inv
+            %h4 Second
+          .sm-1.clr-2
+            %h4 .clr-2
+          .sm-1.clr-2.inv
+            %h4 .clr-2.inv
         .sm-1.col.pad
           .sm-1
-            %h3 Tertiary
-          .sm-1.clr-3.text-center
-            %h3 .clr-3
-          .sm-1.clr-3.inv.text-center
-            %h3 .clr-3.inv
+            %h4 Third
+          .sm-1.clr-3
+            %h4 .clr-3
+          .sm-1.clr-3.inv
+            %h4 .clr-3.inv
+      %h2 Statuses
+      .row.sm-col.text-center
+        .sm-1.col.pad
+          .sm-1
+            %h4 Info
+          .sm-1.info
+            %h4 .info
+          .sm-1.info.inv
+            %h4 .info.inv
+        .sm-1.col.pad
+          .sm-1
+            %h4 Success
+          .sm-1.success
+            %h4 .success
+          .sm-1.success.inv
+            %h4 .success.inv
+        .sm-1.col.pad
+          .sm-1
+            %h4 Alert
+          .sm-1.alert
+            %h4 .alert
+          .sm-1.alert.inv
+            %h4 .alert.inv
+        .sm-1.col.pad
+          .sm-1
+            %h4 Error
+          .sm-1.error
+            %h4 .error
+          .sm-1.error.inv
+            %h4 .error.inv
       %h1
         %i.fa.fa-fw.fa-th-large
         Block Grid
-      %h2
-        %span .blocks-2
-        .blocks-2.text-center.pad
-          .clr-3 1
-          .clr-3 2
-          .clr-3 3
-          .clr-3 4
-          .clr-3 5
-          .clr-3 6
-      %h2
-        %span .blocks-4
-        .blocks-4.text-center.pad
-          .clr-3 1
-          .clr-3 2
-          .clr-3 3
-          .clr-3 4
-          .clr-3 5
-          .clr-3 6
-      %h2
-        %span .blocks-8
-        .blocks-8.text-center.pad
-          .clr-3 1
-          .clr-3 2
-          .clr-3 3
-          .clr-3 4
-          .clr-3 5
-          .clr-3 6
+      %h2 .blocks-2
+      .blocks-2.text-center.pad
+        .clr-3 1
+        .clr-3 2
+        .clr-3 3
+        .clr-3 4
+        .clr-3 5
+        .clr-3 6
+      %h2 .blocks-4
+      .blocks-4.text-center.pad
+        .clr-3 1
+        .clr-3 2
+        .clr-3 3
+        .clr-3 4
+        .clr-3 5
+        .clr-3 6
+      %h2 .blocks-8
+      .blocks-8.text-center.pad
+        .clr-3 1
+        .clr-3 2
+        .clr-3 3
+        .clr-3 4
+        .clr-3 5
+        .clr-3 6
       %h1
         %i.fa.fa-fw.fa-th
         Grid
@@ -301,8 +331,22 @@
               %td 13
               %td 14
               %td 15
-      %a{href:'#top'}
-        %i.fa.fa-chevron-up.clr-3(simple-top=true)
+            %tr
+              %td 1
+              %td 2
+              %td 3
+              %td 4
+              %td 5
+              %td 6
+              %td 7
+              %td 8
+              %td 9
+              %td 10
+              %td 11
+              %td 12
+              %td 13
+              %td 14
+              %td 15
       %h1
         %i.fa.fa-fw.fa-clipboard
         Forms
@@ -357,10 +401,10 @@
       .label.error
         Error
       %h2 Progress
-      %progress{max:100,value:90}
-      %progress{max:100,value:70}
+      %progress{max:100,value:75}
       %progress{max:100,value:50}
-      %progress{max:100,value:70}
+      %progress{max:100,value:25}
+      %progress{max:100,value:60}
       %h1 Navigation
       %h2 Breadcrumbs
       %ul.crumbs
