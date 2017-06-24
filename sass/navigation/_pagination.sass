@@ -1,0 +1,25 @@
+/*
+ * Settings
+ */
+
+
+// Colors
+$paginate-button-selected: #CCC
+
+// Box Model
+$paginate-button-margin: 0.25em
+$paginate-button-padding: 0.5em 0.75em
+
+
+/*
+ * Definitions
+ */
+
+
+.pager
+  display: flex
+  > a
+    margin: $paginate-button-margin
+    padding: $paginate-button-padding
+    &:hover,&.here
+      background: $paginate-button-selected
