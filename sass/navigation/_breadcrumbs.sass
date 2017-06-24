@@ -1,0 +1,19 @@
+/*
+ * Settings
+ */
+
+// Box Model
+$crumbs-padding: 0.25em 0.25em 0.25em 0
+
+/*
+ * Description
+ */
+
+.crumbs
+  @extend %hide-bullet
+  @extend %horizonatal-list
+  li::after
+    content: '\276f'
+    padding: $crumbs-padding
+  li:last-child::after
+    content: none

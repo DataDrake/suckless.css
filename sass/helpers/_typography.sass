@@ -19,8 +19,17 @@ h1,h2,h3,h4,h5,h5,h6
   text-align: right
 
 // List Modifiers
-.list-hide-bullet
+%hide-bullet
   list-style-type: none
+
+%horizonatal-list
+  display: flex
+
+.list-hide-bullet
+  @extend %hide-bullet
+
+.list-horizontal
+  @extend %horizonatal-list
 
 // Size Modifiers
 .tiny
