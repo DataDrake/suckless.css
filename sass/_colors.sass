@@ -1,34 +1,45 @@
+/*
+ * Settings
+ */
+
+
+//First
+$color-1-fg: #FFF
+$color-1-bg: #C0F
+//Second
+$color-2-fg: #FFF
+$color-2-bg: #19F
+//Third
+$color-3-fg: #FFF
+$color-3-bg: #333
+
+//Status Colors
+$color-info: #19F
+$color-alert: #F90
+$color-failure: #E00
+$color-success: #0C0
+
+
+/*
+ * Definitions
+ */
+
+
 @mixin color-pair($name,$fg,$bg)
   .#{$name}
-    border-color: $bg
     color: $fg
     background: $bg
   .#{$name}.inv
-    border-color: $fg
     color: $bg
     background: $fg
 
-//First
-$colors-primary-fg: #FFF
-$colors-primary-bg: #C0F
-@include color-pair(clr-1,$colors-primary-fg,$colors-primary-bg)
+//Main Palette
+@include color-pair(clr-1, $color-1-fg, $color-1-bg)
+@include color-pair(clr-2, $color-2-fg, $color-2-bg)
+@include color-pair(clr-3, $color-3-fg, $color-3-bg)
 
-//Second
-$colors-secondary-fg: #FFF
-$colors-secondary-bg: #19F
-@include color-pair(clr-2,$colors-secondary-fg,$colors-secondary-bg)
-
-//Third
-$colors-tertiary-fg: #FFF
-$colors-tertiary-bg: #333
-@include color-pair(clr-3,$colors-tertiary-fg,$colors-tertiary-bg)
-
-//Status
-$colors-info: $colors-secondary-bg
-$colors-alert: #F90
-$colors-failure: #E00
-$colors-success: #0C0
-@include color-pair(info,$colors-primary-fg,$colors-info)
-@include color-pair(alert,$colors-primary-fg,$colors-alert)
-@include color-pair(error,$colors-primary-fg,$colors-failure)
-@include color-pair(success,$colors-primary-fg,$colors-success)
+//Status Palette
+@include color-pair(info, $color-1-fg, $color-info)
+@include color-pair(alert, $color-1-fg, $color-alert)
+@include color-pair(error, $color-1-fg, $color-failure)
+@include color-pair(success, $color-1-fg, $color-success)

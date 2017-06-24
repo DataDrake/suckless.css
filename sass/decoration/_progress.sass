@@ -1,0 +1,33 @@
+/*
+ * Settings
+ */
+
+// Colors
+$progress-fg: $color-info
+$progress-bg: #DDD
+
+
+// Box Model
+$progress-size: 100%
+$progress-margin: 0 0 0.5em
+
+
+/*
+ * Definitions
+ */
+
+
+progress
+  -moz-appearance: none
+  -webkit-appearance: none
+  width: $progress-size
+  border: none
+  margin: $progress-margin
+  color: $progress-fg
+  background: $progress-bg
+  &::-moz-progress-bar
+    background: $progress-fg
+  &::-webkit-progress-value
+    background: $progress-fg
+  &::-webkit-progress-bar
+    background: $progress-bg

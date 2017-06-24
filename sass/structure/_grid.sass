@@ -1,0 +1,29 @@
+/*
+ * Settings
+ */
+
+
+// Minimum size to query for large styles
+$grid-lg-min: 48em
+// Minimum size to query for medium styles
+$grid-md-min: 30em
+// Maximum number of flex columns to allow
+$grid-max: 6
+
+
+/*
+ * Definitions
+ */
+
+
+@mixin grid($size)
+  @for $cols from 1 through $grid-max
+    .#{$size}-#{$cols}
+      flex: $cols
+
+.row,.col
+  width: 100%
+  display: flex
+
+.col
+  flex-direction: column

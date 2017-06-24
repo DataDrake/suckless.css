@@ -1,0 +1,36 @@
+/*
+ * Settings
+ */
+
+
+// Colors
+$inline-fg: $color-3-fg
+$inline-bg: $color-3-bg
+
+// Box Model
+$inline-border-radius: 0.25em
+$inline-padding: 0.25rem 0.5rem
+
+/*
+ * Definitions
+ */
+
+// Shared
+blockquote,code,kbd
+  color: $inline-fg
+  background: $inline-bg
+  border-radius: $inline-border-radius
+  padding: $inline-padding
+
+// Block Quote Citation
+blockquote
+  cite
+    display: block
+    &::before
+      content: '\2014 \0020'
+
+// Code and Keyboard
+code,kbd
+  font-family: Hack, Consolas, "Liberation Mono", Menlo, monospace
+
+

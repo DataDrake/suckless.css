@@ -1,16 +1,30 @@
+/*
+ * Settings
+ */
+
+
+// List of numbers of blocks per row to support
 $block-counts: 2, 4, 8
+
+// Margins for blocks
 $block-margin-pre: 0
 $block-margin-post: 0.5em
 $block-margin-sides: 1%
 
 
+/*
+ * Definitions
+ */
 
+
+// Shared attributes
 %blocks
   display: flex
   flex-wrap: wrap
   > *
     margin: $block-margin-pre $block-margin-sides $block-margin-post $block-margin-sides
 
+// Specific attributes
 @each $count in $block-counts
   .blocks-#{$count}
     @extend %blocks

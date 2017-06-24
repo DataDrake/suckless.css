@@ -1,20 +1,26 @@
 @import _colors
-@import _block-grid
-@import _button
-@import _decorations
-@import _forms
 @import _general
-@import _grid
-@import _helpers
-@import _table
-@import _top
-@import _typography
 @import _rtl
-//@import _menu
+@import decoration/badge
+@import decoration/label
+@import decoration/progress
+@import helpers/alignment
+@import helpers/box_model
+@import helpers/typography
+@import input/button
+@import input/forms
+//@import navigation/menu
+@import navigation/top
+@import structure/blocks
+@import structure/grid
+@import visuals/inline
+@import visuals/table
 
-/**************************/
-/* Size-specific settings */
-/**************************/
+
+/*
+ * Size-specific settings
+ */
+
 
 //default to small
 .sm-hide,.md-only,.lg-only
@@ -26,24 +32,24 @@
 @include grid(sm)
 
 //medium settings
-@media only screen and (min-width: $grid-medium-min)
-  .sm-only,.md-hide,.lg-only
+@media only screen and (min-width: $grid-md-min)
+  .sm-only,.md-hide
     display: none
   .sm-hide,.md-only
     display: inherit
-  .sm-col, .lg-col
+  .sm-col
     flex-direction: row
   .md-col
     flex-direction: column
   @include grid(md)
 
 //large settings
-@media only screen and (min-width: $grid-large-min)
-  .sm-only,.md-only,.lg-hide
+@media only screen and (min-width: $grid-lg-min)
+  .md-only,.lg-hide
     display: none
-  .sm-hide,.md-hide,.lg-only
+  .md-hide,.lg-only
     display: inherit
-  .sm-col, .md-col
+  .md-col
     flex-direction: row
   .lg-col
     flex-direction: column

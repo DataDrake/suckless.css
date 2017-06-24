@@ -1,0 +1,60 @@
+/*
+ * Settings
+ */
+
+
+// Colors
+$form-element-border: #CCC
+$form-element-focus: $color-info
+
+// Box Model
+$form-margin: 0 0.5em 0.5em 0
+$form-line-height: 1.25em
+$form-element-border-radius: 0.2em
+$form-element-border-size: 0.15em
+$form-element-padding: 0.5em 0.75em
+$form-group-margin: 0.375em 0.5em
+
+
+/*
+ * Definitions
+ */
+
+
+form
+  *
+    margin: $form-margin
+    line-height: $form-line-height
+
+textarea
+  resize: none
+  width: 99%
+
+select
+  -moz-appearance: none
+  -webkit-appearance: none
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'><path d='M0 0 H4 L2 3 Z'/></svg>") no-repeat
+  background-size: 0.75em 0.5em
+  background-position: right 0.375em center
+  &[multiple]
+    background: none
+
+input,select,textarea,.input-group
+  border: $form-element-border-size solid $form-element-border
+  border-radius: $form-element-border-radius
+  padding: $form-element-padding
+  &:focus
+    border-color: $form-element-focus
+
+.input-group
+  display: inline-flex
+  padding: 0
+  background: $form-element-border
+  border: none
+  > *
+    margin: 0
+
+.input-pre, .input-post
+  margin: $form-group-margin
+  > *
+    margin: 0

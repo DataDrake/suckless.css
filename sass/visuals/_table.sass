@@ -1,0 +1,36 @@
+/*
+ ^ Settings
+ */
+
+
+// Colors
+$table-head-border: #333
+$table-stripe: #E7E7E7
+
+// Box Model
+$table-head-border-width: 0.125em
+$table-cell-padding: 0.5em
+
+
+/*
+ * Definitions
+ */
+
+
+table
+  width: 100%
+  border-collapse: collapse
+  thead
+    tr
+      border-bottom: $table-head-border-width solid $table-head-border
+  th
+    text-align: left
+  th, td
+    padding: $table-cell-padding
+
+table.striped
+  tr:nth-child(even)
+    background-color: $table-stripe
+
+.table-responsive
+  overflow-x: auto
