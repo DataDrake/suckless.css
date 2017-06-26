@@ -1,5 +1,5 @@
 !!! html5
-%html{dir:'rtl'}
+%html{dir:''}
   %head
     %meta{charset:'utf-8'}
     %link{rel:'stylesheet',type:"text/css",href:"vendor/css/font-awesome.min.css"}
@@ -8,489 +8,344 @@
     #top
     %a{href:'#top'}
       %i.fa.fa-chevron-up.clr-3(simple-top=true)
-    .pad
-      %h1
-        %i.fa.fa-fw.fa-paint-brush
-        Colors
-      %h2 Swatches
-      .row.sm-col.text-center
-        .sm-1.col.pad
+    .row.sm-col
+      .sidebar.sm-1
+        %ul
+          %li.section General
+          %li
+            %a Colors
+          %li.section Decoration
+          %li
+            %a Badges
+          %li
+            %a Labels
+          %li
+            %a Progress
+          %li.section Helpers
+          %li
+            %a Alignment
+          %li
+            %a Box Model
+          %li
+            %a Typography
+          %li.section Input
+          %li
+            %a Buttons
+          %li
+            %a Forms
+          %li.section Navigation
+          %li
+            %a Breadcrumbs
+          %li
+            %a Icon Bar
+          %li
+            %a Pagination
+          %li
+            %a Sidebar
+          %li.section Structure
+          %li
+            %a Blocks
+          %li
+            %a Grid
+          %li.section Visuals
+          %li
+            %a Inline
+          %li
+            %a Table
+      .sm-1.md-4.lg-5.pad
+        %h1
+          %i.fa.fa-fw.fa-paint-brush
+          Colors
+        %h2 Swatches
+        .row.sm-col.text-center
+          .sm-1.col.pad
+            .sm-1
+              %h4 First
+            .sm-1.clr-1
+              %h4 .clr-1
+            .sm-1.clr-1.inv
+              %h4 .clr-1.inv
+          .sm-1.col.pad
+            .sm-1
+              %h4 Second
+            .sm-1.clr-2
+              %h4 .clr-2
+            .sm-1.clr-2.inv
+              %h4 .clr-2.inv
+          .sm-1.col.pad
+            .sm-1
+              %h4 Third
+            .sm-1.clr-3
+              %h4 .clr-3
+            .sm-1.clr-3.inv
+              %h4 .clr-3.inv
+        %h2 Statuses
+        .row.sm-col.text-center
+          .sm-1.col.pad
+            .sm-1
+              %h4 Info
+            .sm-1.info
+              %h4 .info
+            .sm-1.info.inv
+              %h4 .info.inv
+          .sm-1.col.pad
+            .sm-1
+              %h4 Success
+            .sm-1.success
+              %h4 .success
+            .sm-1.success.inv
+              %h4 .success.inv
+          .sm-1.col.pad
+            .sm-1
+              %h4 Alert
+            .sm-1.alert
+              %h4 .alert
+            .sm-1.alert.inv
+              %h4 .alert.inv
+          .sm-1.col.pad
+            .sm-1
+              %h4 Error
+            .sm-1.error
+              %h4 .error
+            .sm-1.error.inv
+              %h4 .error.inv
+        %h1
+          %i.fa.fa-fw.fa-heart
+          Decorations
+        %h2 Badges
+        .row
+          %i.fa.fa-info.badge.info
+          %i.fa.fa-check.badge.success
+          %i.fa.fa-exclamation.badge.alert
+          %i.fa.fa-bolt.badge.error
+        %h2 Labels
+        .label.info
+          Info
+        .label.success
+          Success
+        .label.alert
+          Alert
+        .label.error
+          Error
+        %h2 Progress
+        %progress{max:100,value:75}
+        %progress{max:100,value:50}
+        %progress{max:100,value:25}
+        %progress{max:100,value:60}
+        %h1
+          Helpers
+        %h2
+          %i.fa.fa-fw.fa-keyboard-o
+          Typography
+        %h3 Sizes
+        .row.text-center
+          .sm-1.tiny
+            %p .tiny
+          .sm-1.small
+            %p .small
           .sm-1
-            %h4 First
-          .sm-1.clr-1
-            %h4 .clr-1
-          .sm-1.clr-1.inv
-            %h4 .clr-1.inv
-        .sm-1.col.pad
-          .sm-1
-            %h4 Second
-          .sm-1.clr-2
-            %h4 .clr-2
-          .sm-1.clr-2.inv
-            %h4 .clr-2.inv
-        .sm-1.col.pad
-          .sm-1
-            %h4 Third
-          .sm-1.clr-3
-            %h4 .clr-3
-          .sm-1.clr-3.inv
-            %h4 .clr-3.inv
-      %h2 Statuses
-      .row.sm-col.text-center
-        .sm-1.col.pad
-          .sm-1
-            %h4 Info
-          .sm-1.info
-            %h4 .info
-          .sm-1.info.inv
-            %h4 .info.inv
-        .sm-1.col.pad
-          .sm-1
-            %h4 Success
-          .sm-1.success
-            %h4 .success
-          .sm-1.success.inv
-            %h4 .success.inv
-        .sm-1.col.pad
-          .sm-1
-            %h4 Alert
-          .sm-1.alert
-            %h4 .alert
-          .sm-1.alert.inv
-            %h4 .alert.inv
-        .sm-1.col.pad
-          .sm-1
-            %h4 Error
-          .sm-1.error
-            %h4 .error
-          .sm-1.error.inv
-            %h4 .error.inv
-      %h1
-        %i.fa.fa-fw.fa-th-large
-        Block Grid
-      %h2 .blocks-2
-      .blocks-2.text-center.pad
-        .clr-3 1
-        .clr-3 2
-        .clr-3 3
-        .clr-3 4
-        .clr-3 5
-        .clr-3 6
-      %h2 .blocks-4
-      .blocks-4.text-center.pad
-        .clr-3 1
-        .clr-3 2
-        .clr-3 3
-        .clr-3 4
-        .clr-3 5
-        .clr-3 6
-      %h2 .blocks-8
-      .blocks-8.text-center.pad
-        .clr-3 1
-        .clr-3 2
-        .clr-3 3
-        .clr-3 4
-        .clr-3 5
-        .clr-3 6
-      %h1
-        %i.fa.fa-fw.fa-th
-        Grid
-      %h2 Multipliers
-      .row.pad.text-center
-        .sm-1.clr-1
-          %h4 .sm-1
-      .row.pad.text-center
-        .sm-1.clr-1
-          %h4 .sm-1
-        .sm-1.clr-2
-          %h4 .sm-1
-      .row.pad.text-center
-        .sm-1.clr-1
-          %h4 .sm-1
-        .sm-1.clr-2
-          %h4 .sm-1
-        .sm-1.clr-1
-          %h4 .sm-1
-      .row.pad.text-center
-        .sm-1.clr-1
-          %h4 .sm-1
-        .sm-2.clr-2
-          %h4 .sm-2
-        .sm-1.clr-1
-          %h4 .sm-1
-      .row.pad.text-center
-        .sm-1.clr-1
-          %h4 .sm-1
-        .sm-6.clr-2
-          %h4 .sm-6
-      %h2 Sizes
-      .row.pad.text-center
-        .sm-1.lg-1.clr-1
-          %h4 .sm-1
-        .sm-1.md-2.lg-6.clr-2
-          %h4 .sm-1.md-2.lg-6
-      %h2 Column
-      .row.text-center
-        .sm-1.pad.col
-          .sm-1.clr-1
-            %h4 .sm-1
-          .sm-1.clr-3.inv
-            %h4 .sm-1
-          .sm-1.clr-1
-            %h4 .sm-1
-        .sm-1.pad.col
-          .sm-1.clr-1
-            %h4 .sm-1
-          .sm-2.clr-3.inv
-            %h4 .sm-2
-          .sm-1.clr-1
-            %h4 .sm-1
-        .sm-1.pad.col
-          .sm-1.clr-1
-            %h4 .sm-1
-          .sm-2.clr-3.inv
-            %h4 .sm-2
-      %h1
-        %i.fa.fa-fw.fa-hand-pointer-o
-        Buttons
-      %h2 Sizes
-      %a.btn.tiny Tiny
-      %a.btn.small Small
-      %a.btn Normal
-      %a.btn.large Large
-      %a.btn.large.expand Large Expanded
-      %a.btn.tiny.expand Tiny Expanded
-      %h2 Types
-      .btn
-        %a normal
-      .btn.hollow
-        %a hollow
-      .btn.alert
-        %a
-          %i.fa.fa-warning
-          %span alert
-      .btn.error
-        %a
-          %i.fa.fa-close
-          %span error
-      .btn.success
-        %a
-          %i.fa.fa-check
-          %span success
-      %h2 Shapes
-      %a.btn Normal
-      %a.btn.radius Radius
-      %a.btn.hollow Hollow
-      %a.btn.hollow.radius Radius
-      %h2 Groups
-      %h3 Normal
-      .btn-group
-        %a.btn btn
-        %a.btn btn
-        %a.btn btn
-        %a.btn btn
-      %h3 Expanded
-      .btn-group.expand
-        %a.btn btn
-        %a.btn btn
-        %a.btn btn
-        %a.btn btn
-      %h3 Expanded, Hollow, Radius, Large
-      .btn-group.hollow.expand.radius.large
-        %a.btn btn
-        %a.btn btn
-        %a.btn btn
-        %a.btn btn
-      %h3 Stacked
-      .btn-group.stack
-        %a.btn btn
-        %a.btn btn
-        %a.btn btn
-        %a.btn btn
-      %h1
-        %i.fa.fa-fw.fa-keyboard-o
-        Typography
-      %h2 Sizes
-      .row.text-center
-        .sm-1.tiny
-          %p .tiny
-        .sm-1.small
-          %p .small
-        .sm-1
-          %p .normal
-        .sm-1.large
-          %p .large
-      %h2 Alignment
-      .row.sm-col.md-col
-        .sm-1.pad.clr-1.text-left
-          %h4
-            %i.fa.fa-align-left
-            %span .text-left
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-        .sm-1.pad.clr-2.text-center
-          %h4
-            %i.fa.fa-align-center
-            %span .text-center
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-        .sm-1.pad.clr-1.text-right
-          %h4
-            %span .text-right
-            %i.fa.fa-align-right
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-        .sm-1.pad.clr-3.text-justify
-          %h4
-            %i.fa.fa-align-justify
-            %span .text-justify
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-      %h2 Blockquote
-      %blockquote
-        This is awesome
-        %cite Some Awesome Dude
-      %h2 Inline Code
-      %h3 kbd Tags
-      %kbd Ctrl + I
-      %h3 code Tags
-      %code code
-      %h1
-        %i.fa.fa-fw.fa-table
-        Tables
-      %h2 Default
-      %table
-        %thead
-          %tr
-            %th Col 1
-            %th Col 2
-            %th Col 3
-        %tbody
-          %tr
-            %td 1
-            %td Apple
-            %td Pie
-          %tr
-            %td 2
-            %td Chocolate
-            %td Cake
-          %tr
-            %td 3
-            %td Strawberry
-            %td Tart
-      %h2 Striped
-      %table.striped
-        %thead
-          %tr
-            %th Col 1
-            %th Col 2
-            %th Col 3
-        %tbody
-          %tr
-            %td 1
-            %td Apple
-            %td Pie
-          %tr
-            %td 2
-            %td Chocolate
-            %td Cake
-          %tr
-            %td 3
-            %td Strawberry
-            %td Tart
-      %h2 Responsive
-      .table-responsive
-        %table.striped
-          %thead
-            %tr
-              %th Column 1
-              %th Column 2
-              %th Column 3
-              %th Column 4
-              %th Column 5
-              %th Column 6
-              %th Column 7
-              %th Column 8
-              %th Column 9
-              %th Column 10
-              %th Column 11
-              %th Column 12
-              %th Column 13
-              %th Column 14
-              %th Column 15
-          %tbody
-            %tr
-              %td 1
-              %td 2
-              %td 3
-              %td 4
-              %td 5
-              %td 6
-              %td 7
-              %td 8
-              %td 9
-              %td 10
-              %td 11
-              %td 12
-              %td 13
-              %td 14
-              %td 15
-            %tr
-              %td 1
-              %td 2
-              %td 3
-              %td 4
-              %td 5
-              %td 6
-              %td 7
-              %td 8
-              %td 9
-              %td 10
-              %td 11
-              %td 12
-              %td 13
-              %td 14
-              %td 15
-      %h1
-        %i.fa.fa-fw.fa-clipboard
-        Forms
-      %form{id:'test'}
-        %legend This is a form
-        %select
-          %option{value:'A'} Apple
-          %option{value:'B'} Banana
-          %option{value:'C'} Cherry
-        %br
-        %select{multiple:'true'}
-          %option{value:'A'} Apple
-          %option{value:'B'} Banana
-          %option{value:'C'} Cherry
-        %br
-        %label{for:'name'}
-          Name
+            %p .normal
+          .sm-1.large
+            %p .large
+        %h3 Alignment
+        .row.sm-col.md-col
+          .sm-1.pad.clr-1.text-left
+            %h4
+              %i.fa.fa-align-left
+              %span .text-left
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
+          .sm-1.pad.clr-2.text-center
+            %h4
+              %i.fa.fa-align-center
+              %span .text-center
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
+          .sm-1.pad.clr-1.text-right
+            %h4
+              %span .text-right
+              %i.fa.fa-align-right
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
+          .sm-1.pad.clr-3.text-justify
+            %h4
+              %i.fa.fa-align-justify
+              %span .text-justify
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
+        %h1 Input
+        %h2
+          %i.fa.fa-fw.fa-hand-pointer-o
+          Buttons
+        %h3 Sizes
+        %p
+          %a.btn.tiny Tiny
+          %a.btn.small Small
+          %a.btn Normal
+          %a.btn.large Large
+        %a.btn.large.expand Large Expanded
+        %a.btn.tiny.expand Tiny Expanded
+        %h3 Types
+        %p
+          %a.btn normal
+          %a.btn.hollow hollow
+          %a.btn.alert
+            %i.fa.fa-warning
+            %span alert
+          %a.btn.error
+            %i.fa.fa-close
+            %span error
+          %a.btn.success
+            %i.fa.fa-check
+            %span success
+        %h3 Shapes
+        %p
+          %a.btn Normal
+          %a.btn.radius Radius
+          %a.btn.hollow Hollow
+          %a.btn.hollow.radius Radius
+        %h3 Groups
+        %h4 Normal
+        .btn-group
+          %a.btn btn
+          %a.btn btn
+          %a.btn btn
+          %a.btn btn
+        %h4 Expanded
+        .btn-group.expand
+          %a.btn btn
+          %a.btn btn
+          %a.btn btn
+          %a.btn btn
+        %h4 Expanded, Hollow, Radius, Large
+        .btn-group.hollow.expand.radius.large
+          %a.btn btn
+          %a.btn btn
+          %a.btn btn
+          %a.btn btn
+        %h4 Stacked
+        .btn-group.stack
+          %a.btn btn
+          %a.btn btn
+          %a.btn btn
+          %a.btn btn
+        %h2
+          %i.fa.fa-fw.fa-clipboard
+          Forms
+        %form{id:'test'}
+          %legend This is a form
+          %select
+            %option{value:'A'} Apple
+            %option{value:'B'} Banana
+            %option{value:'C'} Cherry
           %br
-          %input{type:'text', name:'name'}
-        %br
-        .input-group
-          .input-pre
-            Pre
-          %input{type:'text'}
-          .input-post
-            Post
-        %br
-        %textarea Tell me a story...
-        %br
-        .input-group
-          %input{type:'search'}
-          .input-post
-            %i.fa.fa-search
-        %br
-        %button{type:'reset',form:'test',value:'Reset'} Reset
-        %input{type:'submit',value:'Submit'}
-      %h1
-        %i.fa.fa-fw.fa-heart
-        Decorations
-      %h2 Badges
-      %i.fa.fa-info.badge.info
-      %i.fa.fa-check.badge.success
-      %i.fa.fa-exclamation.badge.alert
-      %i.fa.fa-bolt.badge.error
-      %h2 Labels
-      .label.info
-        Info
-      .label.success
-        Success
-      .label.alert
-        Alert
-      .label.error
-        Error
-      %h2 Progress
-      %progress{max:100,value:75}
-      %progress{max:100,value:50}
-      %progress{max:100,value:25}
-      %progress{max:100,value:60}
-      %h1 Navigation
-      %h2 Breadcrumbs
-      %ul.crumbs
-        %li
-          %a Food
-        %li
-          %a Vegetables
-        %li
-          %a Onions
-        %li
-          %a Vidalia
-      %h2 Icon Bar
-      %h3 Normal
-      .pad
-        %ul.icons.clr-1
+          %select{multiple:'true'}
+            %option{value:'A'} Apple
+            %option{value:'B'} Banana
+            %option{value:'C'} Cherry
+          %br
+          %label{for:'name'}
+            Name
+            %br
+            %input{type:'text', name:'name'}
+          %br
+          .input-group
+            .input-pre
+              Pre
+            %input{type:'text'}
+            .input-post
+              Post
+          %br
+          %textarea Tell me a story...
+          %br
+          .input-group
+            %input{type:'search'}
+            .input-post
+              %i.fa.fa-search
+          %br
+          %button{type:'reset',form:'test',value:'Reset'} Reset
+          %input{type:'submit',value:'Submit'}
+        %h1 Navigation
+        %h2 Breadcrumbs
+        %ul.crumbs
           %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span One
+            %a Food
           %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Two
+            %a Vegetables
           %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Three
-          %li.divider
+            %a Onions
           %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Four
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Five
-      %h3 .stack
-      .pad
-        %ul.icons.stack.clr-2.inv
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span One
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Two
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Three
-          %li.divider
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Four
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Five
-      %h3 .vertical
-      .pad
-        %ul.icons.stack.vertical.clr-3
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span One
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Two
-          %li.divider
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Three
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Four
-          %li
-            %a
-              %i.fa.fa-fw.fa-file
-              %span Five
-      %h2 Pagination
-      .row
+            %a Vidalia
+        %h2 Icon Bar
+        %h3 Normal
+        .pad
+          %ul.icons.clr-1
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span One
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Two
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Three
+            %li.divider
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Four
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Five
+        %h3 .stack
+        .pad
+          %ul.icons.stack.clr-2.inv
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span One
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Two
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Three
+            %li.divider
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Four
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Five
+        %h3 .vertical
+        .pad
+          %ul.icons.stack.vertical.clr-3
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span One
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Two
+            %li.divider
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Three
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Four
+            %li
+              %a
+                %i.fa.fa-fw.fa-file
+                %span Five
+        %h2 Pagination
         .pager
           %a ⏪
           %a ⏴
@@ -499,3 +354,210 @@
           %a 7
           %a ⏵
           %a ⏩
+        %h2 Sidebar
+        .pad
+          %ul.sidebar
+            %li.section Numbers
+            %li
+              %a One
+            %li
+              %a Two
+            %li
+              %a Threes
+        %h1 Structure
+        %h2
+          %i.fa.fa-fw.fa-th-large
+          Block Grid
+        %h3 .blocks-2
+        .blocks-2.text-center.pad
+          .clr-3 1
+          .clr-3 2
+          .clr-3 3
+          .clr-3 4
+          .clr-3 5
+          .clr-3 6
+        %h3 .blocks-4
+        .blocks-4.text-center.pad
+          .clr-3 1
+          .clr-3 2
+          .clr-3 3
+          .clr-3 4
+          .clr-3 5
+          .clr-3 6
+        %h3 .blocks-8
+        .blocks-8.text-center.pad
+          .clr-3 1
+          .clr-3 2
+          .clr-3 3
+          .clr-3 4
+          .clr-3 5
+          .clr-3 6
+        %h2
+          %i.fa.fa-fw.fa-th
+          Grid
+        %h3 Multipliers
+        .row.pad.text-center
+          .sm-1.clr-1
+            %h4 .sm-1
+        .row.pad.text-center
+          .sm-1.clr-1
+            %h4 .sm-1
+          .sm-1.clr-2
+            %h4 .sm-1
+        .row.pad.text-center
+          .sm-1.clr-1
+            %h4 .sm-1
+          .sm-1.clr-2
+            %h4 .sm-1
+          .sm-1.clr-1
+            %h4 .sm-1
+        .row.pad.text-center
+          .sm-1.clr-1
+            %h4 .sm-1
+          .sm-2.clr-2
+            %h4 .sm-2
+          .sm-1.clr-1
+            %h4 .sm-1
+        .row.pad.text-center
+          .sm-1.clr-1
+            %h4 .sm-1
+          .sm-6.clr-2
+            %h4 .sm-6
+        %h3 Sizes
+        .row.pad.text-center
+          .sm-1.lg-1.clr-1
+            %h4 .sm-1
+          .sm-1.md-2.lg-6.clr-2
+            %h4 .sm-1.md-2.lg-6
+        %h3 Column
+        .row.text-center
+          .sm-1.pad.col
+            .sm-1.clr-1
+              %h4 .sm-1
+            .sm-1.clr-3.inv
+              %h4 .sm-1
+            .sm-1.clr-1
+              %h4 .sm-1
+          .sm-1.pad.col
+            .sm-1.clr-1
+              %h4 .sm-1
+            .sm-2.clr-3.inv
+              %h4 .sm-2
+            .sm-1.clr-1
+              %h4 .sm-1
+          .sm-1.pad.col
+            .sm-1.clr-1
+              %h4 .sm-1
+            .sm-2.clr-3.inv
+              %h4 .sm-2
+
+        %h1 Visuals
+        %h2 Inline Elements
+        %h3 Blockquote
+        %p
+          %blockquote
+            This is awesome
+            %cite Some Awesome Dude
+        %h3 kbd Tags
+        %p
+          %kbd Ctrl + I
+        %h3 code Tags
+        %p
+          %code code
+
+        %h2
+          %i.fa.fa-fw.fa-table
+          Tables
+        %h3 Default
+        %table
+          %thead
+            %tr
+              %th Col 1
+              %th Col 2
+              %th Col 3
+          %tbody
+            %tr
+              %td 1
+              %td Apple
+              %td Pie
+            %tr
+              %td 2
+              %td Chocolate
+              %td Cake
+            %tr
+              %td 3
+              %td Strawberry
+              %td Tart
+        %h3 Striped
+        %table.striped
+          %thead
+            %tr
+              %th Col 1
+              %th Col 2
+              %th Col 3
+          %tbody
+            %tr
+              %td 1
+              %td Apple
+              %td Pie
+            %tr
+              %td 2
+              %td Chocolate
+              %td Cake
+            %tr
+              %td 3
+              %td Strawberry
+              %td Tart
+        %h3 Responsive
+        .table-responsive
+          %table.striped
+            %thead
+              %tr
+                %th Column 1
+                %th Column 2
+                %th Column 3
+                %th Column 4
+                %th Column 5
+                %th Column 6
+                %th Column 7
+                %th Column 8
+                %th Column 9
+                %th Column 10
+                %th Column 11
+                %th Column 12
+                %th Column 13
+                %th Column 14
+                %th Column 15
+            %tbody
+              %tr
+                %td 1
+                %td 2
+                %td 3
+                %td 4
+                %td 5
+                %td 6
+                %td 7
+                %td 8
+                %td 9
+                %td 10
+                %td 11
+                %td 12
+                %td 13
+                %td 14
+                %td 15
+              %tr
+                %td 1
+                %td 2
+                %td 3
+                %td 4
+                %td 5
+                %td 6
+                %td 7
+                %td 8
+                %td 9
+                %td 10
+                %td 11
+                %td 12
+                %td 13
+                %td 14
+                %td 15
