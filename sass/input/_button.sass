@@ -7,9 +7,6 @@
 $btn-foreground: #FFF
 $btn-background: $color-info
 
-// Relative change in button color when hovering
-$btn-hover-change: -6
-
 // Box Model
 $btn-margin: 0.5em
 $btn-border-width: 0.1875em
@@ -21,22 +18,10 @@ $btn-padding: 0.5em
  * Definitions
  */
 
-
-// Modifications to buttons when hovering
-@mixin button-hover($fg,$bg,$change)
-  &:hover
-    @if $change > 0
-      background: lighten($bg, $change)
-      border-color: lighten($bg, $change)
-    @else
-      background: darken($bg,-1*$change)
-      border-color: darken($bg, -1*$change)
-
 // Add color to buttons
-@mixin button-colors($fg,$bg,$change)
+@mixin button-colors($fg,$bg)
   background: $bg
   border-color: $bg
-  @include button-hover($fg,$bg,$change)
 
 // Default button attributes
 button,.btn,[type=submit],[type=reset]
@@ -47,7 +32,7 @@ button,.btn,[type=submit],[type=reset]
   margin: $btn-margin
   text-decoration: none
   border: $btn-border-width solid $btn-background
-  @include button-colors($btn-foreground,$btn-background,$btn-hover-change)
+  @include button-colors($btn-foreground,$btn-background)
 
 // Button Group Attributes
 .btn-group
@@ -61,20 +46,16 @@ button,.btn,[type=submit],[type=reset]
 
 // Color Modifiers
 .btn.alert
-  @include button-colors($btn-foreground, $color-alert,$btn-hover-change)
+  @include button-colors($btn-foreground, $color-alert)
 .btn.error
-  @include button-colors($btn-foreground, $color-failure,$btn-hover-change)
+  @include button-colors($btn-foreground, $color-failure)
 .btn.success
-  @include button-colors($btn-foreground, $color-success,$btn-hover-change)
+  @include button-colors($btn-foreground, $color-success)
 
 // Hollow Color Modifiers
 .btn.hollow, .btn-group.hollow > .btn
   color: $btn-background
   background: $btn-foreground
-.btn.hollow:hover,.btn-group.hollow > .btn:hover
-  color: $btn-foreground
-  background: darken($btn-background,-1*$btn-hover-change)
-  border-color: darken($btn-background, -1*$btn-hover-change)
 
 // Button Shape Modifiers
 .btn.expand

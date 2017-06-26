@@ -1,0 +1,31 @@
+/*
+ * Settings
+ */
+
+$icon-padding: 1em
+
+/*
+ * Definitions
+ */
+
+ul.icons
+  @extend %hide-bullet
+  display: flex
+  padding: $icon-padding 0
+  > li
+    flex: 1
+    display: flex
+  a
+    flex: 1
+    text-align: center
+    > *
+      margin: 0 auto
+  &.stack
+    a
+      display: flex
+      flex-direction: column
+  &.vertical
+    display: inline-flex
+    flex-direction: column
+    li a
+      padding: $icon-padding
