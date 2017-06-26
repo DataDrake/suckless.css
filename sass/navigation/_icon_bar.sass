@@ -15,6 +15,9 @@ ul.icons
   > li
     flex: 1
     display: flex
+  .divider
+    flex: none
+    border: 1px solid
   a
     flex: 1
     text-align: center
@@ -27,5 +30,7 @@ ul.icons
   &.vertical
     display: inline-flex
     flex-direction: column
+    .divider
+      margin: 0 $icon-padding
     li a
       padding: $icon-padding
