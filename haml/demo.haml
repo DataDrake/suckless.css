@@ -72,8 +72,8 @@
             %a Table
       .sm-1.md-3.lg-4.col.pad
         %h1
-          %i.fa.fa-fw.fa-paint-brush
           Colors
+          %i.fa.fa-fw.fa-paint-brush
         %h2 Swatches
         .row.sm-col.text-center
           .sm-1.col.pad
@@ -128,8 +128,8 @@
             .sm-1.error.inv
               %h4 .error.inv
         %h1
-          %i.fa.fa-fw.fa-heart
           Decorations
+          %i.fa.fa-fw.fa-heart
         %h2 Badges
         .row
           %i.fa.fa-info.badge.info
@@ -152,9 +152,10 @@
         %progress{max:100,value:60}
         %h1
           Helpers
+          %i.fa.fa-hw.fa-support
         %h2
-          %i.fa.fa-fw.fa-keyboard-o
           Typography
+          %i.fa.fa-fw.fa-keyboard-o
         %h3 Sizes
         .row.text-center
           .sm-1.tiny
@@ -189,35 +190,38 @@
             %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
         %h1 Input
         %h2
-          %i.fa.fa-fw.fa-hand-pointer-o
           Buttons
+          %i.fa.fa-fw.fa-hand-pointer-o
         %h3 Sizes
-        %p
-          %a.btn.tiny Tiny
-          %a.btn.small Small
-          %a.btn Normal
-          %a.btn.large Large
+        .row
+          %p
+            %a.btn.tiny Tiny
+            %a.btn.small Small
+            %a.btn Normal
+            %a.btn.large Large
         %a.btn.large.expand Large Expanded
         %a.btn.tiny.expand Tiny Expanded
         %h3 Types
-        %p
-          %a.btn normal
-          %a.btn.hollow hollow
-          %a.btn.alert
-            %i.fa.fa-warning
-            %span alert
-          %a.btn.error
-            %i.fa.fa-close
-            %span error
-          %a.btn.success
-            %i.fa.fa-check
-            %span success
+        .row
+          %p
+            %a.btn normal
+            %a.btn.hollow hollow
+            %a.btn.alert
+              %i.fa.fa-warning
+              %span alert
+            %a.btn.error
+              %i.fa.fa-close
+              %span error
+            %a.btn.success
+              %i.fa.fa-check
+              %span success
         %h3 Shapes
-        %p
-          %a.btn Normal
-          %a.btn.radius Radius
-          %a.btn.hollow Hollow
-          %a.btn.hollow.radius Radius
+        .row
+          %p
+            %a.btn Normal
+            %a.btn.radius Radius
+            %a.btn.hollow Hollow
+            %a.btn.hollow.radius Radius
         %h3 Groups
         %h4 Normal
         .btn-group
@@ -238,14 +242,16 @@
           %a.btn btn
           %a.btn btn
         %h4 Stacked
-        .btn-group.stack
-          %a.btn btn
-          %a.btn btn
-          %a.btn btn
-          %a.btn btn
+        .row
+          .sm-1.btn-group.stack
+            %a.btn btn
+            %a.btn btn
+            %a.btn btn
+            %a.btn btn
+          .sm-1.lg-3
         %h2
-          %i.fa.fa-fw.fa-clipboard
           Forms
+          %i.fa.fa-fw.fa-clipboard
         %form{id:'test'}
           %legend This is a form
           %select
@@ -279,7 +285,9 @@
           %br
           %button{type:'reset',form:'test',value:'Reset'} Reset
           %input{type:'submit',value:'Submit'}
-        %h1 Navigation
+        %h1
+          Navigation
+          %i.fa.fa-fw.fa-navicon
         %h2 Breadcrumbs
         %ul.crumbs
           %li
@@ -364,28 +372,31 @@
                 %i.fa.fa-fw.fa-file
                 %span Five
         %h2 Pagination
-        .pager
-          %a ⏪
-          %a ⏴
-          %a 5
-          %a.here 6
-          %a 7
-          %a ⏵
-          %a ⏩
+        .row
+          .pager
+            %a ⏪
+            %a ⏴
+            %a 5
+            %a.here 6
+            %a 7
+            %a ⏵
+            %a ⏩
         %h2 Sidebar
-        .pad
-          %ul.sidebar
+        .sidebar
+          %ul
             %li.section Numbers
             %li
               %a One
             %li
               %a Two
             %li
-              %a Threes
-        %h1 Structure
+              %a Three
+        %h1
+          Structure
+          %i.fa.fa-fw.fa-sitemap
         %h2
+          Grid
           %i.fa.fa-fw.fa-th-large
-          Block Grid
         %h3 .blocks-2
         .blocks-2.text-center.pad
           .clr-3 1
@@ -411,8 +422,8 @@
           .clr-3 5
           .clr-3 6
         %h2
-          %i.fa.fa-fw.fa-th
           Grid
+          %i.fa.fa-fw.fa-th
         %h3 Multipliers
         .row.pad.text-center
           .sm-1.clr-1
@@ -469,7 +480,9 @@
             .sm-2.clr-3.inv
               %h4 .sm-2
 
-        %h1 Visuals
+        %h1
+          Visuals
+          %i.fa.fa-fw.fa-eye
         %h2 Inline Elements
         %h3 Blockquote
         %p
@@ -477,11 +490,13 @@
             This is awesome
             %cite Some Awesome Dude
         %h3 kbd Tags
-        %p
-          %kbd Ctrl + I
+        .row
+          %p
+            %kbd Ctrl + I
         %h3 code Tags
-        %p
-          %code code
+        .row
+          %p
+            %code code
 
         %h2
           %i.fa.fa-fw.fa-table
@@ -579,3 +594,8 @@
                 %td 13
                 %td 14
                 %td 15
+    %footer
+      .text-center.clr-1.pad
+        %p
+          Copyright &copy; 2017
+          %a{href: 'mailto:bmeyers@datadrake.com',style:'color:#FFF'} Bryan T. Meyers
