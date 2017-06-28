@@ -15,15 +15,17 @@ $color-3-bg: #000
 
 //Status Colors
 $color-info: #19F
-$color-alert: #F90
+$color-warn: #F90
 $color-failure: #E00
-$color-success: #0C0
+$color-good: #0C0
 
 
 /*
  * Definitions
  */
 
+.white
+  background: #FFF
 
 @mixin color-pair($name,$fg,$bg)
   .#{$name}
@@ -40,6 +42,6 @@ $color-success: #0C0
 
 //Status Palette
 @include color-pair(info, $color-1-fg, $color-info)
-@include color-pair(alert, $color-1-fg, $color-alert)
+@include color-pair(warn, $color-1-fg, $color-warn)
 @include color-pair(error, $color-1-fg, $color-failure)
-@include color-pair(success, $color-1-fg, $color-success)
+@include color-pair(good, $color-1-fg, $color-good)

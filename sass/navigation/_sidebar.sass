@@ -19,13 +19,19 @@ $sidebar-section-margin: 1rem
 /*
  * Definitions
  */
+#menu
+  transition: width 0.2s ease
+  width: 0
+#menu:target
+  transition: width 0.2s ease
+  width: 12rem
 .sidebar
+  color: $sidebar-item-fg
+  background: $sidebar-item-bg
   ul
     @extend %hide-bullet
     height: 100%
-    background: $sidebar-item-bg
   li
-    color: $sidebar-item-fg
     padding: $sidebar-item-padding
   li.section
     background: $sidebar-section-bg

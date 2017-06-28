@@ -4,29 +4,26 @@
 
 
 // List of numbers of blocks per row to support
-$block-counts: 2, 4, 8
-
-// Margins for blocks
-$block-margin-pre: 0
-$block-margin-post: 0.5rem
-$block-margin-sides: 1%
-
+$block-max: 6
 
 /*
  * Definitions
  */
 
-
-// Shared attributes
-%blocks
+.blocks
   display: flex
   flex-wrap: wrap
-  > *
-    margin: $block-margin-pre $block-margin-sides $block-margin-post
+  flex-direction: column
+  *
+    align-items: stretch
+    width: 100%
 
 // Specific attributes
-@each $count in $block-counts
-  .blocks-#{$count}
-    @extend %blocks
+@mixin blocks
+  .blocks
+    flex-direction: row
     > *
-      width: 100/($count) - 2*$block-margin-sides
+      display: flex
+  @for $count from 1 to $block-max + 1
+    .block-#{$count}
+      width: (100%*$count)/$block-max

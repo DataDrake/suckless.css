@@ -45,12 +45,12 @@ button,.btn,[type=submit],[type=reset]
     margin-bottom: $btn-margin
 
 // Color Modifiers
-.btn.alert
-  @include button-colors($btn-foreground, $color-alert)
+.btn.warn
+  @include button-colors($btn-foreground, $color-warn)
 .btn.error
   @include button-colors($btn-foreground, $color-failure)
-.btn.success
-  @include button-colors($btn-foreground, $color-success)
+.btn.good
+  @include button-colors($btn-foreground, $color-good)
 
 // Hollow Color Modifiers
 .btn.hollow, .btn-group.hollow > .btn
