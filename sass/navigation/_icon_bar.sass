@@ -11,7 +11,6 @@ $icon-padding: 0.75rem
 .icons
   @extend %hide-bullet
   display: flex
-  padding: $icon-padding 0
   > li
     flex: 1
     display: flex
@@ -21,6 +20,7 @@ $icon-padding: 0.75rem
   a
     flex: 1
     text-align: center
+    padding: $icon-padding
     > *
       margin: 0 auto
   &.stack
@@ -32,5 +32,3 @@ $icon-padding: 0.75rem
     flex-direction: column
     .divider
       margin: 0 $icon-padding
-    li a
-      padding: $icon-padding
