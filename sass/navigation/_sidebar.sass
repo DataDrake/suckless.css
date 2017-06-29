@@ -15,18 +15,20 @@ $sidebar-item-fg: #333
 $sidebar-item-padding: 0.5rem 1rem
 $sidebar-section-padding: 0.25rem 1rem
 $sidebar-section-margin: 1rem
+$sidebar-width: 12rem
 
 /*
  * Definitions
  */
 #menu
-  transition: width 0.2s linear
-  width: 0
+  transition: all 0.2s ease
+  margin-left: -$sidebar-width
+  width: $sidebar-width
 #menu:target
-  transition: width 0.2s linear
-  width: 12rem
+  transition: all 0.2s ease
+  margin-left: 0
 #menu:target + .wrapper, .wrapper
-  margin-right: -12rem
+  margin-right: -$sidebar-width
 .sidebar
   color: $sidebar-item-fg
   background: $sidebar-item-bg
@@ -47,6 +49,11 @@ $sidebar-section-margin: 1rem
   a
     display: block
 html[dir='rtl']
-  #menu:target + .wrapper, .wrapper
-    margin-left: -12rem
+  #menu
+    margin-left: 0
+    margin-right: -$sidebar-width
+  #menu:target
     margin-right: 0
+  #menu:target + .wrapper, .wrapper
+    margin-right: 0
+    margin-left: -$sidebar-width
