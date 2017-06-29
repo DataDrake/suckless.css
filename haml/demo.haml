@@ -1,5 +1,5 @@
 !!! html5
-%html{dir:''}
+%html{dir:'rtl'}
   %head
     %meta{charset:'utf-8'}
     %link{rel:'stylesheet',type:"text/css",href:"vendor/css/font-awesome.min.css"}
@@ -10,7 +10,7 @@
       %i.fa.fa-chevron-up.clr-3(simple-top=true)
     .row
       #menu.sidebar
-        .row.clr-3
+        .row.clr-3.text-center
           %a.sm-1.pad{href:'#'}
             Close Menu
         %ul
@@ -57,25 +57,26 @@
             %a Inline
           %li
             %a Table
-      .col.white
+      .wrapper.col.white
         %nav.topbar.clr-3
           %a{href:'#menu'}
             %i.fa.fa-fw.fa-bars
           %a{href:'/'}
+            %i.fa.fa-fw.fa-css3
             Suckless.css
-          %ul.icons
+          %ul.icons.shrink
             %li
               %a{href:'/about'}
                 %i.fa.fa-fw.fa-info
-                About
+                %span About
             %li
               %a{href:'/general#introduction'}
                 %i.fa.fa-fw.fa-book
-                Docs
+                %span Docs
             %li
               %a{href:'http://github.com/DataDrake/suckless.css'}
                 %i.fa.fa-fw.fa-github
-                Dev
+                %span Dev
         .row
           .sm-1.md-3.lg-4.col.pad-2
             %h1
@@ -106,34 +107,36 @@
                   %h5 .clr-3.inv
             %h2 Statuses
             .row.sm-col.text-center
-              .sm-1.col.pad
-                .sm-1
-                  %h5 Info
-                .sm-1.pad.info
-                  %h5 .info
-                .sm-1.pad.info.inv
-                  %h5 .info.inv
-              .sm-1.col.pad
-                .sm-1
-                  %h5 Good
-                .sm-1.pad.good
-                  %h5 .good
-                .sm-1.pad.good.inv
-                  %h5 .good.inv
-              .sm-1.col.pad
-                .sm-1
-                  %h5 Warn
-                .sm-1.pad.warn
-                  %h5 .warn
-                .sm-1.pad.warn.inv
-                  %h5 .warn.inv
-              .sm-1.col.pad
-                .sm-1
-                  %h5 Error
-                .sm-1.pad.error
-                  %h5 .error
-                .sm-1.pad.error.inv
-                  %h5 .error.inv
+              .row.sm-col.md-col
+                .sm-1.col.pad
+                  .sm-1
+                    %h5 Info
+                  .sm-1.pad.info
+                    %h5 .info
+                  .sm-1.pad.info.inv
+                    %h5 .info.inv
+                .sm-1.col.pad
+                  .sm-1
+                    %h5 Good
+                  .sm-1.pad.good
+                    %h5 .good
+                  .sm-1.pad.good.inv
+                    %h5 .good.inv
+              .row.sm-col.md-col
+                .sm-1.col.pad
+                  .sm-1
+                    %h5 Warn
+                  .sm-1.pad.warn
+                    %h5 .warn
+                  .sm-1.pad.warn.inv
+                    %h5 .warn.inv
+                .sm-1.col.pad
+                  .sm-1
+                    %h5 Error
+                  .sm-1.pad.error
+                    %h5 .error
+                  .sm-1.pad.error.inv
+                    %h5 .error.inv
             %h1
               Decorations
               %i.fa.fa-fw.fa-heart
@@ -501,6 +504,29 @@
             %h1
               Visuals
               %i.fa.fa-fw.fa-eye
+            %h2 Accordian
+            .accordian
+              %div
+                %input{id:'s1',type:'checkbox'}
+                %label.clr-3{for:'s1'}
+                  One
+                .row
+                  .sm-1.clr-1.pad
+                    Hello
+              %div
+                %input{id:'s2',type:'checkbox'}
+                %label.clr-3{for:'s2'}
+                  Two
+                .row
+                  .sm-1.clr-2.pad
+                    Hello
+              %div
+                %input{id:'s3',type:'checkbox'}
+                %label.clr-3{for:'s3'}
+                  Three
+                .row
+                  .sm-1.clr-1.pad
+                    Hello
             %h2 Inline Elements
             %h3 Blockquote
             %p

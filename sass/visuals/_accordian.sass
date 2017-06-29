@@ -1,0 +1,29 @@
+.accordian
+  display: flex
+  flex-direction: column
+  > div
+    display: flex
+    flex-direction: column
+    flex: 1
+    margin-bottom: 0.25rem
+  input
+    display: none
+  input:checked
+    ~ .col,~ .row
+      height: auto
+  input:checked + label:after
+    content: '\25b2'
+  label
+    font-weight: bold
+    padding: 0.75rem
+    width: 100%
+    &:after
+      content: '\25bc'
+      float: right
+  .row,.col
+    height: 0
+    overflow: hidden
+html[dir='rtl']
+  .accordian
+    label:after
+      float: left

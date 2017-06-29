@@ -20,11 +20,13 @@ $sidebar-section-margin: 1rem
  * Definitions
  */
 #menu
-  transition: width 0.2s ease
+  transition: width 0.2s linear
   width: 0
 #menu:target
-  transition: width 0.2s ease
+  transition: width 0.2s linear
   width: 12rem
+#menu:target + .wrapper, .wrapper
+  margin-right: -12rem
 .sidebar
   color: $sidebar-item-fg
   background: $sidebar-item-bg
@@ -44,3 +46,7 @@ $sidebar-section-margin: 1rem
       margin: 0
   a
     display: block
+html[dir='rtl']
+  #menu:target + .wrapper, .wrapper
+    margin-left: -12rem
+    margin-right: 0
