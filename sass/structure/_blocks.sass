@@ -4,26 +4,32 @@
 
 
 // List of numbers of blocks per row to support
-$block-max: 6
+$block-max: 4
 
 /*
  * Definitions
  */
 
-.blocks
-  display: flex
-  flex-wrap: wrap
-  flex-direction: column
-  *
-    align-items: stretch
-    width: 100%
-
-// Specific attributes
-@mixin blocks
-  .blocks
-    flex-direction: row
+@mixin blocks-small
+  %blocks-small
+    display: flex
+    flex-direction: column
     > *
-      display: flex
+      margin: 0.5rem 1%
   @for $count from 1 to $block-max + 1
     .block-#{$count}
-      width: (100%*$count)/$block-max
+      @extend %blocks-small
+
+@mixin blocks-normal
+  %blocks-normal
+    flex-wrap: wrap
+    flex-direction: row
+  @for $count from 1 to $block-max + 1
+    .block-#{$count}
+      @extend %blocks-normal
+      > *
+        width: (100%/$count)-2%
+
+
+
+

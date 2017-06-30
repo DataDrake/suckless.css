@@ -34,7 +34,9 @@ $theme-mode: 'dark'
   flex-direction: row
 .sm-col
   flex-direction: column
+@include blocks-small()
 @include grid(sm)
+
 
 //medium settings
 @media only screen and (min-width: $grid-md-min)
@@ -46,8 +48,8 @@ $theme-mode: 'dark'
     flex-direction: row
   .md-col
     flex-direction: column
+  @include blocks-normal()
   @include grid(md)
-  @include blocks()
 
 //large settings
 @media only screen and (min-width: $grid-lg-min)
