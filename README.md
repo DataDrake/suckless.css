@@ -1,66 +1,80 @@
 # suckless.css
 A minimalist CSS library written in SASS
 
-## Sizes (gzip)
+## Total Sizes
+
+```RTL = Right to Left```
+
+| Gzip ? | RTL Enabled (Bytes) | RTL Disabled (Bytes) |
+|--------|---------------------|----------------------|
+| Yes    | 2214                | 2103                 |
+| No     | 6463                | 5950                 |
+
+## Module Sizes (gzip)
+__Note:__ All sizes are calculated by turning entire modules on and off, one at a time. Actual Size differences may be larger or smaller depending on the interactions between shared class attributes.
+
+| Module      | Size (Bytes) |
+|-------------|--------------|
+| Base        | 197          |
+| Decorations | 83           |
+| Helpers     | 154          |
+| Input       | 338          |
+| Navigation  | 353          |
+| Structure   | 148          |
+| Visuals     | 162          |
+
+## Feature Sizes (gzip)
 
 __Note:__ All sizes are calculated by turning features on and off one at a time. Actual Size differences may be larger or smaller depending on the interactions between shared class attributes.
 
 ### Base
 | Feature  | Size (Bytes) |
 |----------|--------------|
-| Colors   | TBD          |
-| General  | 110          |
+| Colors   | 88           |
+| General  | 108          |
 
 ### Decorations
 | Feature  | Size (Bytes) |
 |----------|--------------|
 | Badges   | 23           |
-| Labels   | 6            |
+| Labels   | 4            |
 | Progress | 53           |
 
 ### Helpers
 | Feature    | Size (Bytes) |
 |------------|--------------|
-| Alignment  | 25           |
-| Box Model  | 13           |
-| Typography | TBD          |
+| Alignment  | 24           |
+| Box Model  | 20           |
+| Typography | 115          |
 
 ### Input
 | Feature | Size (Bytes) |
 |---------|--------------|
-| Button  | 150          |
-| Forms   | 282          |
+| Button  | 145          |
+| Forms   | 279          |
 
 ### Navigation
 | Feature      | Size (Bytes) |
 |--------------|--------------|
-| Breadcrumbs  | 50           |
-| Icon Bar     | 95           |
-| Pagination   | 49           |
-| Sidebar Menu | 156          |
-| Back to Top  | 37           |
-| Topbar       | 67           |
+| Breadcrumbs  | 46           |
+| Icon Bar     | 94           |
+| Pagination   | 46           |
+| Sidebar Menu | 154          |
+| Back to Top  | 41           |
+| Topbar       | 60           |
 
 ### Structure
 | Feature | Size (Bytes) |
 |---------|--------------|
-| Blocks  | 59           |
-| Grid    | TBD          |
+| Blocks  | 58           |
+| Grid    | 173          |
 
 ### Visuals
 | Feature   | Size (Bytes) |
 |-----------|--------------|
-| Accordian | 113          |
-| Inline    | 61           |
-| Table     | 97           |
-
-## Total Sizes (gzip)
-
-```RTL = Right to Left```
-
-| RTL Enabled (Bytes) | RTL Disabled (Bytes) |
-|---------------------|----------------------|
-| 2225                | 2115                 |
+| Accordian | 104          |
+| Inline    | 56           |
+| Table     | 95           |
 
 ## License
 
