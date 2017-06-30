@@ -10,23 +10,18 @@ $block-max: 4
  * Definitions
  */
 
-@mixin blocks-small
-  %blocks-small
-    display: flex
-    flex-direction: column
-    > *
-      margin: 0.5rem 1%
-  @for $count from 1 to $block-max + 1
-    .block-#{$count}
-      @extend %blocks-small
+.blk
+  display: flex
+  flex-direction: column
+  > *
+    margin: 0.5rem 1%
 
 @mixin blocks-normal
-  %blocks-normal
+  .blk
     flex-wrap: wrap
     flex-direction: row
   @for $count from 1 to $block-max + 1
-    .block-#{$count}
-      @extend %blocks-normal
+    .blk-#{$count}
       > *
         width: (100%/$count)-2%
 

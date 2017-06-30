@@ -24,11 +24,11 @@ $sidebar-width: 12rem
   transition: all 0.2s ease
   margin-left: -$sidebar-width
   width: $sidebar-width
+  position: fixed
+  right: 0
 #menu:target
   transition: all 0.2s ease
   margin-left: 0
-#menu:target + .wrapper, .wrapper
-  margin-right: -$sidebar-width
 .sidebar
   color: $sidebar-item-fg
   background: $sidebar-item-bg
@@ -48,12 +48,9 @@ $sidebar-width: 12rem
       margin: 0
   a
     display: block
-html[dir='rtl']
+html[dir=rtl]
   #menu
     margin-left: 0
     margin-right: -$sidebar-width
   #menu:target
     margin-right: 0
-  #menu:target + .wrapper, .wrapper
-    margin-right: 0
-    margin-left: -$sidebar-width

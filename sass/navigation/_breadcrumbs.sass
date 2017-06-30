@@ -3,7 +3,7 @@
  */
 
 // Box Model
-$crumbs-padding: 0.25rem 0.25rem 0.25rem 0
+$crumbs-padding: 0.25rem
 
 /*
  * Description
@@ -14,10 +14,10 @@ $crumbs-padding: 0.25rem 0.25rem 0.25rem 0
   @extend %horizonatal-list
   li::after
     content: '\276f'
-    padding: $crumbs-padding
+    padding: $crumbs-padding $crumbs-padding $crumbs-padding 0
   li:last-child::after
     content: none
 
 html[dir=rtl]
   .crumbs li::after
-    padding: 0.25rem 0 0.25rem 0.25rem
+    padding: $crumbs-padding 0 $crumbs-padding $crumbs-padding
