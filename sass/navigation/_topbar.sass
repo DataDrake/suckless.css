@@ -20,8 +20,9 @@ nav.topbar
   a
     padding: $navbar-anchor-padding
     border-left: $navbar-anchor-border-width solid $navbar-anchor-border-color
-html[dir=rtl]
-  nav.topbar
-    a
-      border-left: none
-      border-right: $navbar-anchor-border-width solid $navbar-anchor-border-color
+@if $enable-rtl
+  html[dir=rtl]
+    nav.topbar
+      a
+        border-left: none
+        border-right: $navbar-anchor-border-width solid $navbar-anchor-border-color

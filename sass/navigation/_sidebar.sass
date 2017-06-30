@@ -48,9 +48,10 @@ $sidebar-width: 12rem
       margin: 0
   a
     display: block
-html[dir=rtl]
-  #menu
-    margin-left: 0
-    margin-right: -$sidebar-width
-  #menu:target
-    margin-right: 0
+@if $enable-rtl
+  html[dir=rtl]
+    #menu
+      margin-left: 0
+      margin-right: -$sidebar-width
+    #menu:target
+      margin-right: 0

@@ -17,7 +17,7 @@ $crumbs-padding: 0.25rem
     padding: $crumbs-padding $crumbs-padding $crumbs-padding 0
   li:last-child::after
     content: none
-
-html[dir=rtl]
-  .crumbs li::after
-    padding: $crumbs-padding 0 $crumbs-padding $crumbs-padding
+@if $enable-rtl
+  html[dir=rtl]
+    .crumbs li::after
+      padding: $crumbs-padding 0 $crumbs-padding $crumbs-padding

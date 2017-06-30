@@ -21,8 +21,7 @@ p a
 span,.fa
   vertical-align: initial
 
-html[dir=rtl]
-  p
-    direction: ltr
-  table th
-    text-align: right
+@if $enable-rtl
+  html[dir=rtl]
+    p
+      direction: ltr

@@ -22,7 +22,8 @@
   .row,.col
     height: 0
     overflow: hidden
-html[dir=rtl]
-  .accordian
-    label:after
-      float: left
+@if $enable-rtl
+  html[dir=rtl]
+    .accordian
+      label:after
+        float: left

@@ -25,7 +25,7 @@ $paginate-button-radius: 0.25rem
     &:hover,&.here
       background: $paginate-button-selected
       border-radius: $paginate-button-radius
-
-html[dir=rtl]
-  .pager
-    flex-direction: row-reverse
+@if $enable-rtl
+  html[dir=rtl]
+    .pager
+      flex-direction: row-reverse

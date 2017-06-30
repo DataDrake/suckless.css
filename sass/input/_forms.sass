@@ -57,7 +57,7 @@ input,select,textarea,.input-group
 .input-pre, .input-post
   margin: $form-group-margin
 
-
-html[dir=rtl]
-  select
-    background-position: left 0.375rem center
+@if $enable-rtl
+  html[dir=rtl]
+    select
+      background-position: left 0.375rem center
