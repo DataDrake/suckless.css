@@ -1,20 +1,11 @@
 /*
- * Settings
- */
-
-
-// List of numbers of blocks per row to support
-$block-max: 4
-
-/*
- * Definitions
+ * Structure - Blocks
  */
 
 .blk
-  display: flex
-  flex-direction: column
+  @extend %flex-column
   > *
-    margin: 0.5rem 1%
+    margin: $block-margin
 
 @mixin blocks-normal
   .blk

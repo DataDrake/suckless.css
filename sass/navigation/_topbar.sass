@@ -1,16 +1,9 @@
 /*
- * Settings
- */
-$navbar-anchor-padding: 0.75rem
-$navbar-anchor-border-color: #777
-$navbar-anchor-border-width: 1px
-
-/*
- * Definitions
+ * Navigation - Topbar
  */
 
-nav.topbar
-  display: flex
+.topbar
+  @extend %flex
   width: 100%
   .icons
     flex: 1
@@ -22,7 +15,7 @@ nav.topbar
     border-left: $navbar-anchor-border-width solid $navbar-anchor-border-color
 @if $enable-rtl
   html[dir=rtl]
-    nav.topbar
+    .topbar
       a
         border-left: none
         border-right: $navbar-anchor-border-width solid $navbar-anchor-border-color

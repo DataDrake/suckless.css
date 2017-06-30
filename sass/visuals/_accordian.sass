@@ -1,11 +1,12 @@
+/*
+ * Visuals - Accordian
+ */
 .accordian
-  display: flex
-  flex-direction: column
+  @extend %flex-column
   > div
-    display: flex
-    flex-direction: column
+    @extend %flex-column
     flex: 1
-    margin: 0.25rem 0
+    margin: $accordian-section-margin
   input
     display: none
   input:checked
@@ -14,7 +15,7 @@
   input:checked + label:after
     content: '\25b2'
   label
-    padding: 0.75rem
+    padding: $accordian-label-padding
     width: 100%
     &:after
       content: '\25bc'

@@ -1,20 +1,6 @@
 /*
- * Settings
+ * Structure Grid
  */
-
-
-// Minimum size to query for large styles
-$grid-lg-min: 48rem
-// Minimum size to query for medium styles
-$grid-md-min: 30rem
-// Maximum number of flex columns to allow
-$grid-max: 6
-
-
-/*
- * Definitions
- */
-
 
 @mixin grid($size)
   @for $cols from 1 through $grid-max
@@ -24,7 +10,8 @@ $grid-max: 6
 .row,.col
   min-width: 0
   width: 100%
-  display: flex
 
+.row
+  @extend %flex
 .col
-  flex-direction: column
+  @extend %flex-column

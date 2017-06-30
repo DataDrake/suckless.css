@@ -1,35 +1,12 @@
 /*
- * Settings
- */
-
-$sidebar-section-bg: #BBB
-$sidebar-item-bg: #EEE
-$sidebar-item-fg: #333
-
-@if $theme-mode == 'dark'
-  $sidebar-section-bg: #666
-  $sidebar-item-bg: #333
-  $sidebar-item-fg: #FFF
-
-
-$sidebar-item-padding: 0.5rem 1rem
-$sidebar-section-padding: 0.25rem 1rem
-$sidebar-section-margin: 1rem
-$sidebar-width: 12rem
-
-/*
- * Definitions
+ * Navigation - Sidebar
  */
 #menu
   transition: all 0.2s ease
   margin-left: -$sidebar-width
   width: $sidebar-width
-  position: fixed
-  right: 0
-#menu:target
-  transition: all 0.2s ease
-  margin-left: 0
-.sidebar
+  position: absolute
+  left: 0
   color: $sidebar-item-fg
   background: $sidebar-item-bg
   ul
@@ -37,7 +14,7 @@ $sidebar-width: 12rem
     height: 100%
   li
     padding: $sidebar-item-padding
-  li.section
+  .section
     background: $sidebar-section-bg
     margin-top: $sidebar-section-margin
     padding: $sidebar-section-padding
@@ -48,9 +25,13 @@ $sidebar-width: 12rem
       margin: 0
   a
     display: block
+#menu:target
+  transition: all 0.2s ease
+  margin-left: 0
 @if $enable-rtl
   html[dir=rtl]
     #menu
+      right: 0
       margin-left: 0
       margin-right: -$sidebar-width
     #menu:target

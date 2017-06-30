@@ -1,8 +1,26 @@
+/*
+ * Global Settings
+ */
 $enable-rtl: true
 $theme-mode: 'dark'
 
-@import _colors
-@import _general
+/*
+ * Theme
+ */
+@import themes/default
+
+
+/*
+ * Module Settings
+ */
+@import _settings
+
+/*
+ * Module Imports
+ */
+@import base/colors
+@import base/classes
+@import base/general
 @import decoration/badge
 @import decoration/label
 @import decoration/progress
@@ -27,7 +45,6 @@ $theme-mode: 'dark'
  * Size-specific settings
  */
 
-
 //default to small
 .sm-hide,.md-only,.lg-only
   display: none
@@ -36,7 +53,6 @@ $theme-mode: 'dark'
 .sm-col
   flex-direction: column
 @include grid(sm)
-
 
 //medium settings
 @media only screen and (min-width: $grid-md-min)

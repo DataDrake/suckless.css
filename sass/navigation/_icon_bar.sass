@@ -1,22 +1,16 @@
 /*
- * Settings
- */
-
-$icon-padding: 0.75rem
-
-/*
- * Definitions
+ * Navigation - Icon Bar
  */
 
 .icons
   @extend %hide-bullet
-  display: flex
+  @extend %flex
   > li
+    @extend %flex
     flex: 1
-    display: flex
   .divider
     flex: none
-    border: 1px solid
+    border: $divider-border-width solid
   a
     flex: 1
     text-align: center
@@ -30,10 +24,9 @@ $icon-padding: 0.75rem
       display: initial
   &.stack
     a
-      display: flex
-      flex-direction: column
+      @extend %flex-column
   &.vertical
     display: inline-flex
-    flex-direction: column
+    @extend %flex-column
     .divider
       margin: 0 $icon-padding

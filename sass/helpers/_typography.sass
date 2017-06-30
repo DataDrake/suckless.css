@@ -1,24 +1,22 @@
 /*
- * Settings
+ * Helpers - Typography
  */
-
-$header-margins: 0.25rem 0
 
 // Headers
 h1,h2,h3,h4,h5,h5,h6,span
   margin: $header-margins
 h1
-  font-size: 2.5rem
+  font-size: $header-1-size
 h2
-  font-size: 2rem
+  font-size: $header-2-size
 h3
-  font-size: 1.75rem
+  font-size: $header-3-size
 h4
-  font-size: 1.5rem
+  font-size: $header-4-size
 h5
-  font-size: 1.25rem
+  font-size: $header-5-size
 h6
-  font-size: 1rem
+  font-size: $header-6-size
 
 // Alignment Modifiers
 .text-center
@@ -31,22 +29,16 @@ h6
   text-align: right
 
 // List Modifiers
-%hide-bullet
-  list-style-type: none
-
-%horizonatal-list
-  display: flex
-
 .hide-bullet
   @extend %hide-bullet
 
 .inline-list
-  @extend %horizonatal-list
+  @extend %flex
 
 // Size Modifiers
 .tiny
-  font-size: 0.75rem
+  font-size: $tiny-size
 .small
-  font-size: 0.85rem
+  font-size: $small-size
 .large
-  font-size: 1.5rem
+  font-size: $large-size

@@ -1,17 +1,10 @@
 /*
- * Settings
- */
-
-// Box Model
-$crumbs-padding: 0.25rem
-
-/*
- * Description
+ * Navigation - Breadcrumbs
  */
 
 .crumbs
   @extend %hide-bullet
-  @extend %horizonatal-list
+  @extend %flex
   li::after
     content: '\276f'
     padding: $crumbs-padding $crumbs-padding $crumbs-padding 0
