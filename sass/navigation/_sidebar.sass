@@ -1,17 +1,18 @@
 /*
  * Navigation - Sidebar
  */
-#menu
-  transition: all 0.2s ease
-  margin-left: -$sidebar-width
+.sidebar
   width: $sidebar-width
+  float: none
   position: absolute
-  left: 0
   color: $sidebar-item-fg
   background: $sidebar-item-bg
+  border-left: 1px solid #777
+  border-right: 1px solid #777
   ul
     @extend %hide-bullet
-    height: 100%
+    min-height: 100vh
+    margin-bottom: $sidebar-section-margin
   li
     padding: $sidebar-item-padding
   .section
@@ -25,14 +26,21 @@
       margin: 0
   a
     display: block
-#menu:target
-  transition: all 0.2s ease
-  margin-left: 0
+
+@mixin sidebar($location)
+  #{$location}: -$sidebar-width
+  &:target
+    #{$location}: 0
+
+.sidebar.left
+  @include sidebar(left)
+
+.sidebar.right
+  @include sidebar(right)
+
 @if $enable-rtl
   html[dir=rtl]
-    #menu
-      right: 0
-      margin-left: 0
-      margin-right: -$sidebar-width
-    #menu:target
-      margin-right: 0
+    .sidebar.left
+      @include sidebar(right)
+    .sidebar.right
+      @include sidebar(left)
