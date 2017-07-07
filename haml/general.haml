@@ -1,0 +1,87 @@
+!!! html5
+%html{dir:''}
+  %head
+    %meta{charset:'utf-8'}
+    %meta{name:"viewport", content:"width=device-width initial-scale=1.0"}
+    %script{src:"https://use.fontawesome.com/4fe63499e3.js"}
+    %link{rel:'stylesheet',type:"text/css",href:"./suckless.min.css"}
+  %body
+    #top
+    %a{href:'#top'}
+      %i.fa.fa-chevron-up.clr-3(simple-top=true)
+    #menu.sidebar.left
+      .row.clr-3.text-center
+        %a.sm-1.pad{href:'#'}
+          Close Menu
+      %ul
+        %li.section General
+        %li
+          %a{href:'general#introduction'} Introduction
+        %li.section Decoration
+        %li
+          %a{href:'decoration#colors'} Colors
+        %li
+          %a{href:'decoration#badges'} Badges
+        %li
+          %a{href:'decoration#labels'} Labels
+        %li
+          %a {href:'decoration#progress'}Progress
+        %li.section Helpers
+        %li
+          %a Alignment
+        %li
+          %a Box Model
+        %li
+          %a Typography
+        %li.section Input
+        %li
+          %a Buttons
+        %li
+          %a Forms
+        %li.section Navigation
+        %li
+          %a Breadcrumbs
+        %li
+          %a Icon Bar
+        %li
+          %a Pagination
+        %li
+          %a Sidebar
+        %li.section Structure
+        %li
+          %a Blocks
+        %li
+          %a Grid
+        %li.section Visuals
+        %li
+          %a Inline
+        %li
+          %a Table
+    .col
+      .topbar.clr-3
+        %a{href:'#menu'}
+          %i.fa.fa-fw.fa-bars
+        %a{href:'/'}
+          %i.fa.fa-fw.fa-css3
+          Suckless.css
+        %ul.icons.shrink
+          %li
+            %a{href:'/about'}
+              %i.fa.fa-fw.fa-info
+              %span About
+          %li
+            %a{href:'/general#introduction'}
+              %i.fa.fa-fw.fa-book
+              %span Docs
+          %li
+            %a{href:'http://github.com/DataDrake/suckless.css'}
+              %i.fa.fa-fw.fa-github
+              %span Dev
+      .pad
+        %h1 Introduction
+        %h3 To be completed...
+    %footer
+      .text-center.clr-1.pad
+        %p
+          Copyright &copy; 2017
+          %a{href: 'mailto:bmeyers@datadrake.com',style:'color:#FFF'} Bryan T. Meyers
