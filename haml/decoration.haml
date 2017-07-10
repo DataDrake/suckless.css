@@ -80,9 +80,31 @@
             %a{href:'http://github.com/DataDrake/suckless.css'}
               %i.fa.fa-fw.fa-github
               %span Dev
-      .pad
-        %h1{id:'introduction'} Introduction
-        %h3 To be completed...
+      .row
+        .sm-1.md-3.lg-4.col.pad-2
+          %h1
+            Decorations
+            %i.fa.fa-fw.fa-heart
+          %h2{id:'badges'} Badges
+          .row
+            %i.fa.fa-info.badge.info
+            %i.fa.fa-check.badge.good
+            %i.fa.fa-exclamation.badge.warn
+            %i.fa.fa-bolt.badge.error
+          %h2{id:'labels'} Labels
+          .label.info
+            Info
+          .label.good
+            Good
+          .label.warn
+            Warn
+          .label.error
+            Error
+          %h2{id:'progress'} Progress
+          %progress{max:100,value:75}
+          %progress{max:100,value:50}
+          %progress{max:100,value:25}
+          %progress{max:100,value:60}
     %footer
       .text-center.clr-1.pad
         %p

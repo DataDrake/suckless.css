@@ -1,0 +1,186 @@
+!!! html5
+%html{dir:''}
+  %head
+    %meta{charset:'utf-8'}
+    %meta{name:"viewport", content:"width=device-width initial-scale=1.0"}
+    %script{src:"https://use.fontawesome.com/4fe63499e3.js"}
+    %link{rel:'stylesheet',type:"text/css",href:"./suckless.min.css"}
+  %body
+    #top
+    %a{href:'#top'}
+      %i.fa.fa-chevron-up.clr-3(simple-top=true)
+    #menu.sidebar.left
+      .row.clr-3.text-center
+        %a.sm-1.pad{href:'#'}
+          Close Menu
+      %ul
+        %li.section General
+        %li
+          %a{href:'general'} Introduction
+        %li.section Base
+        %li
+          %a{href:'base#colors'} Colors
+        %li.section Decoration
+        %li
+          %a{href:'decoration'} Badges
+        %li
+          %a{href:'decoration#labels'} Labels
+        %li
+          %a{href:'decoration#progress'} Progress
+        %li.section Helpers
+        %li
+          %a{href:'helpers'} Alignment
+        %li
+          %a{href:'helpers#box_model'} Box Model
+        %li
+          %a{href:'helpers#typography'} Typography
+        %li.section Input
+        %li
+          %a{href:'input'} Buttons
+        %li
+          %a{href:'input#forms'} Forms
+        %li.section Navigation
+        %li
+          %a{href:'navigation'} Breadcrumbs
+        %li
+          %a{href:'navigation#icon_bar'} Icon Bar
+        %li
+          %a{href:'navigation#pagination'} Pagination
+        %li
+          %a{href:'navigation#sidebar'} Sidebar
+        %li.section Structure
+        %li
+          %a{href:'structure'} Blocks
+        %li
+          %a{href:'structure#grid'} Grid
+        %li.section Visuals
+        %li
+          %a{href:'visuals'} Accordian
+        %li
+          %a{href:'visuals#inline'} Inline
+        %li
+          %a{href:'visuals#table'} Table
+    .col
+      .topbar.clr-3
+        %a{href:'#menu'}
+          %i.fa.fa-fw.fa-bars
+        %a{href:'/'}
+          %i.fa.fa-fw.fa-css3
+          Suckless.css
+        %ul.icons.shrink
+          %li
+            %a{href:'about'}
+              %i.fa.fa-fw.fa-info
+              %span About
+          %li
+            %a{href:'general'}
+              %i.fa.fa-fw.fa-book
+              %span Docs
+          %li
+            %a{href:'http://github.com/DataDrake/suckless.css'}
+              %i.fa.fa-fw.fa-github
+              %span Dev
+      .row
+        .sm-1.md-3.lg-4.col.pad-2
+          %h1 Input
+          %h2{id:'buttons'}
+            Buttons
+            %i.fa.fa-fw.fa-hand-pointer-o
+          %h3 Sizes
+          .row
+            %p
+              %a.btn.tiny Tiny
+              %a.btn.small Small
+              %a.btn Normal
+              %a.btn.large Large
+          %a.btn.large.expand Large Expanded
+          %a.btn.tiny.expand Tiny Expanded
+          %h3 Types
+          .row
+            %p
+              %a.btn normal
+              %a.btn.hollow hollow
+              %a.btn.warn
+                %i.fa.fa-warning
+                %span warn
+              %a.btn.error
+                %i.fa.fa-close
+                %span error
+              %a.btn.good
+                %i.fa.fa-check
+                %span good
+          %h3 Shapes
+          .row
+            %p
+              %a.btn Normal
+              %a.btn.radius Radius
+              %a.btn.hollow Hollow
+              %a.btn.hollow.radius Radius
+          %h3 Groups
+          %h4 Normal
+          .btn-group
+            %a.btn btn
+            %a.btn btn
+            %a.btn btn
+            %a.btn btn
+          %h4 Expanded
+          .btn-group.expand
+            %a.btn btn
+            %a.btn btn
+            %a.btn btn
+            %a.btn btn
+          %h4 Expanded, Hollow, Radius, Large
+          .btn-group.hollow.expand.radius.large
+            %a.btn btn
+            %a.btn btn
+            %a.btn btn
+            %a.btn btn
+          %h4 Stacked
+          .row
+            .sm-1.btn-group.stack
+              %a.btn btn
+              %a.btn btn
+              %a.btn btn
+              %a.btn btn
+            .sm-1.lg-3
+          %h2{id:'forms'}
+            Forms
+            %i.fa.fa-fw.fa-clipboard
+          %form{id:'test'}
+            %legend This is a form
+            %select
+              %option{value:'A'} Apple
+              %option{value:'B'} Banana
+              %option{value:'C'} Cherry
+            %br
+            %select{multiple:'true'}
+              %option{value:'A'} Apple
+              %option{value:'B'} Banana
+              %option{value:'C'} Cherry
+            %br
+            %label{for:'name'}
+              Name
+              %br
+              %input{type:'text', name:'name'}
+            %br
+            .input-group
+              .input-pre
+                Pre
+              %input{type:'text'}
+              .input-post
+                Post
+            %br
+            %textarea Tell me a story...
+            %br
+            .input-group
+              %input{type:'search'}
+              .input-post
+                %i.fa.fa-search
+            %br
+            %button{type:'reset',form:'test',value:'Reset'} Reset
+            %input{type:'submit',value:'Submit'}
+    %footer
+      .text-center.clr-1.pad
+        %p
+          Copyright &copy; 2017
+          %a{href: 'mailto:bmeyers@datadrake.com',style:'color:#FFF'} Bryan T. Meyers

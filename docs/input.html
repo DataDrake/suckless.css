@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html dir=''>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width initial-scale=1.0' name='viewport'>
+    <script src='https://use.fontawesome.com/4fe63499e3.js'></script>
+    <link href='./suckless.min.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='top'></div>
+    <a href='#top'>
+      <i class='fa fa-chevron-up clr-3' simple-top></i>
+    </a>
+    <div class='sidebar left' id='menu'>
+      <div class='row clr-3 text-center'>
+        <a class='sm-1 pad' href='#'>
+          Close Menu
+        </a>
+      </div>
+      <ul>
+        <li class='section'>General</li>
+        <li>
+          <a href='general'>Introduction</a>
+        </li>
+        <li class='section'>Base</li>
+        <li>
+          <a href='base#colors'>Colors</a>
+        </li>
+        <li class='section'>Decoration</li>
+        <li>
+          <a href='decoration'>Badges</a>
+        </li>
+        <li>
+          <a href='decoration#labels'>Labels</a>
+        </li>
+        <li>
+          <a href='decoration#progress'>Progress</a>
+        </li>
+        <li class='section'>Helpers</li>
+        <li>
+          <a href='helpers'>Alignment</a>
+        </li>
+        <li>
+          <a href='helpers#box_model'>Box Model</a>
+        </li>
+        <li>
+          <a href='helpers#typography'>Typography</a>
+        </li>
+        <li class='section'>Input</li>
+        <li>
+          <a href='input'>Buttons</a>
+        </li>
+        <li>
+          <a href='input#forms'>Forms</a>
+        </li>
+        <li class='section'>Navigation</li>
+        <li>
+          <a href='navigation'>Breadcrumbs</a>
+        </li>
+        <li>
+          <a href='navigation#icon_bar'>Icon Bar</a>
+        </li>
+        <li>
+          <a href='navigation#pagination'>Pagination</a>
+        </li>
+        <li>
+          <a href='navigation#sidebar'>Sidebar</a>
+        </li>
+        <li class='section'>Structure</li>
+        <li>
+          <a href='structure'>Blocks</a>
+        </li>
+        <li>
+          <a href='structure#grid'>Grid</a>
+        </li>
+        <li class='section'>Visuals</li>
+        <li>
+          <a href='visuals'>Accordian</a>
+        </li>
+        <li>
+          <a href='visuals#inline'>Inline</a>
+        </li>
+        <li>
+          <a href='visuals#table'>Table</a>
+        </li>
+      </ul>
+    </div>
+    <div class='col'>
+      <div class='topbar clr-3'>
+        <a href='#menu'>
+          <i class='fa fa-fw fa-bars'></i>
+        </a>
+        <a href='/'>
+          <i class='fa fa-fw fa-css3'></i>
+          Suckless.css
+        </a>
+        <ul class='icons shrink'>
+          <li>
+            <a href='about'>
+              <i class='fa fa-fw fa-info'></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href='general'>
+              <i class='fa fa-fw fa-book'></i>
+              <span>Docs</span>
+            </a>
+          </li>
+          <li>
+            <a href='http://github.com/DataDrake/suckless.css'>
+              <i class='fa fa-fw fa-github'></i>
+              <span>Dev</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class='row'>
+        <div class='sm-1 md-3 lg-4 col pad-2'>
+          <h1>Input</h1>
+          <h2 id='buttons'>
+            Buttons
+            <i class='fa fa-fw fa-hand-pointer-o'></i>
+          </h2>
+          <h3>Sizes</h3>
+          <div class='row'>
+            <p>
+              <a class='btn tiny'>Tiny</a>
+              <a class='btn small'>Small</a>
+              <a class='btn'>Normal</a>
+              <a class='btn large'>Large</a>
+            </p>
+          </div>
+          <a class='btn large expand'>Large Expanded</a>
+          <a class='btn tiny expand'>Tiny Expanded</a>
+          <h3>Types</h3>
+          <div class='row'>
+            <p>
+              <a class='btn'>normal</a>
+              <a class='btn hollow'>hollow</a>
+              <a class='btn warn'>
+                <i class='fa fa-warning'></i>
+                <span>warn</span>
+              </a>
+              <a class='btn error'>
+                <i class='fa fa-close'></i>
+                <span>error</span>
+              </a>
+              <a class='btn good'>
+                <i class='fa fa-check'></i>
+                <span>good</span>
+              </a>
+            </p>
+          </div>
+          <h3>Shapes</h3>
+          <div class='row'>
+            <p>
+              <a class='btn'>Normal</a>
+              <a class='btn radius'>Radius</a>
+              <a class='btn hollow'>Hollow</a>
+              <a class='btn hollow radius'>Radius</a>
+            </p>
+          </div>
+          <h3>Groups</h3>
+          <h4>Normal</h4>
+          <div class='btn-group'>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+          </div>
+          <h4>Expanded</h4>
+          <div class='btn-group expand'>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+          </div>
+          <h4>Expanded, Hollow, Radius, Large</h4>
+          <div class='btn-group hollow expand radius large'>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+            <a class='btn'>btn</a>
+          </div>
+          <h4>Stacked</h4>
+          <div class='row'>
+            <div class='sm-1 btn-group stack'>
+              <a class='btn'>btn</a>
+              <a class='btn'>btn</a>
+              <a class='btn'>btn</a>
+              <a class='btn'>btn</a>
+            </div>
+            <div class='sm-1 lg-3'></div>
+          </div>
+          <h2 id='forms'>
+            Forms
+            <i class='fa fa-fw fa-clipboard'></i>
+          </h2>
+          <form id='test'>
+            <legend>This is a form</legend>
+            <select>
+              <option value='A'>Apple</option>
+              <option value='B'>Banana</option>
+              <option value='C'>Cherry</option>
+            </select>
+            <br>
+            <select multiple='true'>
+              <option value='A'>Apple</option>
+              <option value='B'>Banana</option>
+              <option value='C'>Cherry</option>
+            </select>
+            <br>
+            <label for='name'>
+              Name
+              <br>
+              <input name='name' type='text'>
+            </label>
+            <br>
+            <div class='input-group'>
+              <div class='input-pre'>
+                Pre
+              </div>
+              <input type='text'>
+              <div class='input-post'>
+                Post
+              </div>
+            </div>
+            <br>
+            <textarea>Tell me a story...</textarea>
+            <br>
+            <div class='input-group'>
+              <input type='search'>
+              <div class='input-post'>
+                <i class='fa fa-search'></i>
+              </div>
+            </div>
+            <br>
+            <button form='test' type='reset' value='Reset'>Reset</button>
+            <input type='submit' value='Submit'>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class='text-center clr-1 pad'>
+        <p>
+          Copyright &copy; 2017
+          <a href='mailto:bmeyers@datadrake.com' style='color:#FFF'>Bryan T. Meyers</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
