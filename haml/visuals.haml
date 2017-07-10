@@ -1,0 +1,227 @@
+!!! html5
+%html{dir:''}
+  %head
+    %meta{charset:'utf-8'}
+    %meta{name:"viewport", content:"width=device-width initial-scale=1.0"}
+    %script{src:"https://use.fontawesome.com/4fe63499e3.js"}
+    %link{rel:'stylesheet',type:"text/css",href:"./suckless.min.css"}
+  %body
+    #top
+    %a{href:'#top'}
+      %i.fa.fa-chevron-up.clr-3(simple-top=true)
+    #menu.sidebar.left
+      .row.clr-3.text-center
+        %a.sm-1.pad{href:'#'}
+          Close Menu
+      %ul
+        %li.section General
+        %li
+          %a{href:'general'} Introduction
+        %li.section Base
+        %li
+          %a{href:'base'} Colors
+        %li.section Decoration
+        %li
+          %a{href:'decoration'} Badges
+        %li
+          %a{href:'decoration#labels'} Labels
+        %li
+          %a{href:'decoration#progress'} Progress
+        %li.section Helpers
+        %li
+          %a{href:'helpers'} Alignment
+        %li
+          %a{href:'helpers#box_model'} Box Model
+        %li
+          %a{href:'helpers#typography'} Typography
+        %li.section Input
+        %li
+          %a{href:'input'} Buttons
+        %li
+          %a{href:'input#forms'} Forms
+        %li.section Navigation
+        %li
+          %a{href:'navigation'} Breadcrumbs
+        %li
+          %a{href:'navigation#icon_bar'} Icon Bar
+        %li
+          %a{href:'navigation#pagination'} Pagination
+        %li
+          %a{href:'navigation#sidebar'} Sidebar
+        %li.section Structure
+        %li
+          %a{href:'structure'} Blocks
+        %li
+          %a{href:'structure#grid'} Grid
+        %li.section Visuals
+        %li
+          %a{href:'visuals'} Accordian
+        %li
+          %a{href:'visuals#inline'} Inline
+        %li
+          %a{href:'visuals#table'} Table
+    .col
+      .topbar.clr-3
+        %a{href:'#menu'}
+          %i.fa.fa-fw.fa-bars
+        %a{href:'/'}
+          %i.fa.fa-fw.fa-css3
+          Suckless.css
+        %ul.icons.shrink
+          %li
+            %a{href:'about'}
+              %i.fa.fa-fw.fa-info
+              %span About
+          %li
+            %a{href:'general'}
+              %i.fa.fa-fw.fa-book
+              %span Docs
+          %li
+            %a{href:'http://github.com/DataDrake/suckless.css'}
+              %i.fa.fa-fw.fa-github
+              %span Dev
+      .row
+        .sm-1.md-3.lg-4.col.pad-2
+          %h1
+            Visuals
+            %i.fa.fa-fw.fa-eye
+          %h2{id:'accordian'}
+            Accordian
+          .accordian
+            %div
+              %input{id:'s1',type:'checkbox'}
+              %label.clr-3{for:'s1'}
+                One
+              .row
+                .sm-1.clr-1.pad
+                  Hello
+            %div
+              %input{id:'s2',type:'checkbox'}
+              %label.clr-3{for:'s2'}
+                Two
+              .row
+                .sm-1.clr-2.pad
+                  Hello
+            %div
+              %input{id:'s3',type:'checkbox'}
+              %label.clr-3{for:'s3'}
+                Three
+              .row
+                .sm-1.clr-1.pad
+                  Hello
+          %h2{id:'inline'} Inline Elements
+          %h3 Blockquote
+          %p
+            %blockquote
+              This is awesome
+              %cite Some Awesome Dude
+          %h3 kbd Tags
+          .row
+            %p
+              %kbd Ctrl + I
+          %h3 code Tags
+          .row
+            %p
+              %code code
+
+          %h2{id:'tables'}
+            %i.fa.fa-fw.fa-table
+            Tables
+          %h3 Default
+          %table
+            %thead
+              %tr
+                %th Col 1
+                %th Col 2
+                %th Col 3
+            %tbody
+              %tr
+                %td 1
+                %td Apple
+                %td Pie
+              %tr
+                %td 2
+                %td Chocolate
+                %td Cake
+              %tr
+                %td 3
+                %td Strawberry
+                %td Tart
+          %h3 Striped
+          %table.striped
+            %thead
+              %tr
+                %th Col 1
+                %th Col 2
+                %th Col 3
+            %tbody
+              %tr
+                %td 1
+                %td Apple
+                %td Pie
+              %tr
+                %td 2
+                %td Chocolate
+                %td Cake
+              %tr
+                %td 3
+                %td Strawberry
+                %td Tart
+          %h3 Responsive
+          .table-responsive
+            %table.striped
+              %thead
+                %tr
+                  %th Column 1
+                  %th Column 2
+                  %th Column 3
+                  %th Column 4
+                  %th Column 5
+                  %th Column 6
+                  %th Column 7
+                  %th Column 8
+                  %th Column 9
+                  %th Column 10
+                  %th Column 11
+                  %th Column 12
+                  %th Column 13
+                  %th Column 14
+                  %th Column 15
+              %tbody
+                %tr
+                  %td 1
+                  %td 2
+                  %td 3
+                  %td 4
+                  %td 5
+                  %td 6
+                  %td 7
+                  %td 8
+                  %td 9
+                  %td 10
+                  %td 11
+                  %td 12
+                  %td 13
+                  %td 14
+                  %td 15
+                %tr
+                  %td 1
+                  %td 2
+                  %td 3
+                  %td 4
+                  %td 5
+                  %td 6
+                  %td 7
+                  %td 8
+                  %td 9
+                  %td 10
+                  %td 11
+                  %td 12
+                  %td 13
+                  %td 14
+                  %td 15
+    %footer
+      .text-center.clr-1.pad
+        %p
+          Copyright &copy; 2017
+          %a{href: 'mailto:bmeyers@datadrake.com',style:'color:#FFF'} Bryan T. Meyers

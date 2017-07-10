@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html dir=''>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width initial-scale=1.0' name='viewport'>
+    <script src='https://use.fontawesome.com/4fe63499e3.js'></script>
+    <link href='./suckless.min.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='top'></div>
+    <a href='#top'>
+      <i class='fa fa-chevron-up clr-3' simple-top></i>
+    </a>
+    <div class='sidebar left' id='menu'>
+      <div class='row clr-3 text-center'>
+        <a class='sm-1 pad' href='#'>
+          Close Menu
+        </a>
+      </div>
+      <ul>
+        <li class='section'>General</li>
+        <li>
+          <a href='general'>Introduction</a>
+        </li>
+        <li class='section'>Base</li>
+        <li>
+          <a href='base'>Colors</a>
+        </li>
+        <li class='section'>Decoration</li>
+        <li>
+          <a href='decoration'>Badges</a>
+        </li>
+        <li>
+          <a href='decoration#labels'>Labels</a>
+        </li>
+        <li>
+          <a href='decoration#progress'>Progress</a>
+        </li>
+        <li class='section'>Helpers</li>
+        <li>
+          <a href='helpers'>Alignment</a>
+        </li>
+        <li>
+          <a href='helpers#box_model'>Box Model</a>
+        </li>
+        <li>
+          <a href='helpers#typography'>Typography</a>
+        </li>
+        <li class='section'>Input</li>
+        <li>
+          <a href='input'>Buttons</a>
+        </li>
+        <li>
+          <a href='input#forms'>Forms</a>
+        </li>
+        <li class='section'>Navigation</li>
+        <li>
+          <a href='navigation'>Breadcrumbs</a>
+        </li>
+        <li>
+          <a href='navigation#icon_bar'>Icon Bar</a>
+        </li>
+        <li>
+          <a href='navigation#pagination'>Pagination</a>
+        </li>
+        <li>
+          <a href='navigation#sidebar'>Sidebar</a>
+        </li>
+        <li class='section'>Structure</li>
+        <li>
+          <a href='structure'>Blocks</a>
+        </li>
+        <li>
+          <a href='structure#grid'>Grid</a>
+        </li>
+        <li class='section'>Visuals</li>
+        <li>
+          <a href='visuals'>Accordian</a>
+        </li>
+        <li>
+          <a href='visuals#inline'>Inline</a>
+        </li>
+        <li>
+          <a href='visuals#table'>Table</a>
+        </li>
+      </ul>
+    </div>
+    <div class='col'>
+      <div class='topbar clr-3'>
+        <a href='#menu'>
+          <i class='fa fa-fw fa-bars'></i>
+        </a>
+        <a href='/'>
+          <i class='fa fa-fw fa-css3'></i>
+          Suckless.css
+        </a>
+        <ul class='icons shrink'>
+          <li>
+            <a href='about'>
+              <i class='fa fa-fw fa-info'></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href='general'>
+              <i class='fa fa-fw fa-book'></i>
+              <span>Docs</span>
+            </a>
+          </li>
+          <li>
+            <a href='http://github.com/DataDrake/suckless.css'>
+              <i class='fa fa-fw fa-github'></i>
+              <span>Dev</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class='row'>
+        <div class='sm-1 md-3 lg-4 col pad-2'>
+          <h1>
+            Visuals
+            <i class='fa fa-fw fa-eye'></i>
+          </h1>
+          <h2 id='accordian'>
+            Accordian
+          </h2>
+          <div class='accordian'>
+            <div>
+              <input id='s1' type='checkbox'>
+              <label class='clr-3' for='s1'>
+                One
+              </label>
+              <div class='row'>
+                <div class='sm-1 clr-1 pad'>
+                  Hello
+                </div>
+              </div>
+            </div>
+            <div>
+              <input id='s2' type='checkbox'>
+              <label class='clr-3' for='s2'>
+                Two
+              </label>
+              <div class='row'>
+                <div class='sm-1 clr-2 pad'>
+                  Hello
+                </div>
+              </div>
+            </div>
+            <div>
+              <input id='s3' type='checkbox'>
+              <label class='clr-3' for='s3'>
+                Three
+              </label>
+              <div class='row'>
+                <div class='sm-1 clr-1 pad'>
+                  Hello
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 id='inline'>Inline Elements</h2>
+          <h3>Blockquote</h3>
+          <p>
+            <blockquote>
+              This is awesome
+              <cite>Some Awesome Dude</cite>
+            </blockquote>
+          </p>
+          <h3>kbd Tags</h3>
+          <div class='row'>
+            <p>
+              <kbd>Ctrl + I</kbd>
+            </p>
+          </div>
+          <h3>code Tags</h3>
+          <div class='row'>
+            <p>
+              <code>code</code>
+            </p>
+          </div>
+          <h2 id='tables'>
+            <i class='fa fa-fw fa-table'></i>
+            Tables
+          </h2>
+          <h3>Default</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Apple</td>
+                <td>Pie</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Chocolate</td>
+                <td>Cake</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Strawberry</td>
+                <td>Tart</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Striped</h3>
+          <table class='striped'>
+            <thead>
+              <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Apple</td>
+                <td>Pie</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Chocolate</td>
+                <td>Cake</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Strawberry</td>
+                <td>Tart</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Responsive</h3>
+          <div class='table-responsive'>
+            <table class='striped'>
+              <thead>
+                <tr>
+                  <th>Column 1</th>
+                  <th>Column 2</th>
+                  <th>Column 3</th>
+                  <th>Column 4</th>
+                  <th>Column 5</th>
+                  <th>Column 6</th>
+                  <th>Column 7</th>
+                  <th>Column 8</th>
+                  <th>Column 9</th>
+                  <th>Column 10</th>
+                  <th>Column 11</th>
+                  <th>Column 12</th>
+                  <th>Column 13</th>
+                  <th>Column 14</th>
+                  <th>Column 15</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class='text-center clr-1 pad'>
+        <p>
+          Copyright &copy; 2017
+          <a href='mailto:bmeyers@datadrake.com' style='color:#FFF'>Bryan T. Meyers</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
