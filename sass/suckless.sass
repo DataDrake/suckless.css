@@ -36,6 +36,7 @@ $theme-mode: 'dark'
 @import navigation/top
 @import navigation/topbar
 @import structure/blocks
+@import structure/flow
 @import structure/grid
 @import visuals/accordian
 @import visuals/inline
@@ -65,6 +66,8 @@ $theme-mode: 'dark'
   .md-col
     flex-direction: column
   @include blocks-normal()
+  @include flow-row
+  @include flow(2)
   @include grid(md)
 
 //large settings
@@ -77,4 +80,5 @@ $theme-mode: 'dark'
     flex-direction: row
   .lg-col
     flex-direction: column
+  @include flow(3)
   @include grid(lg)

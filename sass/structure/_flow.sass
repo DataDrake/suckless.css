@@ -1,0 +1,20 @@
+/*
+ * Structure - Flow
+ */
+
+.flow
+  @extend %flex-column
+  > *
+    margin: $flow-margin-tb $flow-margin-lr
+@mixin flow-row
+  .flow
+    flex-wrap: wrap
+    flex-direction: row
+@mixin flow($n)
+  .flow
+    > *
+      width: (100%/$n)-(2*$flow-margin-lr)
+
+
+
+

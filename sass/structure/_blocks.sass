@@ -5,7 +5,7 @@
 .blk
   @extend %flex-column
   > *
-    margin: $block-margin
+    margin: $block-margin-tb $block-margin-lr
 
 @mixin blocks-normal
   .blk
@@ -14,7 +14,7 @@
   @for $count from 1 to $block-max + 1
     .blk-#{$count}
       > *
-        width: (100%/$count)-2%
+        width: (100%/$count)-(2*$block-margin-lr)
 
 
 
