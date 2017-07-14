@@ -7,6 +7,7 @@
 /* Navigation */
 /* Visuals */
 /* Module Settings */
+/* Base */
 /* Decorations */
 /* Helpers */
 /* Input */
@@ -66,6 +67,10 @@ span, .fa { vertical-align: initial; }
 label::selection { background: inherit; }
 
 label::-moz-selection { background: inherit; }
+
+dn { font-weight: bold; }
+
+dl { margin-left: 1rem; }
 
 html[dir=rtl] p { direction: ltr; }
 
@@ -224,6 +229,7 @@ html[dir=rtl] .topbar a { border-left: none; border-right: 1px solid #777; }
 .blk > * { margin: 0.5rem 1%; }
 
 /* Structure - Flow */
+.flow { justify-content: center; }
 .flow > * { margin: 0.5rem 1%; }
 
 /* Structure Grid */

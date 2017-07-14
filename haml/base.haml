@@ -84,10 +84,28 @@
               %span Dev
       .row.limit.center
         .sm-1.md-3.lg-4.col.pad-2
-          %h1{id:'colors'}
+          %h1 Base
+          %h2{id:'colors'}
             Colors
             %i.fa.fa-fw.fa-paint-brush
-          %h2 Swatches
+          .flow
+            .col.info-i.outline
+              .info.pad
+                %b Motivation
+              .pad
+                %b
+                  As a designer the use of color can be used to
+                  transform a boring black and white canvas into
+                  something extraordinary.
+            .col.good-i.outline
+              .good.pad
+                %b Philosophy
+              .pad
+                %b
+                  Colors should be applied at whatever scope they are
+                  needed. Rules for colors should never involve
+                  anything that is unrelated to color.
+          %h3 Swatches
           .row.sm-col.text-center
             .sm-1.col.pad
               .sm-1
@@ -110,7 +128,14 @@
                 %h5 .clr-3
               .sm-1.pad.clr-3-i.outline
                 %h5 .clr-3-i
-          %h2 Statuses
+          %h6 Description
+          .pad
+            %p
+              Three custom color classes are provided by default. They
+              may serve as the basis for a color palette and their
+              specific values are set according to the imported theme.
+              More colors may be defined using the included mixin.
+          %h3 Statuses
           .row.sm-col.text-center
             .row.sm-col.md-col
               .sm-1.col.pad
@@ -142,6 +167,44 @@
                   %h5 .error
                 .sm-1.pad.error-i.outline
                   %h5 .error-i
+          %h6 Description
+          .pad
+            %p
+              Four status color classes are provided by default. These
+              classes may be used as visual indicators that a
+              particular status is being expressed by the contents.
+            %dl
+              %dn Info
+              %dd
+                The contents indicate some relevant information that a
+                viewer might find useful, but is neutral in severity.
+              %dn Good
+              %dd
+                The contents indicate that something positive is being
+                expressed, ie. an operation completed successfully.
+              %dn Warn
+              %dd
+                The contents indicate that a potential concern is being
+                expressed and that the viewer should take note.
+              %dn Error
+              %dd
+                The contents indicate the presence of a failure or the
+                potential for future failure.
+          %h3 Mixins
+          %dl
+            %dn @mixin color($name,$fg,$bg)
+            %dd Create a new color class and it's inverted counterpart
+            %dl
+              %dn $name
+              %dd Name of the class
+              %dn $fg
+              %dd
+                Foreground color for normal, Background color for
+                inverse
+              %dn $bg
+              %dd
+                Background color for normal, Foreground color for
+                inverse
     %footer
       .text-center.clr-1.pad
         %p

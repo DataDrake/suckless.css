@@ -120,11 +120,38 @@
       </div>
       <div class='row limit center'>
         <div class='sm-1 md-3 lg-4 col pad-2'>
-          <h1 id='colors'>
+          <h1>Base</h1>
+          <h2 id='colors'>
             Colors
             <i class='fa fa-fw fa-paint-brush'></i>
-          </h1>
-          <h2>Swatches</h2>
+          </h2>
+          <div class='flow'>
+            <div class='col info-i outline'>
+              <div class='info pad'>
+                <b>Motivation</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  As a designer the use of color can be used to
+                  transform a boring black and white canvas into
+                  something extraordinary.
+                </b>
+              </div>
+            </div>
+            <div class='col good-i outline'>
+              <div class='good pad'>
+                <b>Philosophy</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Colors should be applied at whatever scope they are
+                  needed. Rules for colors should never involve
+                  anything that is unrelated to color.
+                </b>
+              </div>
+            </div>
+          </div>
+          <h3>Swatches</h3>
           <div class='row sm-col text-center'>
             <div class='sm-1 col pad'>
               <div class='sm-1'>
@@ -160,7 +187,16 @@
               </div>
             </div>
           </div>
-          <h2>Statuses</h2>
+          <h6>Description</h6>
+          <div class='pad'>
+            <p>
+              Three custom color classes are provided by default. They
+              may serve as the basis for a color palette and their
+              specific values are set according to the imported theme.
+              More colors may be defined using the included mixin.
+            </p>
+          </div>
+          <h3>Statuses</h3>
           <div class='row sm-col text-center'>
             <div class='row sm-col md-col'>
               <div class='sm-1 col pad'>
@@ -211,6 +247,55 @@
               </div>
             </div>
           </div>
+          <h6>Description</h6>
+          <div class='pad'>
+            <p>
+              Four status color classes are provided by default. These
+              classes may be used as visual indicators that a
+              particular status is being expressed by the contents.
+            </p>
+            <dl>
+              <dn>Info</dn>
+              <dd>
+                The contents indicate some relevant information that a
+                viewer might find useful, but is neutral in severity.
+              </dd>
+              <dn>Good</dn>
+              <dd>
+                The contents indicate that something positive is being
+                expressed, ie. an operation completed successfully.
+              </dd>
+              <dn>Warn</dn>
+              <dd>
+                The contents indicate that a potential concern is being
+                expressed and that the viewer should take note.
+              </dd>
+              <dn>Error</dn>
+              <dd>
+                The contents indicate the presence of a failure or the
+                potential for future failure.
+              </dd>
+            </dl>
+          </div>
+          <h3>Mixins</h3>
+          <dl>
+            <dn>@mixin color($name,$fg,$bg)</dn>
+            <dd>Create a new color class and it's inverted counterpart</dd>
+            <dl>
+              <dn>$name</dn>
+              <dd>Name of the class</dd>
+              <dn>$fg</dn>
+              <dd>
+                Foreground color for normal, Background color for
+                inverse
+              </dd>
+              <dn>$bg</dn>
+              <dd>
+                Background color for normal, Foreground color for
+                inverse
+              </dd>
+            </dl>
+          </dl>
         </div>
       </div>
     </div>
