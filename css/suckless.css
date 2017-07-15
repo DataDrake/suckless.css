@@ -68,7 +68,7 @@ label::selection { background: inherit; }
 
 label::-moz-selection { background: inherit; }
 
-dn { font-weight: bold; }
+dt { font-weight: bold; }
 
 dl { margin-left: 1rem; }
 
