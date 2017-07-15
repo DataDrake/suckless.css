@@ -58,9 +58,9 @@ a { cursor: pointer; color: inherit; text-decoration: none; }
 
 p { padding-bottom: 1rem; }
 
-p a { text-decoration: underline; padding-bottom: 0.25rem; }
+p a { text-decoration: underline; vertical-align: initial; }
 
-* { box-sizing: border-box; font-family: sans-serif; vertical-align: middle; margin: 0; padding: 0; }
+* { box-sizing: border-box; font-family: sans-serif; vertical-align: middle; margin: 0; padding: 0; line-height: 1.25em; }
 
 span, .fa { vertical-align: initial; }
 
