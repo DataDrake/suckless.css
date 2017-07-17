@@ -253,51 +253,46 @@
               %input.btn{type:'submit',value:'Submit'}
           %h3 Complete Example
           %h5 Example User Form
-          %form.row.sm-col{id:'test'}
-          %fieldset.pad{id:'name'}
-            %legend Name
-            .row.sm-col
-              .col.sm-2.pad
-                %label{for:'first'}
-                  First
-                  %br
-                  %input{type:'text', name:'first'}
-              .col.sm-1.pad
-                %label{for:'initial'}
-                  M.I.
-                  %br
-                  %input{type:'text', name:'initial'}
-              .col.sm-2.pad
-                %label{for:'last'}
-                  Last
-                  %br
-                  %input{type:'text', name:'last'}
-          .pad
-          %fieldset.pad{id:'contact'}
-            %legend Contact Info
-            .row.sm-col
-              .col.sm-1.pad
-                %label{for:'phone'}
-                  Phone
-                  %br
-                  .input-group
-                    .input-pre
-                      %span 1-
-                    %input{type:'telephone', name:'phone', placeholder:'(555) 1234'}
-              .col.sm-1.pad
-                %label{for:'email'}
-                  Email
-                  %br
-                  %input{type:'email', name:'last', placeholder:'name@example.com'}
-          .pad
-          .row
-            %button.btn.warn.sm-1{type:'reset',form:'test',value:'Reset'}
-              %i.fa.fa-fw.fa-refresh
-              Reset
-            .lg-2.lg-only
-            %button.btn.good.sm-1{type:'submit',value:'Submit'}
-              %i.fa.fa-fw.fa-send
-              Submit
+          %form.col{id:'test2'}
+            %fieldset.pad{id:'name'}
+              %legend Name
+              .row.sm-col
+                .col.sm-2.pad
+                  %label{for:'first'}
+                    First
+                    %br
+                    %input{type:'text', name:'first'}
+                .col.sm-1.pad
+                  %label{for:'initial'}
+                    M.I.
+                    %br
+                    %input{type:'text', name:'initial'}
+                .col.sm-2.pad
+                  %label{for:'last'}
+                    Last
+                    %br
+                    %input{type:'text', name:'last'}
+            .pad
+            %fieldset.pad{id:'contact'}
+              %legend Contact Info
+              .row.sm-col
+                .col.sm-1.pad
+                  %label{for:'phone'}
+                    Phone
+                    %br
+                    .input-group
+                      .input-pre
+                        %span 1-
+                      %input{type:'telephone', name:'phone', placeholder:'(555) 1234'}
+                .col.sm-1.pad
+                  %label{for:'email'}
+                    Email
+                    %br
+                    %input{type:'email', name:'last', placeholder:'name@example.com'}
+            .row
+              %input.btn.warn.sm-1{id:'reset',type:'reset',form:'test2',value:'Reset'}
+              .lg-2.lg-only
+              %input.btn.good.sm-1{id:'submit',type:'submit',form:'test2',value:'Submit'}
     %footer
       .text-center.clr-1.pad
         %p

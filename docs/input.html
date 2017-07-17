@@ -321,70 +321,64 @@
           </div>
           <h3>Complete Example</h3>
           <h5>Example User Form</h5>
-          <form class='row sm-col' id='test'></form>
-          <fieldset class='pad' id='name'>
-            <legend>Name</legend>
-            <div class='row sm-col'>
-              <div class='col sm-2 pad'>
-                <label for='first'>
-                  First
-                  <br>
-                  <input name='first' type='text'>
-                </label>
+          <form class='col' id='test2'>
+            <fieldset class='pad' id='name'>
+              <legend>Name</legend>
+              <div class='row sm-col'>
+                <div class='col sm-2 pad'>
+                  <label for='first'>
+                    First
+                    <br>
+                    <input name='first' type='text'>
+                  </label>
+                </div>
+                <div class='col sm-1 pad'>
+                  <label for='initial'>
+                    M.I.
+                    <br>
+                    <input name='initial' type='text'>
+                  </label>
+                </div>
+                <div class='col sm-2 pad'>
+                  <label for='last'>
+                    Last
+                    <br>
+                    <input name='last' type='text'>
+                  </label>
+                </div>
               </div>
-              <div class='col sm-1 pad'>
-                <label for='initial'>
-                  M.I.
-                  <br>
-                  <input name='initial' type='text'>
-                </label>
-              </div>
-              <div class='col sm-2 pad'>
-                <label for='last'>
-                  Last
-                  <br>
-                  <input name='last' type='text'>
-                </label>
-              </div>
-            </div>
-          </fieldset>
-          <div class='pad'></div>
-          <fieldset class='pad' id='contact'>
-            <legend>Contact Info</legend>
-            <div class='row sm-col'>
-              <div class='col sm-1 pad'>
-                <label for='phone'>
-                  Phone
-                  <br>
-                  <div class='input-group'>
-                    <div class='input-pre'>
-                      <span>1-</span>
+            </fieldset>
+            <div class='pad'></div>
+            <fieldset class='pad' id='contact'>
+              <legend>Contact Info</legend>
+              <div class='row sm-col'>
+                <div class='col sm-1 pad'>
+                  <label for='phone'>
+                    Phone
+                    <br>
+                    <div class='input-group'>
+                      <div class='input-pre'>
+                        <span>1-</span>
+                      </div>
+                      <input name='phone' placeholder='(555) 1234' type='telephone'>
                     </div>
-                    <input name='phone' placeholder='(555) 1234' type='telephone'>
-                  </div>
-                </label>
+                  </label>
+                </div>
+                <div class='col sm-1 pad'>
+                  <label for='email'>
+                    Email
+                    <br>
+                    <input name='last' placeholder='name@example.com' type='email'>
+                  </label>
+                </div>
               </div>
-              <div class='col sm-1 pad'>
-                <label for='email'>
-                  Email
-                  <br>
-                  <input name='last' placeholder='name@example.com' type='email'>
-                </label>
-              </div>
+            </fieldset>
+            <div class='row'>
+              <input class='btn warn sm-1' form='test2' id='reset' type='reset' value='Reset'>
+              <div class='lg-2 lg-only'></div>
+              <input class='btn good sm-1' form='test2' id='submit' type='submit' value='Submit'>
             </div>
-          </fieldset>
-          <div class='pad'></div>
-          <div class='row'>
-            <button class='btn warn sm-1' form='test' type='reset' value='Reset'>
-              <i class='fa fa-fw fa-refresh'></i>
-              Reset
-            </button>
-            <div class='lg-2 lg-only'></div>
-            <button class='btn good sm-1' type='submit' value='Submit'>
-              <i class='fa fa-fw fa-send'></i>
-              Submit
-            </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
