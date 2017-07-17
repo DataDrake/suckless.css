@@ -124,7 +124,174 @@
             Helpers
             <i class='fa fa-hw fa-support'></i>
           </h1>
-          <h2 id='alignment'>Alignment</h2>
+          <div class='flow'>
+            <div class='col info-i outline'>
+              <div class='info pad'>
+                <b>Motivation</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Sometimes a designer needs some assistance making individual
+                  elements look better. Helpers may be applied to any element
+                  in order to style it as desired.
+                </b>
+              </div>
+            </div>
+            <div class='col good-i outline'>
+              <div class='good pad'>
+                <b>Philosophy</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Helpers should be applied liberally throughout a document in
+                  order to reduce the boilerplate CSS for a site. They should
+                  also be applicable to any element, not a specific type.
+                </b>
+              </div>
+            </div>
+          </div>
+          <h2 id='alightment'>Alignment</h2>
+          <b>Description</b>
+          <div class='pad'>
+            <p>
+              Alignment helpers allow objects to be easily positioned on a page.
+            </p>
+            <div class='row'>
+              <div class='left pad clr-2'>
+                .left
+              </div>
+              <div class='center pad clr-2'>
+                .center
+              </div>
+              <div class='right pad clr-2'>
+                .right
+              </div>
+            </div>
+          </div>
+          <h2 id='box_model'>Box Model</h2>
+          <b>Description</b>
+          <div class='pad'>
+            <p>
+              Manipulation of the box model is key to making clean looking
+              sites. These helpers allow a designer to control the size,
+              padding, and border of any element at will.
+            </p>
+          </div>
+          <h3>Sizes</h3>
+          <dl>
+            <dt>.expand</dt>
+            <dd>Fills the whole width of its parent</dd>
+            <dt>.limit</dt>
+            <dd>Will not exceed a specified width</dd>
+          </dl>
+          <h3>Padding</h3>
+          <div class='row text-center'>
+            <div class='sm-1 pad'>
+              <div class='clr-1'>
+                No Pad
+              </div>
+            </div>
+            <div class='sm-1 pad'>
+              <div class='clr-1 pad'>
+                .pad
+              </div>
+            </div>
+            <div class='sm-1 pad'>
+              <div class='clr-1 pad-2'>
+                .pad-2
+              </div>
+            </div>
+          </div>
+          <h3>Border</h3>
+          <div class='row text-center'>
+            <div class='sm-1 pad'>
+              <div class='clr-2-i pad'>
+                Normal
+              </div>
+            </div>
+            <div class='sm-1 pad'>
+              <div class='clr-2-i pad outline'>
+                .outline
+              </div>
+            </div>
+          </div>
+          <h2 id='typography'>
+            Typography
+          </h2>
+          <div class='flow'>
+            <div class='col info-i outline'>
+              <div class='info pad'>
+                <b>Motivation</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Typography and type-setting can be the most complicated parts
+                  of a new design. Default styles and type helpers are essential
+                  to a developer.
+                </b>
+              </div>
+            </div>
+            <div class='col good-i outline'>
+              <div class='good pad'>
+                <b>Philosophy</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Sane defaults for type-setting of headers and inline text
+                  allow a designer to focus less on font-sizes and decoration
+                  and more on the alignment, position, and color of type.
+                </b>
+              </div>
+            </div>
+          </div>
+          <h3>Headers</h3>
+          <b>Description</b>
+          <div class='pad'>
+            <p>
+              Header sizes and decoration are given sane defaults requiring
+              a designer to only worry about the header level and color of
+              specific text.
+            </p>
+          </div>
+          <h1>H1. Header 1</h1>
+          <h2>H2. Header 2</h2>
+          <h3>H3. Header 3</h3>
+          <h4>H4. Header 4</h4>
+          <h5>H5. Header 5</h5>
+          <h6>H6. Header 6</h6>
+          <h3>Sizes</h3>
+          <b>Description</b>
+          <div class='pad'>
+            <p>
+              Headings typically have a heavier font-weight than inline text.
+              Size helpers allow incline text to be made larger or smaller
+              without an increase in font-weight.
+            </p>
+          </div>
+          <div class='row text-center'>
+            <div class='sm-1 tiny'>
+              <p>.tiny</p>
+            </div>
+            <div class='sm-1 small'>
+              <p>.small</p>
+            </div>
+            <div class='sm-1'>
+              <p>.normal</p>
+            </div>
+            <div class='sm-1 large'>
+              <p>.large</p>
+            </div>
+          </div>
+          <h3>Text Alignment</h3>
+          <b>Description</b>
+          <div class='pad'>
+            <p>
+              It is frequently necessary to alter the alignment of text within
+              a container, both to make better use of the space and be
+              visually different than nearby text. The provided text-alignment
+              helpers may be easily applied anywhere in a document.
+            </p>
+          </div>
           <div class='row sm-col md-col'>
             <div class='sm-1 pad clr-1 text-left'>
               <h4>
@@ -153,33 +320,6 @@
                 <span>.text-justify</span>
               </h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.</p>
-            </div>
-          </div>
-          <h2 id='box_model'>Box Model</h2>
-          Coming Soon
-          <h2 id='typography'>
-            Typography
-          </h2>
-          <h3>Headers</h3>
-          <h1>H1. Header 1</h1>
-          <h2>H2. Header 2</h2>
-          <h3>H3. Header 3</h3>
-          <h4>H4. Header 4</h4>
-          <h5>H5. Header 5</h5>
-          <h6>H6. Header 6</h6>
-          <h3>Sizes</h3>
-          <div class='row text-center'>
-            <div class='sm-1 tiny'>
-              <p>.tiny</p>
-            </div>
-            <div class='sm-1 small'>
-              <p>.small</p>
-            </div>
-            <div class='sm-1'>
-              <p>.normal</p>
-            </div>
-            <div class='sm-1 large'>
-              <p>.large</p>
             </div>
           </div>
         </div>

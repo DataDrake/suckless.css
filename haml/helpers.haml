@@ -87,7 +87,123 @@
           %h1
             Helpers
             %i.fa.fa-hw.fa-support
-          %h2{id:'alignment'} Alignment
+          .flow
+            .col.info-i.outline
+              .info.pad
+                %b Motivation
+              .pad
+                %b
+                  Sometimes a designer needs some assistance making individual
+                  elements look better. Helpers may be applied to any element
+                  in order to style it as desired.
+            .col.good-i.outline
+              .good.pad
+                %b Philosophy
+              .pad
+                %b
+                  Helpers should be applied liberally throughout a document in
+                  order to reduce the boilerplate CSS for a site. They should
+                  also be applicable to any element, not a specific type.
+          %h2{id:'alightment'} Alignment
+          %b Description
+          .pad
+            %p
+              Alignment helpers allow objects to be easily positioned on a page.
+            .row
+              .left.pad.clr-2
+                & .left
+              .center.pad.clr-2
+                & .center
+              .right.pad.clr-2
+                & .right
+          %h2{id:'box_model'} Box Model
+          %b Description
+          .pad
+            %p
+              Manipulation of the box model is key to making clean looking
+              sites. These helpers allow a designer to control the size,
+              padding, and border of any element at will.
+          %h3 Sizes
+          %dl
+            %dt .expand
+            %dd Fills the whole width of its parent
+            %dt .limit
+            %dd Will not exceed a specified width
+          %h3 Padding
+          .row.text-center
+            .sm-1.pad
+              .clr-1
+                No Pad
+            .sm-1.pad
+              .clr-1.pad
+                & .pad
+            .sm-1.pad
+              .clr-1.pad-2
+                & .pad-2
+          %h3 Border
+          .row.text-center
+            .sm-1.pad
+              .clr-2-i.pad
+                Normal
+            .sm-1.pad
+              .clr-2-i.pad.outline
+                & .outline
+          %h2{id:'typography'}
+            Typography
+          .flow
+            .col.info-i.outline
+              .info.pad
+                %b Motivation
+              .pad
+                %b
+                  Typography and type-setting can be the most complicated parts
+                  of a new design. Default styles and type helpers are essential
+                  to a developer.
+            .col.good-i.outline
+              .good.pad
+                %b Philosophy
+              .pad
+                %b
+                  Sane defaults for type-setting of headers and inline text
+                  allow a designer to focus less on font-sizes and decoration
+                  and more on the alignment, position, and color of type.
+          %h3 Headers
+          %b Description
+          .pad
+            %p
+              Header sizes and decoration are given sane defaults requiring
+              a designer to only worry about the header level and color of
+              specific text.
+          %h1 H1. Header 1
+          %h2 H2. Header 2
+          %h3 H3. Header 3
+          %h4 H4. Header 4
+          %h5 H5. Header 5
+          %h6 H6. Header 6
+          %h3 Sizes
+          %b Description
+          .pad
+            %p
+              Headings typically have a heavier font-weight than inline text.
+              Size helpers allow incline text to be made larger or smaller
+              without an increase in font-weight.
+          .row.text-center
+            .sm-1.tiny
+              %p .tiny
+            .sm-1.small
+              %p .small
+            .sm-1
+              %p .normal
+            .sm-1.large
+              %p .large
+          %h3 Text Alignment
+          %b Description
+          .pad
+            %p
+              It is frequently necessary to alter the alignment of text within
+              a container, both to make better use of the space and be
+              visually different than nearby text. The provided text-alignment
+              helpers may be easily applied anywhere in a document.
           .row.sm-col.md-col
             .sm-1.pad.clr-1.text-left
               %h4
@@ -109,27 +225,6 @@
                 %i.fa.fa-align-justify
                 %span .text-justify
               %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et odio tempor, varius velit ac, luctus leo. Sed in ipsum sed augue varius elementum.
-          %h2{id:'box_model'} Box Model
-          Coming Soon
-          %h2{id:'typography'}
-            Typography
-          %h3 Headers
-          %h1 H1. Header 1
-          %h2 H2. Header 2
-          %h3 H3. Header 3
-          %h4 H4. Header 4
-          %h5 H5. Header 5
-          %h6 H6. Header 6
-          %h3 Sizes
-          .row.text-center
-            .sm-1.tiny
-              %p .tiny
-            .sm-1.small
-              %p .small
-            .sm-1
-              %p .normal
-            .sm-1.large
-              %p .large
     %footer
       .text-center.clr-1.pad
         %p
