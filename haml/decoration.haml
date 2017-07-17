@@ -87,26 +87,85 @@
           %h1
             Decorations
             %i.fa.fa-fw.fa-heart
+          .flow
+            .col.info-i.outline
+              .info.pad
+                %b Motivation
+              .pad
+                %b
+                  Subtle visual elements can be used to improve the readability
+                  and amount of information conveyed to a viewer.
+            .col.good-i.outline
+              .good.pad
+                %b Philosophy
+              .pad
+                %b
+                  Decorative features of a document should be used to convey
+                  useful information, not just to make a site look more
+                  interesting.
           %h2{id:'badges'} Badges
-          .row
+          %b Description
+          .pad
+            %p
+              A badge is a small icon that can be used as a subtle indicator of
+              the relevance of information.
+          %b Examples
+          .row.pad
             %i.fa.fa-info.badge.info
             %i.fa.fa-check.badge.good
             %i.fa.fa-exclamation.badge.warn
             %i.fa.fa-bolt.badge.error
+          %b HAML
+          .pad
+            %pre
+              %code
+                :preserve
+                  %i.fa.fa-info.badge.info
+                  %i.fa.fa-check.badge.good
+                  %i.fa.fa-exclamation.badge.warn
+                  %i.fa.fa-bolt.badge.error
           %h2{id:'labels'} Labels
-          .label.info
-            Info
-          .label.good
-            Good
-          .label.warn
-            Warn
-          .label.error
-            Error
+          %b Description
+          .pad
+            %p
+              A label can be used as a prominent status indicator, especially
+              for AJAX status messages.
+          %b Examples
+          .pad
+            .label.info Info
+            .label.good Good
+            .label.warn Warn
+            .label.error Error
+          %b HAML
+          .pad
+            %pre
+              %code
+                :preserve
+                  .label.info Info
+                  .label.good Good
+                  .label.warn Warn
+                  .label.error Error
           %h2{id:'progress'} Progress
-          %progress{max:100,value:75}
-          %progress{max:100,value:50}
-          %progress{max:100,value:25}
-          %progress{max:100,value:60}
+          %b Description
+          .pad
+            %p
+              Progress bars are indicators of completion that scale very
+              nicely in responsive layouts.
+          %b Examples
+          .pad
+            %progress{max:100,value:75}
+            %progress{max:100,value:50}
+            %progress{max:100,value:25}
+            %progress{max:100,value:60}
+          %b HAML
+          .pad
+            %pre
+              %code
+                :preserve
+                  %progress{max:100,value:75}
+                  %progress{max:100,value:50}
+                  %progress{max:100,value:25}
+                  %progress{max:100,value:60}
     %footer
       .text-center.clr-1.pad
         %p

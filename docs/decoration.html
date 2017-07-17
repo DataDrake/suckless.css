@@ -124,31 +124,88 @@
             Decorations
             <i class='fa fa-fw fa-heart'></i>
           </h1>
+          <div class='flow'>
+            <div class='col info-i outline'>
+              <div class='info pad'>
+                <b>Motivation</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Subtle visual elements can be used to improve the readability
+                  and amount of information conveyed to a viewer.
+                </b>
+              </div>
+            </div>
+            <div class='col good-i outline'>
+              <div class='good pad'>
+                <b>Philosophy</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Decorative features of a document should be used to convey
+                  useful information, not just to make a site look more
+                  interesting.
+                </b>
+              </div>
+            </div>
+          </div>
           <h2 id='badges'>Badges</h2>
-          <div class='row'>
+          <b>Description</b>
+          <div class='pad'>
+            <p>
+              A badge is a small icon that can be used as a subtle indicator of
+              the relevance of information.
+            </p>
+          </div>
+          <b>Examples</b>
+          <div class='row pad'>
             <i class='fa fa-info badge info'></i>
             <i class='fa fa-check badge good'></i>
             <i class='fa fa-exclamation badge warn'></i>
             <i class='fa fa-bolt badge error'></i>
           </div>
+          <b>HAML</b>
+          <div class='pad'>
+            <pre><code>%i.fa.fa-info.badge.info&#x000A;%i.fa.fa-check.badge.good&#x000A;%i.fa.fa-exclamation.badge.warn&#x000A;%i.fa.fa-bolt.badge.error</code></pre>
+          </div>
           <h2 id='labels'>Labels</h2>
-          <div class='label info'>
-            Info
+          <b>Description</b>
+          <div class='pad'>
+            <p>
+              A label can be used as a prominent status indicator, especially
+              for AJAX status messages.
+            </p>
           </div>
-          <div class='label good'>
-            Good
+          <b>Examples</b>
+          <div class='pad'>
+            <div class='label info'>Info</div>
+            <div class='label good'>Good</div>
+            <div class='label warn'>Warn</div>
+            <div class='label error'>Error</div>
           </div>
-          <div class='label warn'>
-            Warn
-          </div>
-          <div class='label error'>
-            Error
+          <b>HAML</b>
+          <div class='pad'>
+            <pre><code>.label.info Info&#x000A;.label.good Good&#x000A;.label.warn Warn&#x000A;.label.error Error</code></pre>
           </div>
           <h2 id='progress'>Progress</h2>
-          <progress max='100' value='75'></progress>
-          <progress max='100' value='50'></progress>
-          <progress max='100' value='25'></progress>
-          <progress max='100' value='60'></progress>
+          <b>Description</b>
+          <div class='pad'>
+            <p>
+              Progress bars are indicators of completion that scale very
+              nicely in responsive layouts.
+            </p>
+          </div>
+          <b>Examples</b>
+          <div class='pad'>
+            <progress max='100' value='75'></progress>
+            <progress max='100' value='50'></progress>
+            <progress max='100' value='25'></progress>
+            <progress max='100' value='60'></progress>
+          </div>
+          <b>HAML</b>
+          <div class='pad'>
+            <pre><code>%progress{max:100,value:75}&#x000A;%progress{max:100,value:50}&#x000A;%progress{max:100,value:25}&#x000A;%progress{max:100,value:60}</code></pre>
+          </div>
         </div>
       </div>
     </div>

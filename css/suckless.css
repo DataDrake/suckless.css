@@ -47,7 +47,7 @@
 /* Base - Classes */
 .hide-bullet, .crumbs, .icons, .sidebar ul { list-style-type: none; }
 
-.inline-list, .btn-group, .crumbs, .icons, .icons > li, .pager, .topbar, .row { display: flex; }
+.inline-list, .btn-group, .crumbs, .icons, .icons > li, .pager, .topbar, .row, pre { display: flex; }
 
 .btn-group.stack, .icons.stack a, .icons.vertical, .blk, .flow, .col, .accordian, .accordian > div { display: flex; flex-direction: column; }
 
@@ -249,16 +249,18 @@ html[dir=rtl] .topbar a { border-left: none; border-right: 1px solid #777; }
 html[dir=rtl] .accordian label:after { float: left; }
 
 /* Visuals - Inline */
-blockquote, code, kbd { color: #333; background: #DDD; border-radius: 0.25rem; padding: 0.25rem 0.5rem; }
+blockquote, code, kbd, pre { color: #333; background: #DDD; border-radius: 0.25rem; padding: 0.25rem 0.5rem; }
 
 blockquote { border: 0.125rem solid #777; }
 
 cite { display: block; }
 cite::before { content: "— "; }
 
-code, kbd { font-family: monospace; font-weight: bold; }
+pre, code, kbd { font-family: monospace; font-weight: bold; }
 
-code { border: 1px dashed; }
+pre, code { border: 1px dashed; }
+
+pre > code { flex: 1; border: none; line-height: 1.25rem; }
 
 kbd { border: 0.25em outset; }
 
