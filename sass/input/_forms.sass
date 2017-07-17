@@ -21,6 +21,7 @@ select
     background: none
 
 input,select,textarea,.input-group
+  width: 100%
   border: $form-element-border-size solid $form-element-border
   border-radius: $form-element-border-radius
   padding: $form-element-padding
@@ -32,11 +33,20 @@ input,select,textarea,.input-group
   padding: 0
   background: $form-element-border
   border: none
+  input
+    overflow-x: hidden
 .input-group, .input-pre, .input-post
   > *
     margin: 0
+    width: 100%
 .input-pre, .input-post
   margin: $form-group-margin
+  flex: 1
+
+fieldset
+  border: $form-fieldset-border
+  > legend
+    margin: auto $form-fieldset-legend-margin
 
 @if $enable-rtl
   html[dir=rtl]

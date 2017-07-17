@@ -88,36 +88,52 @@
           %h2{id:'buttons'}
             Buttons
             %i.fa.fa-fw.fa-hand-pointer-o
+          .flow
+            .col.info-i.outline
+              .info.pad
+                %b Motivation
+              .pad
+                %b
+                  Buttons are essential input sources that allow a user to
+                  control navigation, transmit data, or interact with dynamic
+                  page content.
+            .col.good-i.outline
+              .good.pad
+                %b Philosophy
+              .pad
+                %b
+                  If it looks like a button, it is a button and must act like a
+                  button.
           %h3 Sizes
           .row
             %p
-              %a.btn.tiny Tiny
-              %a.btn.small Small
-              %a.btn Normal
-              %a.btn.large Large
-          %a.btn.large.expand Large Expanded
-          %a.btn.tiny.expand Tiny Expanded
+              %a.btn.tiny .tiny
+              %a.btn.small .small
+              %a.btn normal
+              %a.btn.large .large
+          %a.btn.large.expand .large.expand
+          %a.btn.tiny.expand .tiny.expand
           %h3 Types
           .row
             %p
               %a.btn normal
-              %a.btn.hollow hollow
+              %a.btn.hollow .hollow
               %a.btn.warn
                 %i.fa.fa-warning
-                %span warn
+                %span .warn
               %a.btn.error
                 %i.fa.fa-close
-                %span error
+                %span .error
               %a.btn.good
                 %i.fa.fa-check
-                %span good
+                %span .good
           %h3 Shapes
           .row
             %p
-              %a.btn Normal
-              %a.btn.radius Radius
-              %a.btn.hollow Hollow
-              %a.btn.hollow.radius Radius
+              %a.btn normal
+              %a.btn.radius .radius
+              %a.btn.hollow .hollow
+              %a.btn.hollow.radius .hollow.radius
           %h3 Groups
           %h4 Normal
           .btn-group
@@ -125,18 +141,32 @@
             %a.btn btn
             %a.btn btn
             %a.btn btn
-          %h4 Expanded
-          .btn-group.expand
+          %b HAML
+          .pad
+            %pre
+              %code
+                :preserve
+                  .btn-group
+                    %a.btn btn
+                    %a.btn btn
+                    %a.btn btn
+                    %a.btn btn
+          %h4 Hollow, Radius, Large
+          .btn-group.hollow.radius.large
             %a.btn btn
             %a.btn btn
             %a.btn btn
             %a.btn btn
-          %h4 Expanded, Hollow, Radius, Large
-          .btn-group.hollow.expand.radius.large
-            %a.btn btn
-            %a.btn btn
-            %a.btn btn
-            %a.btn btn
+          %b HAML
+          .pad
+            %pre
+              %code
+                :preserve
+                  .btn-group.hollow.radius.large
+                    %a.btn btn
+                    %a.btn btn
+                    %a.btn btn
+                    %a.btn btn
           %h4 Stacked
           .row
             .sm-1.btn-group.stack
@@ -145,42 +175,129 @@
               %a.btn btn
               %a.btn btn
             .sm-1.lg-3
+          %b HAML
+          .pad
+            %pre
+              %code
+                :preserve
+                  .sm-1.btn-group.stack
+                    %a.btn btn
+                    %a.btn btn
+                    %a.btn btn
+                    %a.btn btn
+                  .sm-1.lg-3
           %h2{id:'forms'}
             Forms
             %i.fa.fa-fw.fa-clipboard
-          %form{id:'test'}
-            %legend This is a form
-            %select
-              %option{value:'A'} Apple
-              %option{value:'B'} Banana
-              %option{value:'C'} Cherry
-            %br
-            %select{multiple:'true'}
-              %option{value:'A'} Apple
-              %option{value:'B'} Banana
-              %option{value:'C'} Cherry
-            %br
-            %label{for:'name'}
-              Name
-              %br
-              %input{type:'text', name:'name'}
-            %br
-            .input-group
-              .input-pre
-                Pre
-              %input{type:'text'}
-              .input-post
-                Post
-            %br
-            %textarea Tell me a story...
-            %br
-            .input-group
-              %input{type:'search'}
-              .input-post
-                %i.fa.fa-search
-            %br
-            %button{type:'reset',form:'test',value:'Reset'} Reset
-            %input{type:'submit',value:'Submit'}
+          .flow
+            .col.info-i.outline
+              .info.pad
+                %b Motivation
+              .pad
+                %b
+                  Forms are one of the oldest ways for user to send information
+                  to a web server. They are useful for providing paper-like
+                  data collection.
+            .col.good-i.outline
+              .good.pad
+                %b Philosophy
+              .pad
+                %b
+                  Forms should have a similar appearance, even on different
+                  browsers. Selected form elements should visual indicate that
+                  they are selected.
+          %h3 Examples
+          .flow
+            .col
+              %h5.text-center Legends
+              %form{id:'test'}
+                %legend This is a form legend
+            .col
+              %h5.text-center  Dropdown
+              %select
+                %option{value:'A'} Apple
+                %option{value:'B'} Banana
+                %option{value:'C'} Cherry
+            .col
+              %h5.text-center  Multiple-Select
+              %select{multiple:'true'}
+                %option{value:'A'} Apple
+                %option{value:'B'} Banana
+                %option{value:'C'} Cherry
+            .col
+              %h5.text-center  Labelled Input
+              %label{for:'name'}
+                Name
+                %br
+                %input{type:'text', name:'name'}
+            .col
+              %h5.text-center  Pre/Post Group
+              .input-group
+                .input-pre
+                  Pre
+                %input{type:'text'}
+                .input-post
+                  Post
+            .col
+              %h5.text-center  Text Area
+              %textarea Tell me a story...
+            .col
+              %h5.text-center  Search via Post
+              .input-group
+                %input{type:'search'}
+                .input-post
+                  %i.fa.fa-search
+            .col
+              %h5.text-center  Reset/Submit Buttons
+              %button{type:'reset',form:'test',value:'Reset'} Reset
+              %input.btn{type:'submit',value:'Submit'}
+          %h3 Complete Example
+          %h5 Example User Form
+          %form.row.sm-col{id:'test'}
+          %fieldset.pad{id:'name'}
+            %legend Name
+            .row.sm-col
+              .col.sm-2.pad
+                %label{for:'first'}
+                  First
+                  %br
+                  %input{type:'text', name:'first'}
+              .col.sm-1.pad
+                %label{for:'initial'}
+                  M.I.
+                  %br
+                  %input{type:'text', name:'initial'}
+              .col.sm-2.pad
+                %label{for:'last'}
+                  Last
+                  %br
+                  %input{type:'text', name:'last'}
+          .pad
+          %fieldset.pad{id:'contact'}
+            %legend Contact Info
+            .row.sm-col
+              .col.sm-1.pad
+                %label{for:'phone'}
+                  Phone
+                  %br
+                  .input-group
+                    .input-pre
+                      %span 1-
+                    %input{type:'telephone', name:'phone', placeholder:'(555) 1234'}
+              .col.sm-1.pad
+                %label{for:'email'}
+                  Email
+                  %br
+                  %input{type:'email', name:'last', placeholder:'name@example.com'}
+          .pad
+          .row
+            %button.btn.warn.sm-1{type:'reset',form:'test',value:'Reset'}
+              %i.fa.fa-fw.fa-refresh
+              Reset
+            .lg-2.lg-only
+            %button.btn.good.sm-1{type:'submit',value:'Submit'}
+              %i.fa.fa-fw.fa-send
+              Submit
     %footer
       .text-center.clr-1.pad
         %p

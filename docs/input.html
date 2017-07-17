@@ -125,43 +125,68 @@
             Buttons
             <i class='fa fa-fw fa-hand-pointer-o'></i>
           </h2>
+          <div class='flow'>
+            <div class='col info-i outline'>
+              <div class='info pad'>
+                <b>Motivation</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Buttons are essential input sources that allow a user to
+                  control navigation, transmit data, or interact with dynamic
+                  page content.
+                </b>
+              </div>
+            </div>
+            <div class='col good-i outline'>
+              <div class='good pad'>
+                <b>Philosophy</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  If it looks like a button, it is a button and must act like a
+                  button.
+                </b>
+              </div>
+            </div>
+          </div>
           <h3>Sizes</h3>
           <div class='row'>
             <p>
-              <a class='btn tiny'>Tiny</a>
-              <a class='btn small'>Small</a>
-              <a class='btn'>Normal</a>
-              <a class='btn large'>Large</a>
+              <a class='btn tiny'>.tiny</a>
+              <a class='btn small'>.small</a>
+              <a class='btn'>normal</a>
+              <a class='btn large'>.large</a>
             </p>
           </div>
-          <a class='btn large expand'>Large Expanded</a>
-          <a class='btn tiny expand'>Tiny Expanded</a>
+          <a class='btn large expand'>.large.expand</a>
+          <a class='btn tiny expand'>.tiny.expand</a>
           <h3>Types</h3>
           <div class='row'>
             <p>
               <a class='btn'>normal</a>
-              <a class='btn hollow'>hollow</a>
+              <a class='btn hollow'>.hollow</a>
               <a class='btn warn'>
                 <i class='fa fa-warning'></i>
-                <span>warn</span>
+                <span>.warn</span>
               </a>
               <a class='btn error'>
                 <i class='fa fa-close'></i>
-                <span>error</span>
+                <span>.error</span>
               </a>
               <a class='btn good'>
                 <i class='fa fa-check'></i>
-                <span>good</span>
+                <span>.good</span>
               </a>
             </p>
           </div>
           <h3>Shapes</h3>
           <div class='row'>
             <p>
-              <a class='btn'>Normal</a>
-              <a class='btn radius'>Radius</a>
-              <a class='btn hollow'>Hollow</a>
-              <a class='btn hollow radius'>Radius</a>
+              <a class='btn'>normal</a>
+              <a class='btn radius'>.radius</a>
+              <a class='btn hollow'>.hollow</a>
+              <a class='btn hollow radius'>.hollow.radius</a>
             </p>
           </div>
           <h3>Groups</h3>
@@ -172,19 +197,20 @@
             <a class='btn'>btn</a>
             <a class='btn'>btn</a>
           </div>
-          <h4>Expanded</h4>
-          <div class='btn-group expand'>
+          <b>HAML</b>
+          <div class='pad'>
+            <pre><code>.btn-group&#x000A;  %a.btn btn&#x000A;  %a.btn btn&#x000A;  %a.btn btn&#x000A;  %a.btn btn</code></pre>
+          </div>
+          <h4>Hollow, Radius, Large</h4>
+          <div class='btn-group hollow radius large'>
             <a class='btn'>btn</a>
             <a class='btn'>btn</a>
             <a class='btn'>btn</a>
             <a class='btn'>btn</a>
           </div>
-          <h4>Expanded, Hollow, Radius, Large</h4>
-          <div class='btn-group hollow expand radius large'>
-            <a class='btn'>btn</a>
-            <a class='btn'>btn</a>
-            <a class='btn'>btn</a>
-            <a class='btn'>btn</a>
+          <b>HAML</b>
+          <div class='pad'>
+            <pre><code>.btn-group.hollow.radius.large&#x000A;  %a.btn btn&#x000A;  %a.btn btn&#x000A;  %a.btn btn&#x000A;  %a.btn btn</code></pre>
           </div>
           <h4>Stacked</h4>
           <div class='row'>
@@ -196,52 +222,169 @@
             </div>
             <div class='sm-1 lg-3'></div>
           </div>
+          <b>HAML</b>
+          <div class='pad'>
+            <pre><code>.sm-1.btn-group.stack&#x000A;  %a.btn btn&#x000A;  %a.btn btn&#x000A;  %a.btn btn&#x000A;  %a.btn btn&#x000A;.sm-1.lg-3</code></pre>
+          </div>
           <h2 id='forms'>
             Forms
             <i class='fa fa-fw fa-clipboard'></i>
           </h2>
-          <form id='test'>
-            <legend>This is a form</legend>
-            <select>
-              <option value='A'>Apple</option>
-              <option value='B'>Banana</option>
-              <option value='C'>Cherry</option>
-            </select>
-            <br>
-            <select multiple='true'>
-              <option value='A'>Apple</option>
-              <option value='B'>Banana</option>
-              <option value='C'>Cherry</option>
-            </select>
-            <br>
-            <label for='name'>
-              Name
-              <br>
-              <input name='name' type='text'>
-            </label>
-            <br>
-            <div class='input-group'>
-              <div class='input-pre'>
-                Pre
+          <div class='flow'>
+            <div class='col info-i outline'>
+              <div class='info pad'>
+                <b>Motivation</b>
               </div>
-              <input type='text'>
-              <div class='input-post'>
-                Post
+              <div class='pad'>
+                <b>
+                  Forms are one of the oldest ways for user to send information
+                  to a web server. They are useful for providing paper-like
+                  data collection.
+                </b>
               </div>
             </div>
-            <br>
-            <textarea>Tell me a story...</textarea>
-            <br>
-            <div class='input-group'>
-              <input type='search'>
-              <div class='input-post'>
-                <i class='fa fa-search'></i>
+            <div class='col good-i outline'>
+              <div class='good pad'>
+                <b>Philosophy</b>
+              </div>
+              <div class='pad'>
+                <b>
+                  Forms should have a similar appearance, even on different
+                  browsers. Selected form elements should visual indicate that
+                  they are selected.
+                </b>
               </div>
             </div>
-            <br>
-            <button form='test' type='reset' value='Reset'>Reset</button>
-            <input type='submit' value='Submit'>
-          </form>
+          </div>
+          <h3>Examples</h3>
+          <div class='flow'>
+            <div class='col'>
+              <h5 class='text-center'>Legends</h5>
+              <form id='test'>
+                <legend>This is a form legend</legend>
+              </form>
+            </div>
+            <div class='col'>
+              <h5 class='text-center'>Dropdown</h5>
+              <select>
+                <option value='A'>Apple</option>
+                <option value='B'>Banana</option>
+                <option value='C'>Cherry</option>
+              </select>
+            </div>
+            <div class='col'>
+              <h5 class='text-center'>Multiple-Select</h5>
+              <select multiple='true'>
+                <option value='A'>Apple</option>
+                <option value='B'>Banana</option>
+                <option value='C'>Cherry</option>
+              </select>
+            </div>
+            <div class='col'>
+              <h5 class='text-center'>Labelled Input</h5>
+              <label for='name'>
+                Name
+                <br>
+                <input name='name' type='text'>
+              </label>
+            </div>
+            <div class='col'>
+              <h5 class='text-center'>Pre/Post Group</h5>
+              <div class='input-group'>
+                <div class='input-pre'>
+                  Pre
+                </div>
+                <input type='text'>
+                <div class='input-post'>
+                  Post
+                </div>
+              </div>
+            </div>
+            <div class='col'>
+              <h5 class='text-center'>Text Area</h5>
+              <textarea>Tell me a story...</textarea>
+            </div>
+            <div class='col'>
+              <h5 class='text-center'>Search via Post</h5>
+              <div class='input-group'>
+                <input type='search'>
+                <div class='input-post'>
+                  <i class='fa fa-search'></i>
+                </div>
+              </div>
+            </div>
+            <div class='col'>
+              <h5 class='text-center'>Reset/Submit Buttons</h5>
+              <button form='test' type='reset' value='Reset'>Reset</button>
+              <input class='btn' type='submit' value='Submit'>
+            </div>
+          </div>
+          <h3>Complete Example</h3>
+          <h5>Example User Form</h5>
+          <form class='row sm-col' id='test'></form>
+          <fieldset class='pad' id='name'>
+            <legend>Name</legend>
+            <div class='row sm-col'>
+              <div class='col sm-2 pad'>
+                <label for='first'>
+                  First
+                  <br>
+                  <input name='first' type='text'>
+                </label>
+              </div>
+              <div class='col sm-1 pad'>
+                <label for='initial'>
+                  M.I.
+                  <br>
+                  <input name='initial' type='text'>
+                </label>
+              </div>
+              <div class='col sm-2 pad'>
+                <label for='last'>
+                  Last
+                  <br>
+                  <input name='last' type='text'>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class='pad'></div>
+          <fieldset class='pad' id='contact'>
+            <legend>Contact Info</legend>
+            <div class='row sm-col'>
+              <div class='col sm-1 pad'>
+                <label for='phone'>
+                  Phone
+                  <br>
+                  <div class='input-group'>
+                    <div class='input-pre'>
+                      <span>1-</span>
+                    </div>
+                    <input name='phone' placeholder='(555) 1234' type='telephone'>
+                  </div>
+                </label>
+              </div>
+              <div class='col sm-1 pad'>
+                <label for='email'>
+                  Email
+                  <br>
+                  <input name='last' placeholder='name@example.com' type='email'>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class='pad'></div>
+          <div class='row'>
+            <button class='btn warn sm-1' form='test' type='reset' value='Reset'>
+              <i class='fa fa-fw fa-refresh'></i>
+              Reset
+            </button>
+            <div class='lg-2 lg-only'></div>
+            <button class='btn good sm-1' type='submit' value='Submit'>
+              <i class='fa fa-fw fa-send'></i>
+              Submit
+            </button>
+          </div>
         </div>
       </div>
     </div>
