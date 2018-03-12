@@ -2,7 +2,8 @@
  * Navigation - Sidebar
  */
 .sidebar
-  width: $sidebar-width
+  text-align: center
+  width: 100%
   float: none
   position: absolute
   color: $sidebar-item-fg
@@ -27,8 +28,25 @@
   a
     display: block
 
+@mixin sidebar-size()
+  .sidebar
+    width: $sidebar-width
+    li
+      margin-left: auto
+      margin-right: auto
+  .sidebar.left
+    left: -$sidebar-width
+  .sidebar.right
+    right: -$sidebar-width
+  @if $enable-rtl
+    html[dir=rtl]
+      .sidebar.left
+        right: -$sidebar-width
+      .sidebar.right
+        left: -$sidebar-width
+
 @mixin sidebar($location)
-  #{$location}: -$sidebar-width
+  #{$location}: -100%
   &:target
     #{$location}: 0
 

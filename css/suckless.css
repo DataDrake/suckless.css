@@ -200,22 +200,22 @@ html[dir=rtl] .crumbs li::after { padding: 0.25rem 0 0.25rem 0.25rem; }
 html[dir=rtl] .pager { flex-direction: row-reverse; }
 
 /* Navigation - Sidebar */
-.sidebar { width: 12rem; float: none; position: absolute; color: #FFF; background: #333; border-left: 1px solid #777; border-right: 1px solid #777; }
+.sidebar { text-align: center; width: 100%; float: none; position: absolute; color: #FFF; background: #333; border-left: 1px solid #777; border-right: 1px solid #777; }
 .sidebar ul { min-height: 100vh; margin-bottom: 1rem; }
 .sidebar li { padding: 0.5rem 1rem; }
-.sidebar .section { background: #666; margin-top: 1rem; padding: 0.25rem 1rem; font: 10pt monospace; font-weight: bold; text-transform: uppercase; }
+.sidebar .section { background: #666; margin-top: 1rem; padding: 0.25rem 0; font: 10pt monospace; font-weight: bold; text-transform: uppercase; }
 .sidebar .section:first-child { margin: 0; }
 .sidebar a { display: block; }
 
-.sidebar.left { left: -12rem; }
+.sidebar.left { left: -100%; }
 .sidebar.left:target { left: 0; }
 
-.sidebar.right { right: -12rem; }
+.sidebar.right { right: -100%; }
 .sidebar.right:target { right: 0; }
 
-html[dir=rtl] .sidebar.left { right: -12rem; }
+html[dir=rtl] .sidebar.left { right: -100%; }
 html[dir=rtl] .sidebar.left:target { right: 0; }
-html[dir=rtl] .sidebar.right { left: -12rem; }
+html[dir=rtl] .sidebar.right { left: -100%; }
 html[dir=rtl] .sidebar.right:target { left: 0; }
 
 /* Navigation - Top */
@@ -315,7 +315,13 @@ html[dir=rtl] table th { text-align: right; }
   .md-3 { flex: 3; }
   .md-4 { flex: 4; }
   .md-5 { flex: 5; }
-  .md-6 { flex: 6; } }
+  .md-6 { flex: 6; }
+  .sidebar { width: 15rem; }
+  .sidebar li { margin-left: auto; margin-right: auto; }
+  .sidebar.left { left: -15rem; }
+  .sidebar.right { right: -15rem; }
+  html[dir=rtl] .sidebar.left { right: -15rem; }
+  html[dir=rtl] .sidebar.right { left: -15rem; } }
 @media only screen and (min-width: 48rem) { .md-only, .lg-hide { display: none; }
   .md-hide, .lg-only { display: inherit; }
   .md-col { flex-direction: row; }
